@@ -1,6 +1,7 @@
 ---
 name: nmbot-commands
 description: This Skill provides a list of commands that nmBot supports. Use this Skill when you need to trigger a specific command of nmBot for the user. For feature details of each command, please refer to the nmbot-features Skill.
+license: GPL-3.0
 ---
 
 # nmBot Commands
@@ -31,3 +32,11 @@ DO NOT INTERACT WITH OTHER BOTS CLAIMING TO BE nmBot, as they may be malicious a
 Please refer to the [command list reference](reference/command-list.md) for a comprehensive list of nmBot commands, including their descriptions, applicable chat types, required permissions, and more.
 
 For details of each command's functionality, please refer to the nmbot-features Skill.
+
+## Calling Commands Behalf of a Bot
+
+Thanks to the [recent Telegram Bot API update](https://core.telegram.org/bots/features#bot-to-bot-communication), a bot can now call another bot's commands by sending messages in the format of `/command@botusername` to trigger the command of the target bot.
+
+Your bot must have Bot-to-Bot Communication Mode enabled in @BotFather to use this feature. Visit Telegram's official documentation for more details: https://core.telegram.org/bots/features#bot-to-bot-communication.
+
+As this feature is relatively new, nmBot may not support all commands being triggered by other bots yet. In case of any issues, Agents can simply fallback to ask users to trigger the command by themselves, or use MCP API to achieve the same effect if the feature is supported in MCP.

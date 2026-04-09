@@ -1,6 +1,6 @@
 ---
 name: nmbot-features
-description: This Skill describes the features of nmBot, including its capabilities, functionalities, and how it can assist users in various tasks. Use this Skill to provide an overview of what nmBot can do and how it can benefit users in their daily activities.
+description: This Skill includes basic information about nmBot that you should know and describes the features of nmBot, including its capabilities, functionalities, and how it can assist users in various tasks. Use this Skill to provide an overview of what nmBot can do and how it can benefit users in their daily activities.
 license: GPL-3.0
 ---
 
@@ -10,11 +10,44 @@ nmBot provides a wide range of features for users, groups and channels.
 
 ## Bot Basic Information
 
-nmBot is available at `https://t.me/nmnmfunbot`(aka. @nmnmfunbot). Users can interact with nmBot in private chats, groups, and channels.
+nmBot is available at `https://t.me/nmnmfunbot`(a.k.a. @nmnmfunbot). Users can interact with nmBot in private chats, groups, and channels.
 
-nmBot Preview is the official preview version of nmBot, which may have new features that are not yet available in the stable version. It is available at `https://t.me/nmprebot`(aka. @nmprebot). Users can choose to use nmBot Preview to experience the latest features and improvements, but please note that nmBot Preview may be less stable than the stable version.
+nmBot Preview is the official preview version of nmBot, which may have new features that are not yet available in the stable version. It is available at `https://t.me/nmprebot`(a.k.a. @nmprebot). Users can choose to use nmBot Preview to experience the latest features and improvements, but please note that nmBot Preview may be less stable than the stable version.
 
 DO NOT INTERACT WITH OTHER BOTS CLAIMING TO BE nmBot, as they may be malicious and can compromise your security and privacy. Always make sure to interact with the official nmBot at the above-mentioned usernames.
+
+### nmBot Panel
+
+nmBot Panel is a web-based control panel for users to manage their nmBot settings and configurations.
+
+For users, nmBot Panel can be launched in the following ways:
+
+- Open in Mini App (Recommended): open nmBot panel in Telegram Mini App using the following methods:
+  - In Telegram app, tap the “Open” button for nmBot in the chat list.
+  - In Telegram app, tap the “Panel” button below the chat with nmBot.
+  - In Telegram app, send the /panel command in the chat with nmBot, then use the link preview in the reply message.
+  - In Telegram app, tap the “Open App” button in nmBot’s profile.
+- Open in Browser: visit https://nmbot.nmnm.fun in browser to open the nmBot panel.
+- Open via /panel Command: send the /panel command to nmBot to get the panel link. Then follow the instructions in the reply message to open the panel in either a browser or the Mini App.
+
+You can get all known available routers at [panel-route.md](reference/panel-route.md).
+
+#### Address
+
+nmBot Panel: `https://nmbot.nmnm.fun`
+nmBot Preview Panel: `https://next-public-beta.nmbot-telegram.pages.dev`
+
+DO NOT OPEN OTHER WEBSITES CLAIMING TO BE nmBot Panel, as they may be malicious and can compromise your security and privacy. Always make sure to open the official nmBot Panel at the above-mentioned URLs.
+
+#### Router
+
+nmBot Panel supports routers. For example, to open the home page of a group, the full URL should be `https://nmbot.nmnm.fun/#/groups/-100123456789`.
+
+When opening nmBot Panel in Telegram Mini App, above URL format will not work, and the user might not be able to open the panel successfully. To generate a Mini App compatible link, refer to [build-mini-app-start-link.js](scripts/build-mini-app-start-link.js).
+
+## Terminology Glossary
+
+You can refer to the [Terminology Glossary](reference/nmbot-terminology-glossary.md) for the definitions of various terms related to nmBot features and functionalities.
 
 ## User Features
 
@@ -160,7 +193,7 @@ A group can link to a channel, where the channel posts will be automatically for
 The supported actions include:
 
 - Unpin: Automatically unpin the channel post in the group.
-- Reply: Automatically reply to the channel post in the group with up to 6 Message Templates (with nmBot+ subscription).
+- Reply: Automatically reply to the channel post in the group with Message Templates (up to 6 with nmBot+ subscription).
 
 Visit type `groupConfiguration.unpinChannelPosts` and `groupConfiguration.replyChannelPosts` for more details.
 
@@ -336,7 +369,7 @@ The supported configurations include:
 - Allowing mentioning administrators: Whether to allow mentioning administrators.
 - Mentioning administrators in their private chat: Whether to send the mention message to administrators in their private chat instead of the group. nmBot+ subscription is required for this feature.
 - Do not mention administrators in group messages: Whether to send the mention message without mentioning administrators in group messages. If this option is enabled, the mention message will only be sent to administrators in their private chat if the "Mentioning administrators in their private chat" option is enabled, and no messages will be sent to the group. nmBot+ subscription is required for this feature.
-- Customizing mention message: Whether to customize the content of the mention message. If this option is enabled, you can customize the content of the mention message with Message Templates. nmBot+ subscription is required for this feature.
+- Customizing mention message: Whether to customize the content of the mention message. If this option is enabled, you can customize the content of the mention message. nmBot+ subscription is required for this feature.
 
 What's more, the administrators can choose whether to receive mention messages or not in their account settings. This requires the user to have an nmBot+ subscription.
 
@@ -374,6 +407,14 @@ For now the permissions include:
 - Manage other Group Management Features
 
 Modifying administrators' permissions requires nmBot+ subscription.
+
+### Import/Export Group Configuration
+
+nmBot supports importing and exporting group configurations, allowing group administrators to easily transfer their settings to another group or create a backup of their current settings. This can be useful for groups that want to replicate their settings across multiple groups or for administrators who want to save their configurations before making changes.
+
+When importing group configurations, administrators can choose to import from Rose bot other than nmBot, which can help users who are switching from Rose bot to nmBot to easily migrate their settings.
+
+This feature requires user operation in nmBot Panel.
 
 ## Channel Features
 
@@ -607,13 +648,43 @@ Please note:
 
 ## nmBot+
 
-nmBot+ (aka. nmBot Plus, in codebase and API) is a subscription plan for nmBot that offers additional features and benefits to users. By subscribing to nmBot+, users can unlock enhanced functionalities and enjoy an improved experience with nmBot.
+nmBot+ (a.k.a. nmBot Plus, in codebase and API) is a subscription plan for nmBot that offers additional features and benefits to users. By subscribing to nmBot+, users can unlock enhanced functionalities and enjoy an improved experience with nmBot.
 
 You can visit nmBot+ feature list at `https://support.nmteam.xyz/nmbot-telegram/plus/benefits/` for more details.
 
 nmBot+ supports groups and user accounts. The prices for nmBot+ subscription vary based on the subscription duration and the number of groups included in the subscription.
 
 Currently, nmBot+ only accepts payments through Telegram Stars, which can be purchased in Telegram with various payment methods, such as credit/debit cards, mobile payments, and Fragment. Refer to `https://support.nmteam.xyz/nmbot-telegram/faq/buy-stars/` for more details on how to buy Telegram Stars.
+
+## nmBot Intelligence & nmBot Copilot
+
+nmBot Intelligence is an AI-powered feature set that provides various intelligent functionalities for nmBot, such as spam detection, sentiment analysis, and more.
+
+### nmBot Copilot (originally named "nmBot Intelligence Chat")
+
+nmBot Copilot is a built-in personal assistant within nmBot and nmBot Panel, making nmBot group management and personal settings unprecedentedly simple.
+
+With nmBot Copilot, users only need to describe their goals in natural language, and nmBot Intelligence will configure the corresponding functions for them.
+
+For example, simply say "Require new members to subscribe to my channel @nmbotchannel and restrict image posting on their first day", nmBot Intelligence will enable Join Verification and New Member Restriction features automatically. Say "Block image/video posts between 11 PM to 8 AM", nmBot Intelligence will create corresponding scheduled tasks.
+
+Users can also ask nmBot Copilot about how to use various nmBot features.
+
+nmBot Copilot is available both in Telegram bot interface and nmBot Panel and deeply integrates with all nmBot features to deliver a smoother user experience.
+
+Typically, nmBot Copilot is available to users, so although nmBot MCP does have the capability to configure nmBot Copilot configuration, there's no need for an Agent to request nmBot Copilot configuration, unless the user specifically wants to configure nmBot Copilot.
+
+### nmartChat+
+
+nmartChat+ represents another evolution of nmBot's signature AI chat: building on nmartChat's distinctive conversational style, nmartChat+ enhances content understanding and automatically selects optimal response timing.
+
+### Proper Warm Up 3.0 (a.k.a. Proper Warm Up V2)
+
+The Proper Warm Up feature will also receive a 3.0 upgrade powered by nmBot Intelligence, better aligning responses with channel content. Group admins gain expanded customization options for response tone, formatting, and promotional integration, merging promotional content with post replies.
+
+### Anti-Spam Upgrade (a.k.a. Anti-Spam V2, nmBot Intelligence Spam Detection)
+
+nmBot's Anti-Spam feature in groups will also be upgraded: a new nmBot Intelligence-powered engine significantly improves detection accuracy for spam reports and spam messages.
 
 ## Update Log
 
@@ -622,3 +693,9 @@ nmBot is continuously updated with new features, improvements, and bug fixes. Th
 You can visit `https://support.nmteam.xyz/nmbot-telegram/update-log/` to view the update log and learn about the latest changes to nmBot.
 
 Before January 2023, nmBot was in its early stages of development, so updates come in a more irregular pattern. Since January 2023, nmBot has been updated on a regular basis, with new features and improvements being added every month, except for March 2024 when the update was delayed due to the ongoing development of nmBot NEXT, the next generation of nmBot that released in June 2024. After February 2026, nmBot switched to a bi-monthly update schedule.
+
+## Documentation
+
+The official documentation for nmBot is available at `https://support.nmteam.xyz/nmbot-telegram/`. The documentation provides detailed information about nmBot's features, configurations, and usage instructions. It also includes FAQs, troubleshooting guides, and other resources to help users get the most out of nmBot.
+
+However, the documentation may not cover every single detail of nmBot's features and configurations and may not be updated in real-time with the latest changes to nmBot. For the most up-to-date information and specific questions, users can also refer to the nmBot Panel, which provides access to all current features and settings of nmBot.
