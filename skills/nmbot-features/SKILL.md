@@ -416,6 +416,14 @@ When importing group configurations, administrators can choose to import from Ro
 
 This feature requires user operation in nmBot Panel.
 
+### GroupConfiguration/One-Click Group Configuration
+
+Most of the feature configurations mentioned above are so simple that they can be easily read through the GroupConfiguration class and configured with a simple and unified `groupSetConfig` API/MCP tool. Such configurations are called **One-Click Group Configuration** in nmBot world, in contrast to features like Keyword Reply that require reading and configuration via a separate API.
+
+You can read GroupConfiguration via the `checkGroup` tool, and set the configuration via `groupSetConfig` API or MCP tool.
+
+When updating configuration, you should review [Available Group Configuration Keys.md](reference/available-group-configuration-keys.md) to check the available configuration keys and their corresponding values, and make sure the values you set are valid for the corresponding keys.
+
 ## Channel Features
 
 nmBot provides features for channels, such as automatically adding buttons to channel posts, and more.
