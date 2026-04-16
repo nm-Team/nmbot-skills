@@ -1,6 +1,6 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-04-15T08:02:50.229Z
+Generated at: 2026-04-16T10:00:00.441Z
 
 **Project Title:** nmBot
 **Project Version:** 1\.0\.0
@@ -671,7 +671,7 @@ Generated at: 2026-04-15T08:02:50.229Z
           "properties": {
             "actionDaysOfWeek": {
               "type": "array",
-              "description": "Days of week to perform task. Contains an array of 0-6 tp reflect day of week. If is an empty array, the scheduled task runs everyday.",
+              "description": "Days of week to perform task. Contains an array of 0-6 to reflect day of week. If is an empty array, the scheduled task runs everyday.",
               "items": {
                 "type": "integer"
               }
@@ -695,7 +695,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "messageIds": {
               "type": "array",
-              "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type.Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
+              "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type. Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
               "items": {
                 "type": "integer"
               }
@@ -1740,7 +1740,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "ignoreChinesePunctuation": {
               "type": "boolean",
-              "description": "Ignore Simplized/Traditional Chinese in match RegExps."
+              "description": "Ignore Simplified/Traditional Chinese in match RegExps."
             },
             "ignoreGroupAdministators": {
               "type": "boolean",
@@ -1820,7 +1820,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "randomReplyCount": {
               "type": "integer",
-              "description": "The count of reply templates to be choosed. For non-nmBot+ chats only accept 1."
+              "description": "The count of reply templates to be chosen. For non-nmBot+ chats only accept 1."
             },
             "reactToDelete": {
               "type": "boolean",
@@ -1828,7 +1828,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "replyMessageIds": {
               "type": "array",
-              "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features.Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
+              "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features. Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
               "items": {
                 "type": "integer",
                 "description": "Id of the message template to reply with."
@@ -8284,7 +8284,7 @@ Generated at: 2026-04-15T08:02:50.229Z
           "properties": {
             "actionDaysOfWeek": {
               "type": "array",
-              "description": "Days of week to perform task. Contains an array of 0-6 tp reflect day of week. If is an empty array, the scheduled task runs everyday.",
+              "description": "Days of week to perform task. Contains an array of 0-6 to reflect day of week. If is an empty array, the scheduled task runs everyday.",
               "items": {
                 "type": "integer"
               }
@@ -8308,7 +8308,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "messageIds": {
               "type": "array",
-              "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type.Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
+              "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type. Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
               "items": {
                 "type": "integer"
               }
@@ -9164,7 +9164,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "ignoreChinesePunctuation": {
               "type": "boolean",
-              "description": "Ignore Simplized/Traditional Chinese in match RegExps."
+              "description": "Ignore Simplified/Traditional Chinese in match RegExps."
             },
             "ignoreGroupAdministators": {
               "type": "boolean",
@@ -9244,7 +9244,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "randomReplyCount": {
               "type": "integer",
-              "description": "The count of reply templates to be choosed. For non-nmBot+ chats only accept 1."
+              "description": "The count of reply templates to be chosen. For non-nmBot+ chats only accept 1."
             },
             "reactToDelete": {
               "type": "boolean",
@@ -9252,7 +9252,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             },
             "replyMessageIds": {
               "type": "array",
-              "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features.Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
+              "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features. Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
               "items": {
                 "type": "integer",
                 "description": "Id of the message template to reply with."
@@ -11224,7 +11224,7 @@ Generated at: 2026-04-15T08:02:50.229Z
             "properties": {
               "actionDaysOfWeek": {
                 "type": "array",
-                "description": "Days of week to perform task. Contains an array of 0-6 tp reflect day of week. If is an empty array, the scheduled task runs everyday.",
+                "description": "Days of week to perform task. Contains an array of 0-6 to reflect day of week. If is an empty array, the scheduled task runs everyday.",
                 "items": {
                   "type": "integer"
                 }
@@ -11248,7 +11248,7 @@ Generated at: 2026-04-15T08:02:50.229Z
               },
               "messageIds": {
                 "type": "array",
-                "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type.Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
+                "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type. Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
                 "items": {
                   "type": "integer"
                 }
@@ -11946,7 +11946,7 @@ Generated at: 2026-04-15T08:02:50.229Z
               },
               "ignoreChinesePunctuation": {
                 "type": "boolean",
-                "description": "Ignore Simplized/Traditional Chinese in match RegExps."
+                "description": "Ignore Simplified/Traditional Chinese in match RegExps."
               },
               "ignoreGroupAdministators": {
                 "type": "boolean",
@@ -12026,7 +12026,7 @@ Generated at: 2026-04-15T08:02:50.229Z
               },
               "randomReplyCount": {
                 "type": "integer",
-                "description": "The count of reply templates to be choosed. For non-nmBot+ chats only accept 1."
+                "description": "The count of reply templates to be chosen. For non-nmBot+ chats only accept 1."
               },
               "reactToDelete": {
                 "type": "boolean",
@@ -12034,7 +12034,7 @@ Generated at: 2026-04-15T08:02:50.229Z
               },
               "replyMessageIds": {
                 "type": "array",
-                "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features.Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
+                "description": "Ids of the message templates to reply with. Can contain 0 items if only uses other keyword reply features. Currently a chat subscribed to nmBot+ can add up to 12 messages. Otherwise a chat can add up to 6 messages.",
                 "items": {
                   "type": "integer",
                   "description": "Id of the message template to reply with."
