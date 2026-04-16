@@ -1,6 +1,6 @@
 # Available Group Configuration Keys
 
-- **Generated At:** 2026-04-15T10:59:19.643Z
+- **Generated At:** 2026-04-16T10:37:34.335Z
 - **Source File:** packages/bot-next/src/utils/oneClickGroupConfigurationChanger.ts
 - **Total Tags:** 10
 - **Total Keys:** 115
@@ -912,17 +912,17 @@
 - **Description:** The language used by nmBot in the group.
 - **Available values:**
   - en
-  - zh-Hans
-  - zh-Hant
-  - zh-Mars
+  - zh-hans
+  - zh-hant
+  - zh-mars
 - **Required permissions:** otherAdminFunctions
 - **Tags:**
   - Language (language)
 - **Available values (English labels):**
   - English
-  - English
-  - English
-  - English
+  - 简体中文
+  - 繁體中文
+  - 焱暒妏
 
 ---
 
