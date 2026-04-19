@@ -1,20 +1,20 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-04-16T10:00:00.441Z
+Generated at: 2026-04-19T06:18:36.180Z
 
-**Project Title:** nmBot
-**Project Version:** 1\.0\.0
-**OpenAPI Version:** 3\.0\.1
-**OpenAPI Source:** openapi/nmBot\-full\.openapi\.json
-**Allowed Tag:** Allow Tools Calling
-**Total Methods:** 49
-**Total MCP Tools:** 49
+- **Project Title:** nmBot
+- **Project Version:** 1\.0\.0
+- **OpenAPI Version:** 3\.0\.1
+- **OpenAPI Source:** openapi/nmBot\-full\.openapi\.json
+- **Allowed Tag:** Allow Tools Calling
+- **Total Methods:** 49
+- **Total MCP Tools:** 49
 
 ## addGroupScheduledTask
 
-**Tool Name:** addGroupScheduledTask
-**Tool Description:** POST /addGroupScheduledTask
-**Tool Input Schema:**
+**- Tool Name:** addGroupScheduledTask
+**- Tool Description:** POST /addGroupScheduledTask
+**- Tool Input Schema:**
 
 ```json
 {
@@ -207,7 +207,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -218,15 +218,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /addGroupScheduledTask
-**Method Name:** addGroupScheduledTask
-**Readonly:** No
-**Deprecated:** No
-**Summary:** addGroupScheduledTask
-**Description:** POST /addGroupScheduledTask
-**Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /addGroupScheduledTask
+**- Method Name:** addGroupScheduledTask
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** addGroupScheduledTask
+**- Description:** POST /addGroupScheduledTask
+**- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -614,7 +614,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -843,9 +843,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## addJpacList
 
-**Tool Name:** addJpacList
-**Tool Description:** Join an existing JPAC list via shareId\. Method: POST /addJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** addJpacList
+**- Tool Description:** Join an existing JPAC list via shareId\. Method: POST /addJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -864,7 +864,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -875,15 +875,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /addJpacList
-**Method Name:** addJpacList
-**Readonly:** No
-**Deprecated:** No
-**Summary:** addJpacList
-**Description:** Join an existing JPAC list via shareId\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /addJpacList
+**- Method Name:** addJpacList
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** addJpacList
+**- Description:** Join an existing JPAC list via shareId\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -923,7 +923,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -1044,9 +1044,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## addKeywordReply
 
-**Tool Name:** addKeywordReply
-**Tool Description:** POST /addKeywordReply
-**Tool Input Schema:**
+**- Tool Name:** addKeywordReply
+**- Tool Description:** POST /addKeywordReply
+**- Tool Input Schema:**
 
 ```json
 {
@@ -1237,7 +1237,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -1248,15 +1248,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /addKeywordReply
-**Method Name:** addKeywordReply
-**Readonly:** No
-**Deprecated:** No
-**Summary:** addKeywordReply
-**Description:** POST /addKeywordReply
-**Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /addKeywordReply
+**- Method Name:** addKeywordReply
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** addKeywordReply
+**- Description:** POST /addKeywordReply
+**- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -1640,7 +1640,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -1869,9 +1869,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## addMessageTemplate
 
-**Tool Name:** addMessageTemplate
-**Tool Description:** POST /addMessageTemplate
-**Tool Input Schema:**
+**- Tool Name:** addMessageTemplate
+**- Tool Description:** POST /addMessageTemplate
+**- Tool Input Schema:**
 
 ```json
 {
@@ -1999,7 +1999,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -2010,15 +2010,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /addMessageTemplate
-**Method Name:** addMessageTemplate
-**Readonly:** No
-**Deprecated:** No
-**Summary:** addMessageTemplate
-**Description:** POST /addMessageTemplate
-**Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /addMessageTemplate
+**- Method Name:** addMessageTemplate
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** addMessageTemplate
+**- Description:** POST /addMessageTemplate
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -2276,7 +2276,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -2455,9 +2455,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## banGroupJoinVerificationUser
 
-**Tool Name:** banGroupJoinVerificationUser
-**Tool Description:** Ban or unban user from join\-verification history\. Method: POST /banGroupJoinVerificationUser\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** banGroupJoinVerificationUser
+**- Tool Description:** Ban or unban user from join\-verification history\. Method: POST /banGroupJoinVerificationUser\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -2480,7 +2480,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -2491,15 +2491,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /banGroupJoinVerificationUser
-**Method Name:** banGroupJoinVerificationUser
-**Readonly:** No
-**Deprecated:** No
-**Summary:** banGroupJoinVerificationUser
-**Description:** Ban or unban user from join\-verification history\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /banGroupJoinVerificationUser
+**- Method Name:** banGroupJoinVerificationUser
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** banGroupJoinVerificationUser
+**- Description:** Ban or unban user from join\-verification history\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -2548,7 +2548,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -2595,9 +2595,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## channelSetConfig
 
-**Tool Name:** channelSetConfig
-**Tool Description:** Update channel\-level configuration keys\. Method: POST /channelSetConfig\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** channelSetConfig
+**- Tool Description:** Update channel\-level configuration keys\. Method: POST /channelSetConfig\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -2712,7 +2712,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -2723,15 +2723,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /channelSetConfig
-**Method Name:** channelSetConfig
-**Readonly:** No
-**Deprecated:** No
-**Summary:** channelSetConfig
-**Description:** Update channel\-level configuration keys\.
-**Tags:** Allow Tools Calling, Group
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /channelSetConfig
+**- Method Name:** channelSetConfig
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** channelSetConfig
+**- Description:** Update channel\-level configuration keys\.
+**- Tags:** Allow Tools Calling, Group
+**- Request:**
 
 ```json
 {
@@ -2964,7 +2964,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -3100,9 +3100,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## checkGroup
 
-**Tool Name:** checkGroup
-**Tool Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\. Method: POST /checkGroup\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** checkGroup
+**- Tool Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\. Method: POST /checkGroup\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -3131,7 +3131,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -3142,15 +3142,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /checkGroup
-**Method Name:** checkGroup
-**Readonly:** No
-**Deprecated:** No
-**Summary:** checkGroup
-**Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\.
-**Tags:** Allow Tools Calling, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /checkGroup
+**- Method Name:** checkGroup
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** checkGroup
+**- Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\.
+**- Tags:** Allow Tools Calling, Group, User
+**- Request:**
 
 ```json
 {
@@ -3211,7 +3211,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -6606,9 +6606,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## createJpacList
 
-**Tool Name:** createJpacList
-**Tool Description:** Create a JPAC list for the chat \(one per chat\)\. Method: POST /createJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** createJpacList
+**- Tool Description:** Create a JPAC list for the chat \(one per chat\)\. Method: POST /createJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -6628,7 +6628,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -6639,15 +6639,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /createJpacList
-**Method Name:** createJpacList
-**Readonly:** No
-**Deprecated:** No
-**Summary:** createJpacList
-**Description:** Create a JPAC list for the chat \(one per chat\)\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /createJpacList
+**- Method Name:** createJpacList
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** createJpacList
+**- Description:** Create a JPAC list for the chat \(one per chat\)\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -6689,7 +6689,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -6810,9 +6810,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## deleteGroupScheduledTask
 
-**Tool Name:** deleteGroupScheduledTask
-**Tool Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\. Method: POST /deleteGroupScheduledTask\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** deleteGroupScheduledTask
+**- Tool Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\. Method: POST /deleteGroupScheduledTask\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -6831,7 +6831,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -6842,15 +6842,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /deleteGroupScheduledTask
-**Method Name:** deleteGroupScheduledTask
-**Readonly:** No
-**Deprecated:** No
-**Summary:** deleteGroupScheduledTask
-**Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\.
-**Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /deleteGroupScheduledTask
+**- Method Name:** deleteGroupScheduledTask
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** deleteGroupScheduledTask
+**- Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -6890,7 +6890,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -6937,9 +6937,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## deleteKeywordReplies
 
-**Tool Name:** deleteKeywordReplies
-**Tool Description:** Delete Keyword Replies for a group or user\. Method: POST /deleteKeywordReplies\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** deleteKeywordReplies
+**- Tool Description:** Delete Keyword Replies for a group or user\. Method: POST /deleteKeywordReplies\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -6961,7 +6961,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -6972,15 +6972,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /deleteKeywordReplies
-**Method Name:** deleteKeywordReplies
-**Readonly:** No
-**Deprecated:** No
-**Summary:** deleteKeywordReplies
-**Description:** Delete Keyword Replies for a group or user\.
-**Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /deleteKeywordReplies
+**- Method Name:** deleteKeywordReplies
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** deleteKeywordReplies
+**- Description:** Delete Keyword Replies for a group or user\.
+**- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -7026,7 +7026,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -7076,9 +7076,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## deleteKeywordReply
 
-**Tool Name:** deleteKeywordReply
-**Tool Description:** Delete a Keyword Reply for a group or user\. Method: POST /deleteKeywordReply\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** deleteKeywordReply
+**- Tool Description:** Delete a Keyword Reply for a group or user\. Method: POST /deleteKeywordReply\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -7097,7 +7097,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -7108,15 +7108,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /deleteKeywordReply
-**Method Name:** deleteKeywordReply
-**Readonly:** No
-**Deprecated:** No
-**Summary:** deleteKeywordReply
-**Description:** Delete a Keyword Reply for a group or user\.
-**Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /deleteKeywordReply
+**- Method Name:** deleteKeywordReply
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** deleteKeywordReply
+**- Description:** Delete a Keyword Reply for a group or user\.
+**- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -7156,7 +7156,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -7203,9 +7203,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## deleteMessageTemplate
 
-**Tool Name:** deleteMessageTemplate
-**Tool Description:** Delete a Message Template from a chat\. Method: POST /deleteMessageTemplate\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** deleteMessageTemplate
+**- Tool Description:** Delete a Message Template from a chat\. Method: POST /deleteMessageTemplate\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -7224,7 +7224,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -7235,15 +7235,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /deleteMessageTemplate
-**Method Name:** deleteMessageTemplate
-**Readonly:** No
-**Deprecated:** No
-**Summary:** deleteMessageTemplate
-**Description:** Delete a Message Template from a chat\.
-**Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /deleteMessageTemplate
+**- Method Name:** deleteMessageTemplate
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** deleteMessageTemplate
+**- Description:** Delete a Message Template from a chat\.
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -7283,7 +7283,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -7458,9 +7458,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## disableJpacList
 
-**Tool Name:** disableJpacList
-**Tool Description:** Disable \(delete\) a JPAC list created by the chat\. Method: POST /disableJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** disableJpacList
+**- Tool Description:** Disable \(delete\) a JPAC list created by the chat\. Method: POST /disableJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -7479,7 +7479,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -7490,15 +7490,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /disableJpacList
-**Method Name:** disableJpacList
-**Readonly:** No
-**Deprecated:** No
-**Summary:** disableJpacList
-**Description:** Disable \(delete\) a JPAC list created by the chat\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /disableJpacList
+**- Method Name:** disableJpacList
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** disableJpacList
+**- Description:** Disable \(delete\) a JPAC list created by the chat\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -7538,7 +7538,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -7613,9 +7613,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## editGroupScheduledTask
 
-**Tool Name:** editGroupScheduledTask
-**Tool Description:** POST /editGroupScheduledTask
-**Tool Input Schema:**
+**- Tool Name:** editGroupScheduledTask
+**- Tool Description:** POST /editGroupScheduledTask
+**- Tool Input Schema:**
 
 ```json
 {
@@ -7812,7 +7812,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -7823,15 +7823,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /editGroupScheduledTask
-**Method Name:** editGroupScheduledTask
-**Readonly:** No
-**Deprecated:** No
-**Summary:** editGroupScheduledTask
-**Description:** POST /editGroupScheduledTask
-**Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /editGroupScheduledTask
+**- Method Name:** editGroupScheduledTask
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** editGroupScheduledTask
+**- Description:** POST /editGroupScheduledTask
+**- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -8227,7 +8227,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -8456,9 +8456,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## editKeywordReply
 
-**Tool Name:** editKeywordReply
-**Tool Description:** POST /editKeywordReply
-**Tool Input Schema:**
+**- Tool Name:** editKeywordReply
+**- Tool Description:** POST /editKeywordReply
+**- Tool Input Schema:**
 
 ```json
 {
@@ -8653,7 +8653,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -8664,15 +8664,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /editKeywordReply
-**Method Name:** editKeywordReply
-**Readonly:** No
-**Deprecated:** No
-**Summary:** editKeywordReply
-**Description:** POST /editKeywordReply
-**Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /editKeywordReply
+**- Method Name:** editKeywordReply
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** editKeywordReply
+**- Description:** POST /editKeywordReply
+**- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -9064,7 +9064,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -9293,9 +9293,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## editMessageTemplate
 
-**Tool Name:** editMessageTemplate
-**Tool Description:** Edit a Message Template from a chat\. Method: POST /editMessageTemplate\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** editMessageTemplate
+**- Tool Description:** Edit a Message Template from a chat\. Method: POST /editMessageTemplate\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -9427,7 +9427,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -9438,15 +9438,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /editMessageTemplate
-**Method Name:** editMessageTemplate
-**Readonly:** No
-**Deprecated:** No
-**Summary:** editMessageTemplate
-**Description:** Edit a Message Template from a chat\.
-**Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /editMessageTemplate
+**- Method Name:** editMessageTemplate
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** editMessageTemplate
+**- Description:** Edit a Message Template from a chat\.
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
+**- Request:**
 
 ```json
 {
@@ -9712,7 +9712,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -9887,9 +9887,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getBusinessScheduledTasks
 
-**Tool Name:** getBusinessScheduledTasks
-**Tool Description:** Get the Business Scheduled Tasks for the user\. Method: POST /getBusinessScheduledTasks\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getBusinessScheduledTasks
+**- Tool Description:** Get the Business Scheduled Tasks for the user\. Method: POST /getBusinessScheduledTasks\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -9898,7 +9898,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -9909,15 +9909,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getBusinessScheduledTasks
-**Method Name:** getBusinessScheduledTasks
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getBusinessScheduledTasks
-**Description:** Get the Business Scheduled Tasks for the user\.
-**Tags:** Allow Tools Calling, nmBot Intelligence, User, User Only, Readonly, Business Scheduled Task
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getBusinessScheduledTasks
+**- Method Name:** getBusinessScheduledTasks
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getBusinessScheduledTasks
+**- Description:** Get the Business Scheduled Tasks for the user\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence, User, User Only, Readonly, Business Scheduled Task
+**- Request:**
 
 ```json
 {
@@ -9929,7 +9929,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10035,9 +10035,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getChatJpacList
 
-**Tool Name:** getChatJpacList
-**Tool Description:** Get JPAC lists created by the chat and lists the chat has joined\. Method: POST /getChatJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getChatJpacList
+**- Tool Description:** Get JPAC lists created by the chat and lists the chat has joined\. Method: POST /getChatJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10052,7 +10052,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10063,15 +10063,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getChatJpacList
-**Method Name:** getChatJpacList
-**Readonly:** No
-**Deprecated:** No
-**Summary:** getChatJpacList
-**Description:** Get JPAC lists created by the chat and lists the chat has joined\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getChatJpacList
+**- Method Name:** getChatJpacList
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** getChatJpacList
+**- Description:** Get JPAC lists created by the chat and lists the chat has joined\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -10103,7 +10103,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10268,9 +10268,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getCredit
 
-**Tool Name:** getCredit
-**Tool Description:** Get credit balance and daily sign status for current user\. Method: POST /getCredit\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getCredit
+**- Tool Description:** Get credit balance and daily sign status for current user\. Method: POST /getCredit\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10279,7 +10279,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10290,15 +10290,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getCredit
-**Method Name:** getCredit
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getCredit
-**Description:** Get credit balance and daily sign status for current user\.
-**Tags:** Allow Tools Calling, User, User Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getCredit
+**- Method Name:** getCredit
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getCredit
+**- Description:** Get credit balance and daily sign status for current user\.
+**- Tags:** Allow Tools Calling, User, User Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -10320,7 +10320,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10386,9 +10386,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getCreditHistory
 
-**Tool Name:** getCreditHistory
-**Tool Description:** Get recent credit change records from credit service\. Method: POST /getCreditHistory\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getCreditHistory
+**- Tool Description:** Get recent credit change records from credit service\. Method: POST /getCreditHistory\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10397,7 +10397,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10408,15 +10408,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getCreditHistory
-**Method Name:** getCreditHistory
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getCreditHistory
-**Description:** Get recent credit change records from credit service\.
-**Tags:** Allow Tools Calling, User, User Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getCreditHistory
+**- Method Name:** getCreditHistory
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getCreditHistory
+**- Description:** Get recent credit change records from credit service\.
+**- Tags:** Allow Tools Calling, User, User Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -10438,7 +10438,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10491,9 +10491,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupActionLog
 
-**Tool Name:** getGroupActionLog
-**Tool Description:** Search moderation/action logs in a managed group\. Method: POST /getGroupActionLog\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getGroupActionLog
+**- Tool Description:** Search moderation/action logs in a managed group\. Method: POST /getGroupActionLog\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10535,7 +10535,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10546,15 +10546,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupActionLog
-**Method Name:** getGroupActionLog
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupActionLog
-**Description:** Search moderation/action logs in a managed group\.
-**Tags:** Allow Tools Calling, Group, Group Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupActionLog
+**- Method Name:** getGroupActionLog
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupActionLog
+**- Description:** Search moderation/action logs in a managed group\.
+**- Tags:** Allow Tools Calling, Group, Group Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -10641,7 +10641,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10690,9 +10690,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupCommands
 
-**Tool Name:** getGroupCommands
-**Tool Description:** Get custom command visibility config for a managed group\. Method: POST /getGroupCommands\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getGroupCommands
+**- Tool Description:** Get custom command visibility config for a managed group\. Method: POST /getGroupCommands\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10707,7 +10707,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10718,15 +10718,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupCommands
-**Method Name:** getGroupCommands
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupCommands
-**Description:** Get custom command visibility config for a managed group\.
-**Tags:** Allow Tools Calling, Group, Group Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupCommands
+**- Method Name:** getGroupCommands
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupCommands
+**- Description:** Get custom command visibility config for a managed group\.
+**- Tags:** Allow Tools Calling, Group, Group Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -10759,7 +10759,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10824,9 +10824,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupCustomRules
 
-**Tool Name:** getGroupCustomRules
-**Tool Description:** POST /getGroupCustomRules
-**Tool Input Schema:**
+**- Tool Name:** getGroupCustomRules
+**- Tool Description:** POST /getGroupCustomRules
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10840,7 +10840,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -10851,15 +10851,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupCustomRules
-**Method Name:** getGroupCustomRules
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupCustomRules
-**Description:** POST /getGroupCustomRules
-**Tags:** Allow Tools Calling, Group Custom Rules, nmBot Intelligence, Readonly, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupCustomRules
+**- Method Name:** getGroupCustomRules
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupCustomRules
+**- Description:** POST /getGroupCustomRules
+**- Tags:** Allow Tools Calling, Group Custom Rules, nmBot Intelligence, Readonly, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -10889,7 +10889,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -10974,9 +10974,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupJoinVerificationHistory
 
-**Tool Name:** getGroupJoinVerificationHistory
-**Tool Description:** Get recent join\-verification records for a managed group\. Method: POST /getGroupJoinVerificationHistory\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getGroupJoinVerificationHistory
+**- Tool Description:** Get recent join\-verification records for a managed group\. Method: POST /getGroupJoinVerificationHistory\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -10991,7 +10991,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11002,15 +11002,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupJoinVerificationHistory
-**Method Name:** getGroupJoinVerificationHistory
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupJoinVerificationHistory
-**Description:** Get recent join\-verification records for a managed group\.
-**Tags:** Allow Tools Calling, Group, Group Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupJoinVerificationHistory
+**- Method Name:** getGroupJoinVerificationHistory
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupJoinVerificationHistory
+**- Description:** Get recent join\-verification records for a managed group\.
+**- Tags:** Allow Tools Calling, Group, Group Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -11043,7 +11043,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -11092,9 +11092,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupScheduledTasks
 
-**Tool Name:** getGroupScheduledTasks
-**Tool Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\. Method: POST /getGroupScheduledTasks\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getGroupScheduledTasks
+**- Tool Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\. Method: POST /getGroupScheduledTasks\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -11109,7 +11109,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11120,15 +11120,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupScheduledTasks
-**Method Name:** getGroupScheduledTasks
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupScheduledTasks
-**Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\.
-**Tags:** Allow Tools Calling, nmBot Intelligence, Readonly, Scheduled Task, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupScheduledTasks
+**- Method Name:** getGroupScheduledTasks
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupScheduledTasks
+**- Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence, Readonly, Scheduled Task, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -11160,7 +11160,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -11397,9 +11397,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getGroupWhitelist
 
-**Tool Name:** getGroupWhitelist
-**Tool Description:** POST /getGroupWhitelist
-**Tool Input Schema:**
+**- Tool Name:** getGroupWhitelist
+**- Tool Description:** POST /getGroupWhitelist
+**- Tool Input Schema:**
 
 ```json
 {
@@ -11413,7 +11413,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11424,15 +11424,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getGroupWhitelist
-**Method Name:** getGroupWhitelist
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getGroupWhitelist
-**Description:** POST /getGroupWhitelist
-**Tags:** Allow Tools Calling, Group White List, Readonly, nmBot Intelligence, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getGroupWhitelist
+**- Method Name:** getGroupWhitelist
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getGroupWhitelist
+**- Description:** POST /getGroupWhitelist
+**- Tags:** Allow Tools Calling, Group White List, Readonly, nmBot Intelligence, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -11462,7 +11462,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -11535,9 +11535,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getIntelligenceChatSettings
 
-**Tool Name:** getIntelligenceChatSettings
-**Tool Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /getIntelligenceChatSettings\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getIntelligenceChatSettings
+**- Tool Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /getIntelligenceChatSettings\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -11546,7 +11546,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11557,15 +11557,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getIntelligenceChatSettings
-**Method Name:** getIntelligenceChatSettings
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getIntelligenceChatSettings
-**Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
-**Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getIntelligenceChatSettings
+**- Method Name:** getIntelligenceChatSettings
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getIntelligenceChatSettings
+**- Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence, Readonly
+**- Request:**
 
 ```json
 {
@@ -11585,7 +11585,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -11633,9 +11633,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getJpacUserList
 
-**Tool Name:** getJpacUserList
-**Tool Description:** Get JPAC user list for a specific JPAC list ID\. Method: POST /getJpacUserList\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getJpacUserList
+**- Tool Description:** Get JPAC user list for a specific JPAC list ID\. Method: POST /getJpacUserList\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -11654,7 +11654,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11665,15 +11665,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getJpacUserList
-**Method Name:** getJpacUserList
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getJpacUserList
-**Description:** Get JPAC user list for a specific JPAC list ID\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getJpacUserList
+**- Method Name:** getJpacUserList
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getJpacUserList
+**- Description:** Get JPAC user list for a specific JPAC list ID\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -11714,7 +11714,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -11771,9 +11771,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getKeywordReplies
 
-**Tool Name:** getKeywordReplies
-**Tool Description:** Get all Keyword Replies for a group or user\. Method: POST /getKeywordReplies\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getKeywordReplies
+**- Tool Description:** Get all Keyword Replies for a group or user\. Method: POST /getKeywordReplies\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -11788,7 +11788,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -11799,15 +11799,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getKeywordReplies
-**Method Name:** getKeywordReplies
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getKeywordReplies
-**Description:** Get all Keyword Replies for a group or user\.
-**Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Readonly, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getKeywordReplies
+**- Method Name:** getKeywordReplies
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getKeywordReplies
+**- Description:** Get all Keyword Replies for a group or user\.
+**- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Readonly, Group, User
+**- Request:**
 
 ```json
 {
@@ -11839,7 +11839,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -12076,9 +12076,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getMessageTemplates
 
-**Tool Name:** getMessageTemplates
-**Tool Description:** Get a chat's Message Templates\. Method: POST /getMessageTemplates\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getMessageTemplates
+**- Tool Description:** Get a chat's Message Templates\. Method: POST /getMessageTemplates\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -12093,7 +12093,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -12104,15 +12104,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getMessageTemplates
-**Method Name:** getMessageTemplates
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getMessageTemplates
-**Description:** Get a chat's Message Templates\.
-**Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getMessageTemplates
+**- Method Name:** getMessageTemplates
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getMessageTemplates
+**- Description:** Get a chat's Message Templates\.
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
+**- Request:**
 
 ```json
 {
@@ -12144,7 +12144,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -12319,9 +12319,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## getUserConfiguration
 
-**Tool Name:** getUserConfiguration
-**Tool Description:** Get the current user's configuration of nmBot\. Method: POST /getUserConfiguration\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** getUserConfiguration
+**- Tool Description:** Get the current user's configuration of nmBot\. Method: POST /getUserConfiguration\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -12330,7 +12330,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -12341,15 +12341,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /getUserConfiguration
-**Method Name:** getUserConfiguration
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** getUserConfiguration
-**Description:** Get the current user's configuration of nmBot\.
-**Tags:** Allow Tools Calling, User, User Only, Readonly, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /getUserConfiguration
+**- Method Name:** getUserConfiguration
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** getUserConfiguration
+**- Description:** Get the current user's configuration of nmBot\.
+**- Tags:** Allow Tools Calling, User, User Only, Readonly, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -12361,7 +12361,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -12396,9 +12396,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## grantJpacAccessToChat
 
-**Tool Name:** grantJpacAccessToChat
-**Tool Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\. Method: POST /grantJpacAccessToChat\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** grantJpacAccessToChat
+**- Tool Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\. Method: POST /grantJpacAccessToChat\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -12421,7 +12421,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -12432,15 +12432,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /grantJpacAccessToChat
-**Method Name:** grantJpacAccessToChat
-**Readonly:** No
-**Deprecated:** No
-**Summary:** grantJpacAccessToChat
-**Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /grantJpacAccessToChat
+**- Method Name:** grantJpacAccessToChat
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** grantJpacAccessToChat
+**- Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -12488,7 +12488,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -12563,9 +12563,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## groupSetConfig
 
-**Tool Name:** groupSetConfig
-**Tool Description:** Apply one\-click group configuration changes\. Method: POST /groupSetConfig\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** groupSetConfig
+**- Tool Description:** Apply one\-click group configuration changes\. Method: POST /groupSetConfig\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -13064,7 +13064,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -13075,15 +13075,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /groupSetConfig
-**Method Name:** groupSetConfig
-**Readonly:** No
-**Deprecated:** No
-**Summary:** groupSetConfig
-**Description:** Apply one\-click group configuration changes\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /groupSetConfig
+**- Method Name:** groupSetConfig
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** groupSetConfig
+**- Description:** Apply one\-click group configuration changes\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -14084,7 +14084,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -15430,9 +15430,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## groupSetJoinVerifyChannel
 
-**Tool Name:** groupSetJoinVerifyChannel
-**Tool Description:** Set the Join Verification Channel of a group\. Method: POST /groupSetJoinVerifyChannel\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** groupSetJoinVerifyChannel
+**- Tool Description:** Set the Join Verification Channel of a group\. Method: POST /groupSetJoinVerifyChannel\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -15460,7 +15460,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -15471,15 +15471,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /groupSetJoinVerifyChannel
-**Method Name:** groupSetJoinVerifyChannel
-**Readonly:** No
-**Deprecated:** No
-**Summary:** groupSetJoinVerifyChannel \(nmBot Intelligence\)
-**Description:** Set the Join Verification Channel of a group\.
-**Tags:** Allow Tools Calling, nmBot Intelligence, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /groupSetJoinVerifyChannel
+**- Method Name:** groupSetJoinVerifyChannel
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** groupSetJoinVerifyChannel \(nmBot Intelligence\)
+**- Description:** Set the Join Verification Channel of a group\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -15537,7 +15537,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -15583,9 +15583,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## importConfigurationFromNmBot
 
-**Tool Name:** importConfigurationFromNmBot
-**Tool Description:** Parse encrypted nmBot exported configuration and validate importable items\. Method: POST /importConfigurationFromNmBot\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** importConfigurationFromNmBot
+**- Tool Description:** Parse encrypted nmBot exported configuration and validate importable items\. Method: POST /importConfigurationFromNmBot\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -15607,7 +15607,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -15618,15 +15618,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /importConfigurationFromNmBot
-**Method Name:** importConfigurationFromNmBot
-**Readonly:** No
-**Deprecated:** No
-**Summary:** importConfigurationFromNmBot
-**Description:** Parse encrypted nmBot exported configuration and validate importable items\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /importConfigurationFromNmBot
+**- Method Name:** importConfigurationFromNmBot
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** importConfigurationFromNmBot
+**- Description:** Parse encrypted nmBot exported configuration and validate importable items\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -15673,7 +15673,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -15724,9 +15724,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## importJpacFromCSV
 
-**Tool Name:** importJpacFromCSV
-**Tool Description:** Import JPAC users from CSV content\. Method: POST /importJpacFromCSV\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** importJpacFromCSV
+**- Tool Description:** Import JPAC users from CSV content\. Method: POST /importJpacFromCSV\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -15749,7 +15749,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -15760,15 +15760,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /importJpacFromCSV
-**Method Name:** importJpacFromCSV
-**Readonly:** No
-**Deprecated:** No
-**Summary:** importJpacFromCSV
-**Description:** Import JPAC users from CSV content\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /importJpacFromCSV
+**- Method Name:** importJpacFromCSV
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** importJpacFromCSV
+**- Description:** Import JPAC users from CSV content\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -15817,7 +15817,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -15866,9 +15866,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## init
 
-**Tool Name:** init
-**Tool Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\. Method: POST /init\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** init
+**- Tool Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\. Method: POST /init\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -15886,7 +15886,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -15897,15 +15897,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /init
-**Method Name:** init
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** init
-**Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\.
-**Tags:** User, User Only, Readonly, Allow Tools Calling
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /init
+**- Method Name:** init
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** init
+**- Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\.
+**- Tags:** User, User Only, Readonly, Allow Tools Calling
+**- Request:**
 
 ```json
 {
@@ -15944,7 +15944,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -16110,9 +16110,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## leaveJpacList
 
-**Tool Name:** leaveJpacList
-**Tool Description:** Leave a JPAC list that the chat has joined\. Method: POST /leaveJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** leaveJpacList
+**- Tool Description:** Leave a JPAC list that the chat has joined\. Method: POST /leaveJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -16131,7 +16131,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -16142,15 +16142,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /leaveJpacList
-**Method Name:** leaveJpacList
-**Readonly:** No
-**Deprecated:** No
-**Summary:** leaveJpacList
-**Description:** Leave a JPAC list that the chat has joined\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /leaveJpacList
+**- Method Name:** leaveJpacList
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** leaveJpacList
+**- Description:** Leave a JPAC list that the chat has joined\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -16190,7 +16190,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -16265,9 +16265,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## mergeBusinessScheduledTasks
 
-**Tool Name:** mergeBusinessScheduledTasks
-**Tool Description:** Save the new Business Scheduled Tasks for the user\. Method: POST /mergeBusinessScheduledTasks\. Permission scope: User Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** mergeBusinessScheduledTasks
+**- Tool Description:** Save the new Business Scheduled Tasks for the user\. Method: POST /mergeBusinessScheduledTasks\. Permission scope: User Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -16338,7 +16338,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -16349,15 +16349,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /mergeBusinessScheduledTasks
-**Method Name:** mergeBusinessScheduledTasks
-**Readonly:** No
-**Deprecated:** No
-**Summary:** mergeBusinessScheduledTasks
-**Description:** Save the new Business Scheduled Tasks for the user\.
-**Tags:** Allow Tools Calling, nmBot Intelligence, User Only, User, Business Scheduled Task
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /mergeBusinessScheduledTasks
+**- Method Name:** mergeBusinessScheduledTasks
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** mergeBusinessScheduledTasks
+**- Description:** Save the new Business Scheduled Tasks for the user\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence, User Only, User, Business Scheduled Task
+**- Request:**
 
 ```json
 {
@@ -16501,7 +16501,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -16585,9 +16585,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## mergeGroupCustomRules
 
-**Tool Name:** mergeGroupCustomRules
-**Tool Description:** POST /mergeGroupCustomRules
-**Tool Input Schema:**
+**- Tool Name:** mergeGroupCustomRules
+**- Tool Description:** POST /mergeGroupCustomRules
+**- Tool Input Schema:**
 
 ```json
 {
@@ -16637,7 +16637,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -16648,15 +16648,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /mergeGroupCustomRules
-**Method Name:** mergeGroupCustomRules
-**Readonly:** No
-**Deprecated:** No
-**Summary:** mergeGroupCustomRules
-**Description:** POST /mergeGroupCustomRules
-**Tags:** Allow Tools Calling, Group Custom Rules, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /mergeGroupCustomRules
+**- Method Name:** mergeGroupCustomRules
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** mergeGroupCustomRules
+**- Description:** POST /mergeGroupCustomRules
+**- Tags:** Allow Tools Calling, Group Custom Rules, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -16765,7 +16765,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -16808,9 +16808,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## resetGroupCommands
 
-**Tool Name:** resetGroupCommands
-**Tool Description:** Reset group custom command config back to defaults\. Method: POST /resetGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** resetGroupCommands
+**- Tool Description:** Reset group custom command config back to defaults\. Method: POST /resetGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -16825,7 +16825,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -16836,15 +16836,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /resetGroupCommands
-**Method Name:** resetGroupCommands
-**Readonly:** No
-**Deprecated:** No
-**Summary:** resetGroupCommands
-**Description:** Reset group custom command config back to defaults\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /resetGroupCommands
+**- Method Name:** resetGroupCommands
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** resetGroupCommands
+**- Description:** Reset group custom command config back to defaults\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -16877,7 +16877,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -16924,9 +16924,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## sendMessageTemplateTestMessage
 
-**Tool Name:** sendMessageTemplateTestMessage
-**Tool Description:** Send a test message to the user to confirm Message Template settings\. Method: POST /sendMessageTemplateTestMessage\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** sendMessageTemplateTestMessage
+**- Tool Description:** Send a test message to the user to confirm Message Template settings\. Method: POST /sendMessageTemplateTestMessage\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -16965,7 +16965,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -16976,15 +16976,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /sendMessageTemplateTestMessage
-**Method Name:** sendMessageTemplateTestMessage
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** sendMessageTemplateTestMessage
-**Description:** Send a test message to the user to confirm Message Template settings\.
-**Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /sendMessageTemplateTestMessage
+**- Method Name:** sendMessageTemplateTestMessage
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** sendMessageTemplateTestMessage
+**- Description:** Send a test message to the user to confirm Message Template settings\.
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
+**- Request:**
 
 ```json
 {
@@ -17064,7 +17064,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17107,9 +17107,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## setGroupCommands
 
-**Tool Name:** setGroupCommands
-**Tool Description:** Persist enabled command list for group admins and members\. Method: POST /setGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** setGroupCommands
+**- Tool Description:** Persist enabled command list for group admins and members\. Method: POST /setGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17131,7 +17131,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17142,15 +17142,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /setGroupCommands
-**Method Name:** setGroupCommands
-**Readonly:** No
-**Deprecated:** No
-**Summary:** setGroupCommands
-**Description:** Persist enabled command list for group admins and members\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /setGroupCommands
+**- Method Name:** setGroupCommands
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** setGroupCommands
+**- Description:** Persist enabled command list for group admins and members\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -17197,7 +17197,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17244,9 +17244,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## setGroupPermissionException
 
-**Tool Name:** setGroupPermissionException
-**Tool Description:** Set or clear per\-admin permission exception for a group\. Method: POST /setGroupPermissionException\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** setGroupPermissionException
+**- Tool Description:** Set or clear per\-admin permission exception for a group\. Method: POST /setGroupPermissionException\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17273,7 +17273,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17284,15 +17284,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /setGroupPermissionException
-**Method Name:** setGroupPermissionException
-**Readonly:** No
-**Deprecated:** No
-**Summary:** setGroupPermissionException
-**Description:** Set or clear per\-admin permission exception for a group\.
-**Tags:** Allow Tools Calling, Group, Group Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /setGroupPermissionException
+**- Method Name:** setGroupPermissionException
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** setGroupPermissionException
+**- Description:** Set or clear per\-admin permission exception for a group\.
+**- Tags:** Allow Tools Calling, Group, Group Only
+**- Request:**
 
 ```json
 {
@@ -17349,7 +17349,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17395,9 +17395,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## setJpacAutoAddNewBannedUsers
 
-**Tool Name:** setJpacAutoAddNewBannedUsers
-**Tool Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\. Method: POST /setJpacAutoAddNewBannedUsers\. Permission scope: Group Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** setJpacAutoAddNewBannedUsers
+**- Tool Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\. Method: POST /setJpacAutoAddNewBannedUsers\. Permission scope: Group Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17420,7 +17420,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17431,15 +17431,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /setJpacAutoAddNewBannedUsers
-**Method Name:** setJpacAutoAddNewBannedUsers
-**Readonly:** No
-**Deprecated:** No
-**Summary:** setJpacAutoAddNewBannedUsers
-**Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\.
-**Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /setJpacAutoAddNewBannedUsers
+**- Method Name:** setJpacAutoAddNewBannedUsers
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** setJpacAutoAddNewBannedUsers
+**- Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\.
+**- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -17487,7 +17487,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17562,9 +17562,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## setPinnedChats
 
-**Tool Name:** setPinnedChats
-**Tool Description:** Pin or unpin a chat in current user panel\. Method: POST /setPinnedChats\. Permission scope: User Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** setPinnedChats
+**- Tool Description:** Pin or unpin a chat in current user panel\. Method: POST /setPinnedChats\. Permission scope: User Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17583,7 +17583,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17594,15 +17594,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /setPinnedChats
-**Method Name:** setPinnedChats
-**Readonly:** No
-**Deprecated:** No
-**Summary:** setPinnedChats
-**Description:** Pin or unpin a chat in current user panel\.
-**Tags:** Allow Tools Calling, User, User Only
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /setPinnedChats
+**- Method Name:** setPinnedChats
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** setPinnedChats
+**- Description:** Pin or unpin a chat in current user panel\.
+**- Tags:** Allow Tools Calling, User, User Only
+**- Request:**
 
 ```json
 {
@@ -17643,7 +17643,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17690,9 +17690,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## setUserConfiguration
 
-**Tool Name:** setUserConfiguration
-**Tool Description:** Set the current user's configuration of nmBot\. Method: POST /setUserConfiguration\. Permission scope: User Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** setUserConfiguration
+**- Tool Description:** Set the current user's configuration of nmBot\. Method: POST /setUserConfiguration\. Permission scope: User Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17713,7 +17713,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17724,15 +17724,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /setUserConfiguration
-**Method Name:** setUserConfiguration
-**Readonly:** No
-**Deprecated:** No
-**Summary:** setUserConfiguration
-**Description:** Set the current user's configuration of nmBot\.
-**Tags:** Allow Tools Calling, User, User Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /setUserConfiguration
+**- Method Name:** setUserConfiguration
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** setUserConfiguration
+**- Description:** Set the current user's configuration of nmBot\.
+**- Tags:** Allow Tools Calling, User, User Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -17776,7 +17776,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17811,9 +17811,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## spamLogQuery
 
-**Tool Name:** spamLogQuery
-**Tool Description:** List recent spam moderation actions related to current user\. Method: POST /spamLogQuery\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** spamLogQuery
+**- Tool Description:** List recent spam moderation actions related to current user\. Method: POST /spamLogQuery\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17822,7 +17822,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17833,15 +17833,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /spamLogQuery
-**Method Name:** spamLogQuery
-**Readonly:** Yes
-**Deprecated:** No
-**Summary:** spamLogQuery
-**Description:** List recent spam moderation actions related to current user\.
-**Tags:** Allow Tools Calling, User, User Only, Readonly
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /spamLogQuery
+**- Method Name:** spamLogQuery
+**- Readonly:** Yes
+**- Deprecated:** No
+**- Summary:** spamLogQuery
+**- Description:** List recent spam moderation actions related to current user\.
+**- Tags:** Allow Tools Calling, User, User Only, Readonly
+**- Request:**
 
 ```json
 {
@@ -17863,7 +17863,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
@@ -17908,9 +17908,9 @@ Generated at: 2026-04-16T10:00:00.441Z
 
 ## updateIntelligenceChatSettings
 
-**Tool Name:** updateIntelligenceChatSettings
-**Tool Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /updateIntelligenceChatSettings\. Permission scope: User Only\. Includes documented 200 response schema\.
-**Tool Input Schema:**
+**- Tool Name:** updateIntelligenceChatSettings
+**- Tool Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /updateIntelligenceChatSettings\. Permission scope: User Only\. Includes documented 200 response schema\.
+**- Tool Input Schema:**
 
 ```json
 {
@@ -17937,7 +17937,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Tool Annotations:**
+**- Tool Annotations:**
 
 ```json
 {
@@ -17948,15 +17948,15 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**HTTP Method:** POST
-**Path:** /updateIntelligenceChatSettings
-**Method Name:** updateIntelligenceChatSettings
-**Readonly:** No
-**Deprecated:** No
-**Summary:** updateIntelligenceChatSettings
-**Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
-**Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence
-**Request:**
+**- HTTP Method:** POST
+**- Path:** /updateIntelligenceChatSettings
+**- Method Name:** updateIntelligenceChatSettings
+**- Readonly:** No
+**- Deprecated:** No
+**- Summary:** updateIntelligenceChatSettings
+**- Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
+**- Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence
+**- Request:**
 
 ```json
 {
@@ -18012,7 +18012,7 @@ Generated at: 2026-04-16T10:00:00.441Z
 }
 ```
 
-**Responses:**
+**- Responses:**
 
 ```json
 [
