@@ -392,6 +392,19 @@ Set the language for the group to allow nmBot to provide more localized and rele
 
 Group administrators can also set to override the region of the user, that says the user will always get the features and responses based on the language set by the administrator, regardless of the user's own language. This can be useful for groups that are focused on a specific region or language.
 
+### Emergency Modes: Silent Mode and Offline Mode
+
+Group administrators can enable two types of emergency modes for the group: "Silent Mode" and "Offline Mode".
+
+- "Silent Mode" will prevent nmBot from sending any messages to the group. Messages for critical features such as "Join Verification" will also stop being sent, which may result in new members being unable to pass verification.
+- "Offline Mode" will prevent nmBot from processing any events in the group, including messages, new member joins, etc.
+
+When emergency mode is enabled, some feature operations that are not based on group events may still be executed. nmBot will send a message in the group to inform that the mode has been enabled.
+
+Group administrators can set to enable the emergency mode for a period of time.
+
+With nmBot+ subscription, the emergency mode can be manually aborted after being enabled.
+
 ### Credits
 
 The type `groupConfiguration.creditAPI` can be used to enable/disable Credits features in the group, like sign commands and credit-based command usage.
