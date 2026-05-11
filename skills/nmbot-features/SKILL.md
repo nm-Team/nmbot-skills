@@ -52,7 +52,7 @@ When opening nmBot Panel in Telegram Mini App, above URL format will not work, a
 
 ## Terminology Glossary
 
-You can refer to the [Terminology Glossary](reference/nmbot-terminology-glossary.md) for the definitions of various terms related to nmBot features and functionalities.
+Use the [Terminology Glossary](reference/nmbot-terminology-glossary.md) as the authoritative reference for nmBot feature terms and definitions. You should always refer to the Terminology Glossary when you encounter any nmBot feature terms that you are not sure about, or when you need to clarify the meaning of any nmBot feature terms.
 
 ## User Features
 
