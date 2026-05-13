@@ -37,6 +37,6 @@ For details of each command's functionality, please refer to the nmbot-features 
 
 Telegram supports bot-to-bot communication, and a bot can send messages such as `/command@botusername` to another bot.
 
-However, nmBot currently does **not** receive or respond to any messages sent by bots in group chats. Agents should not rely on another bot triggering nmBot commands in a group, even if Bot-to-Bot Communication Mode is enabled in @BotFather.
+However, nmBot currently does **not** receive or respond to any messages sent by bots in group chats. This reflects nmBot's current behavior and may change in the future. Agents should not rely on another bot triggering nmBot commands in a group, even if Bot-to-Bot Communication Mode is enabled in @BotFather.
 
 If a group workflow needs nmBot to act, ask a human user to trigger the command instead, or use the MCP API when the required capability is available there.
