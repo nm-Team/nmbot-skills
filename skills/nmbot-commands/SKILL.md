@@ -33,10 +33,10 @@ Please refer to the [command list reference](reference/command-list.md) for a co
 
 For details of each command's functionality, please refer to the nmbot-features Skill.
 
-## Calling Commands Behalf of a Bot
+## Bot-to-Bot Communication
 
-Thanks to the [recent Telegram Bot API update](https://core.telegram.org/bots/features#bot-to-bot-communication), a bot can now call another bot's commands by sending messages in the format of `/command@botusername` to trigger the command of the target bot.
+Telegram supports bot-to-bot communication, and a bot can send messages such as `/command@botusername` to another bot.
 
-Your bot must have Bot-to-Bot Communication Mode enabled in @BotFather to use this feature. Visit Telegram's official documentation for more details: https://core.telegram.org/bots/features#bot-to-bot-communication.
+However, nmBot currently does **not** receive or respond to any messages sent by bots in group chats. This reflects nmBot's current behavior and may change in the future. Agents should not rely on another bot triggering nmBot commands in a group, even if Bot-to-Bot Communication Mode is enabled in @BotFather.
 
-As this feature is relatively new, nmBot may not support all commands being triggered by other bots yet. In case of any issues, Agents can simply fallback to ask users to trigger the command by themselves, or use MCP API to achieve the same effect if the feature is supported in MCP.
+If a group workflow needs nmBot to act, ask a human user to trigger the command instead, or use the MCP API when the required capability is available there.
