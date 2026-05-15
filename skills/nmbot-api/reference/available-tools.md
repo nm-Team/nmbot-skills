@@ -1,6 +1,6 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-04-19T06:18:36.180Z
+Generated at: 2026-05-15T10:53:21.936Z
 
 - **Project Title:** nmBot
 - **Project Version:** 1\.0\.0
@@ -4030,7 +4030,8 @@ Generated at: 2026-04-19T06:18:36.180Z
                                   "onlyBanUsersSendMultipleMessageTextsMatched",
                                   "allowSupportToUnbanUsers",
                                   "nmBotIntelligenceThreshold",
-                                  "nmBotIntelligenceSmartAction"
+                                  "nmBotIntelligenceSmartAction",
+                                  "detectBotMessages"
                                 ],
                                 "properties": {
                                   "action": {
@@ -4040,6 +4041,10 @@ Generated at: 2026-04-19T06:18:36.180Z
                                   "allowSupportToUnbanUsers": {
                                     "type": "boolean",
                                     "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                                  },
+                                  "detectBotMessages": {
+                                    "type": "string",
+                                    "description": "When spam interception is enabled, run detection on messages sent by other bots."
                                   },
                                   "detectors": {
                                     "type": "object",
@@ -5706,7 +5711,8 @@ Generated at: 2026-04-19T06:18:36.180Z
                             "onlyBanUsersSendMultipleMessageTextsMatched",
                             "allowSupportToUnbanUsers",
                             "nmBotIntelligenceThreshold",
-                            "nmBotIntelligenceSmartAction"
+                            "nmBotIntelligenceSmartAction",
+                            "detectBotMessages"
                           ],
                           "properties": {
                             "action": {
@@ -5716,6 +5722,10 @@ Generated at: 2026-04-19T06:18:36.180Z
                             "allowSupportToUnbanUsers": {
                               "type": "boolean",
                               "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                            },
+                            "detectBotMessages": {
+                              "type": "string",
+                              "description": "When spam interception is enabled, run detection on messages sent by other bots."
                             },
                             "detectors": {
                               "type": "object",
@@ -12995,6 +13005,9 @@ Generated at: 2026-04-19T06:18:36.180Z
             }
           ]
         },
+        "spamDetectorDetectBotMessages": {
+          "type": "boolean"
+        },
         "spamDetectorNMBotIntelligenceAction": {
           "oneOf": [
             {
@@ -13520,6 +13533,9 @@ Generated at: 2026-04-19T06:18:36.180Z
                 }
               ]
             },
+            "spamDetectorDetectBotMessages": {
+              "type": "boolean"
+            },
             "spamDetectorNMBotIntelligenceAction": {
               "oneOf": [
                 {
@@ -14013,6 +14029,9 @@ Generated at: 2026-04-19T06:18:36.180Z
                 "enum": ["delete", "ban"]
               }
             ]
+          },
+          "spamDetectorDetectBotMessages": {
+            "type": "boolean"
           },
           "spamDetectorNMBotIntelligenceAction": {
             "oneOf": [
@@ -14844,7 +14863,8 @@ Generated at: 2026-04-19T06:18:36.180Z
                 "onlyBanUsersSendMultipleMessageTextsMatched",
                 "allowSupportToUnbanUsers",
                 "nmBotIntelligenceThreshold",
-                "nmBotIntelligenceSmartAction"
+                "nmBotIntelligenceSmartAction",
+                "detectBotMessages"
               ],
               "properties": {
                 "action": {
@@ -14854,6 +14874,10 @@ Generated at: 2026-04-19T06:18:36.180Z
                 "allowSupportToUnbanUsers": {
                   "type": "boolean",
                   "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                },
+                "detectBotMessages": {
+                  "type": "string",
+                  "description": "When spam interception is enabled, run detection on messages sent by other bots."
                 },
                 "detectors": {
                   "type": "object",

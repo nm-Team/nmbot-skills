@@ -1,9 +1,9 @@
 # Available Group Configuration Keys
 
-- **Generated At:** 2026-04-16T10:37:34.335Z
+- **Generated At:** 2026-05-15T10:55:24.992Z
 - **Source File:** packages/bot-next/src/utils/oneClickGroupConfigurationChanger.ts
 - **Total Tags:** 10
-- **Total Keys:** 115
+- **Total Keys:** 116
 - **Function Field Output:** Function body is omitted for safety and readability.
 
 ---
@@ -1594,6 +1594,20 @@
   - Disabled
   - Delete
   - Delete and ban
+
+---
+
+### spamDetectorDetectBotMessages
+
+- **Key:** spamDetectorDetectBotMessages
+- **Name:** Detect Messages Sent by Other Bots
+- **Available values:**
+  - true
+  - false
+- **Required permissions:** speakLimitations
+- **Tags:**
+  - Spam Detector (spamDetector)
+  - Group Management Feature (managementFeature)
 
 ---
 
