@@ -1,9 +1,9 @@
 # Available Group Configuration Keys
 
-- **Generated At:** 2026-05-15T10:55:24.992Z
+- **Generated At:** 2026-05-19T12:03:03.209Z
 - **Source File:** packages/bot-next/src/utils/oneClickGroupConfigurationChanger.ts
 - **Total Tags:** 10
-- **Total Keys:** 116
+- **Total Keys:** 117
 - **Function Field Output:** Function body is omitted for safety and readability.
 
 ---
@@ -197,6 +197,20 @@
 
 - **Key:** autoDeleteGifs
 - **Name:** Auto-Delete GIFs
+- **Available values:**
+  - true
+  - false
+- **Required permissions:** speakLimitations
+- **Tags:**
+  - Group Management Feature (managementFeature)
+  - Auto-Delete Messages by Type (autoDeleteByMessageType)
+
+---
+
+### autoDeleteGuestBotMessages
+
+- **Key:** autoDeleteGuestBotMessages
+- **Name:** Auto-Delete Guest Bot Messages
 - **Available values:**
   - true
   - false

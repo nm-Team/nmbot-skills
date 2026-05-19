@@ -1,6 +1,6 @@
 # nmBot Command List
 
-Generated at: 2026-04-07T13:58:31.352Z
+Generated at: 2026-05-19T12:00:41.065Z
 
 ## /about
 
@@ -19,127 +19,138 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Command:** /ban
 **Description:** Ban user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Operation duration (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /dban
 
 **Command:** /dban
 **Description:** Ban user and delete recent messages
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Operation duration (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /unban
 
 **Command:** /unban
 **Description:** Unban user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /mute
 
 **Command:** /mute
 **Description:** Ban user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Operation duration (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /dmute
 
 **Command:** /dmute
 **Description:** Mute user and delete recent messages
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Operation duration (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /unmute
 
 **Command:** /unmute
 **Description:** Unban user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /kick
 
 **Command:** /kick
 **Description:** Kick user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /dkick
 
 **Command:** /dkick
 **Description:** Kick user and delete recent messages
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /warn, /unwarn
 
 **Command:** /warn, /unwarn
 **Description:** Warn or unwarn user
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Number of warnings or cancellations (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /dwarn
 
 **Command:** /dwarn
 **Description:** Warn user and delete recent messages
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Number of warnings or cancellations (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /spam
 
 **Command:** /spam
 **Description:** Ban user and report to nmBot
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
 - Reason for operation (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /banme
 
@@ -159,17 +170,19 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Command:** /mapping
 **Description:** Create command mapping
 **Arguments:**
+
 - Original command (Required)
 - Customized command (Required)
-**Applicable Chat Types:** Private chat, Group, Supergroup, Channel
+  **Applicable Chat Types:** Private chat, Group, Supergroup, Channel
 
 ## /unmapping
 
 **Command:** /unmapping
 **Description:** Cancel command mapping
 **Arguments:**
+
 - Original or customized command (Required)
-**Applicable Chat Types:** Private chat, Group, Supergroup, Channel
+  **Applicable Chat Types:** Private chat, Group, Supergroup, Channel
 
 ## /dc
 
@@ -198,19 +211,21 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Command:** /sc
 **Description:** Set up group verification channel
 **Arguments:**
+
 - Verify channel ID (Required)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
-**Bot Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
+  **Bot Permission:** Restrict users
 
 ## /white
 
 **Command:** /white
 **Description:** Add/remove a user in group whitelist
 **Arguments:**
+
 - User ID, channel username or ID (Optional)
-**Applicable Chat Types:** Group, Supergroup
-**Admin Permission:** Restrict users
+  **Applicable Chat Types:** Group, Supergroup
+  **Admin Permission:** Restrict users
 
 ## /help, /doc
 
@@ -242,13 +257,14 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Description:** Set nmBot language
 **Applicable Chat Types:** Private chat, Group, Supergroup, Channel
 
-## /lp, /link\_preview\_generate
+## /lp, /link_preview_generate
 
-**Command:** /lp, /link\_preview\_generate
+**Command:** /lp, /link_preview_generate
 **Description:** Create link preview for text messages
 **Arguments:**
+
 - URL (Required)
-**Applicable Chat Types:** Private chat, Group, Supergroup, Channel
+  **Applicable Chat Types:** Private chat, Group, Supergroup, Channel
 
 ## /mycredit, /mc
 
@@ -314,9 +330,9 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Description:** Convert pictures or files into emoticons
 **Applicable Chat Types:** Private chat, Group, Supergroup, Channel
 
-## /default\_topic, /dt
+## /default_topic, /dt
 
-**Command:** /default\_topic, /dt
+**Command:** /default_topic, /dt
 **Description:** Set default topic
 **Applicable Chat Types:** Supergroup
 **Admin Permission:** Manage group
@@ -344,5 +360,6 @@ Generated at: 2026-04-07T13:58:31.352Z
 **Command:** /whatis
 **Description:** Get command information
 **Arguments:**
+
 - Command (Required)
-**Applicable Chat Types:** Private chat, Group, Supergroup, Channel
+  **Applicable Chat Types:** Private chat, Group, Supergroup, Channel

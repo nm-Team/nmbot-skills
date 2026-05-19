@@ -1,6 +1,6 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-05-15T10:53:21.936Z
+Generated at: 2026-05-19T12:00:39.459Z
 
 - **Project Title:** nmBot
 - **Project Version:** 1\.0\.0
@@ -41,6 +41,8 @@ Generated at: 2026-05-15T10:53:21.936Z
         "systemCanSendPolls",
         "systemCanSendOtherMessages",
         "systemCanAddWebPagePreviews",
+        "systemCanEditTag",
+        "systemCanReactToMessages",
         "nmBotAutoDeleteSystemServiceMessages",
         "nmBotAutoDeleteLongMessages",
         "nmBotAutoDeleteMessagesWithLinks",
@@ -56,6 +58,7 @@ Generated at: 2026-05-15T10:53:21.936Z
         "nmBotAutoDeleteStories",
         "nmBotAutoDeleteChannelMessages",
         "nmBotAutoDeleteExternalQuotes",
+        "nmBotAutoDeleteGuestBotMessages",
         "messageIds",
         "pinMessage",
         "deleteLastMessage",
@@ -121,6 +124,14 @@ Generated at: 2026-05-15T10:53:21.936Z
           "type": "boolean",
           "description": "Controls link preview permissions. Ignored if type is not system."
         },
+        "systemCanEditTag": {
+          "type": "boolean",
+          "description": "Controls edit tag permissions. Ignored if type is not system."
+        },
+        "systemCanReactToMessages": {
+          "type": "boolean",
+          "description": "Controls react to messages permissions. Ignored if type is not system."
+        },
         "nmBotAutoDeleteSystemServiceMessages": {
           "type": "boolean",
           "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -180,6 +191,10 @@ Generated at: 2026-05-15T10:53:21.936Z
         "nmBotAutoDeleteExternalQuotes": {
           "type": "boolean",
           "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
+        },
+        "nmBotAutoDeleteGuestBotMessages": {
+          "type": "boolean",
+          "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
         },
         "messageIds": {
           "type": "array",
@@ -259,6 +274,8 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanSendPolls",
             "systemCanSendOtherMessages",
             "systemCanAddWebPagePreviews",
+            "systemCanEditTag",
+            "systemCanReactToMessages",
             "nmBotAutoDeleteSystemServiceMessages",
             "nmBotAutoDeleteLongMessages",
             "nmBotAutoDeleteMessagesWithLinks",
@@ -274,6 +291,7 @@ Generated at: 2026-05-15T10:53:21.936Z
             "nmBotAutoDeleteStories",
             "nmBotAutoDeleteChannelMessages",
             "nmBotAutoDeleteExternalQuotes",
+            "nmBotAutoDeleteGuestBotMessages",
             "messageIds",
             "pinMessage",
             "deleteLastMessage",
@@ -339,6 +357,14 @@ Generated at: 2026-05-15T10:53:21.936Z
               "type": "boolean",
               "description": "Controls link preview permissions. Ignored if type is not system."
             },
+            "systemCanEditTag": {
+              "type": "boolean",
+              "description": "Controls edit tag permissions. Ignored if type is not system."
+            },
+            "systemCanReactToMessages": {
+              "type": "boolean",
+              "description": "Controls react to messages permissions. Ignored if type is not system."
+            },
             "nmBotAutoDeleteSystemServiceMessages": {
               "type": "boolean",
               "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -399,6 +425,10 @@ Generated at: 2026-05-15T10:53:21.936Z
               "type": "boolean",
               "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
             },
+            "nmBotAutoDeleteGuestBotMessages": {
+              "type": "boolean",
+              "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
+            },
             "messageIds": {
               "type": "array",
               "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type.Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
@@ -447,6 +477,8 @@ Generated at: 2026-05-15T10:53:21.936Z
           "systemCanSendPolls",
           "systemCanSendOtherMessages",
           "systemCanAddWebPagePreviews",
+          "systemCanEditTag",
+          "systemCanReactToMessages",
           "nmBotAutoDeleteSystemServiceMessages",
           "nmBotAutoDeleteLongMessages",
           "nmBotAutoDeleteMessagesWithLinks",
@@ -462,6 +494,7 @@ Generated at: 2026-05-15T10:53:21.936Z
           "nmBotAutoDeleteStories",
           "nmBotAutoDeleteChannelMessages",
           "nmBotAutoDeleteExternalQuotes",
+          "nmBotAutoDeleteGuestBotMessages",
           "messageIds",
           "pinMessage",
           "deleteLastMessage",
@@ -527,6 +560,14 @@ Generated at: 2026-05-15T10:53:21.936Z
             "type": "boolean",
             "description": "Controls link preview permissions. Ignored if type is not system."
           },
+          "systemCanEditTag": {
+            "type": "boolean",
+            "description": "Controls edit tag permissions. Ignored if type is not system."
+          },
+          "systemCanReactToMessages": {
+            "type": "boolean",
+            "description": "Controls react to messages permissions. Ignored if type is not system."
+          },
           "nmBotAutoDeleteSystemServiceMessages": {
             "type": "boolean",
             "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -586,6 +627,10 @@ Generated at: 2026-05-15T10:53:21.936Z
           "nmBotAutoDeleteExternalQuotes": {
             "type": "boolean",
             "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
+          },
+          "nmBotAutoDeleteGuestBotMessages": {
+            "type": "boolean",
+            "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
           },
           "messageIds": {
             "type": "array",
@@ -658,12 +703,15 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanSendPolls",
             "systemCanSendOtherMessages",
             "systemCanAddWebPagePreviews",
+            "systemCanEditTag",
+            "systemCanReactToMessages",
             "nmBotAutoDeleteSystemServiceMessages",
             "nmBotAutoDeleteLongMessages",
             "nmBotAutoDeleteMessagesWithLinks",
             "nmBotAutoDeleteMessagesWithCustomEmoji",
             "nmBotAutoDeletePremiumStickers",
             "nmBotAutoDeleteExternalQuotes",
+            "nmBotAutoDeleteGuestBotMessages",
             "pinMessage",
             "deleteLastMessage",
             "unpinLastMessage"
@@ -711,6 +759,10 @@ Generated at: 2026-05-15T10:53:21.936Z
             "nmBotAutoDeleteGifs": {
               "type": "boolean",
               "description": "Controls auto-delete of GIFs. Ignored if type is not nmBot."
+            },
+            "nmBotAutoDeleteGuestBotMessages": {
+              "type": "boolean",
+              "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
             },
             "nmBotAutoDeleteLongMessages": {
               "type": "boolean",
@@ -767,6 +819,14 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanAddWebPagePreviews": {
               "type": "boolean",
               "description": "Controls link preview permissions. Ignored if type is not system."
+            },
+            "systemCanEditTag": {
+              "type": "boolean",
+              "description": "Controls edit tag permissions. Ignored if type is not system."
+            },
+            "systemCanReactToMessages": {
+              "type": "boolean",
+              "description": "Controls react to messages permissions. Ignored if type is not system."
             },
             "systemCanSendAudios": {
               "type": "boolean",
@@ -3350,6 +3410,7 @@ Generated at: 2026-05-15T10:53:21.936Z
                                   "messagesSentViaBot",
                                   "stories",
                                   "externalQuotes",
+                                  "guestBotMessages",
                                   "contacts"
                                 ],
                                 "properties": {
@@ -3364,6 +3425,10 @@ Generated at: 2026-05-15T10:53:21.936Z
                                   "gifs": {
                                     "type": "boolean",
                                     "description": "groupSetConfig key: autoDeleteGifs."
+                                  },
+                                  "guestBotMessages": {
+                                    "type": "boolean",
+                                    "description": "groupSetConfig key: autoDeleteGuestBotMessages."
                                   },
                                   "longMessages": {
                                     "type": "boolean",
@@ -5039,6 +5104,7 @@ Generated at: 2026-05-15T10:53:21.936Z
                             "messagesSentViaBot",
                             "stories",
                             "externalQuotes",
+                            "guestBotMessages",
                             "contacts"
                           ],
                           "properties": {
@@ -5053,6 +5119,10 @@ Generated at: 2026-05-15T10:53:21.936Z
                             "gifs": {
                               "type": "boolean",
                               "description": "groupSetConfig key: autoDeleteGifs."
+                            },
+                            "guestBotMessages": {
+                              "type": "boolean",
+                              "description": "groupSetConfig key: autoDeleteGuestBotMessages."
                             },
                             "longMessages": {
                               "type": "boolean",
@@ -7656,6 +7726,8 @@ Generated at: 2026-05-15T10:53:21.936Z
         "systemCanSendPolls",
         "systemCanSendOtherMessages",
         "systemCanAddWebPagePreviews",
+        "systemCanEditTag",
+        "systemCanReactToMessages",
         "nmBotAutoDeleteSystemServiceMessages",
         "nmBotAutoDeleteLongMessages",
         "nmBotAutoDeleteMessagesWithLinks",
@@ -7671,6 +7743,7 @@ Generated at: 2026-05-15T10:53:21.936Z
         "nmBotAutoDeleteStories",
         "nmBotAutoDeleteChannelMessages",
         "nmBotAutoDeleteExternalQuotes",
+        "nmBotAutoDeleteGuestBotMessages",
         "messageIds",
         "pinMessage",
         "deleteLastMessage",
@@ -7736,6 +7809,14 @@ Generated at: 2026-05-15T10:53:21.936Z
           "type": "boolean",
           "description": "Controls link preview permissions. Ignored if type is not system."
         },
+        "systemCanEditTag": {
+          "type": "boolean",
+          "description": "Controls edit tag permissions. Ignored if type is not system."
+        },
+        "systemCanReactToMessages": {
+          "type": "boolean",
+          "description": "Controls react to messages permissions. Ignored if type is not system."
+        },
         "nmBotAutoDeleteSystemServiceMessages": {
           "type": "boolean",
           "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -7795,6 +7876,10 @@ Generated at: 2026-05-15T10:53:21.936Z
         "nmBotAutoDeleteExternalQuotes": {
           "type": "boolean",
           "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
+        },
+        "nmBotAutoDeleteGuestBotMessages": {
+          "type": "boolean",
+          "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
         },
         "messageIds": {
           "type": "array",
@@ -7878,6 +7963,8 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanSendPolls",
             "systemCanSendOtherMessages",
             "systemCanAddWebPagePreviews",
+            "systemCanEditTag",
+            "systemCanReactToMessages",
             "nmBotAutoDeleteSystemServiceMessages",
             "nmBotAutoDeleteLongMessages",
             "nmBotAutoDeleteMessagesWithLinks",
@@ -7893,6 +7980,7 @@ Generated at: 2026-05-15T10:53:21.936Z
             "nmBotAutoDeleteStories",
             "nmBotAutoDeleteChannelMessages",
             "nmBotAutoDeleteExternalQuotes",
+            "nmBotAutoDeleteGuestBotMessages",
             "messageIds",
             "pinMessage",
             "deleteLastMessage",
@@ -7958,6 +8046,14 @@ Generated at: 2026-05-15T10:53:21.936Z
               "type": "boolean",
               "description": "Controls link preview permissions. Ignored if type is not system."
             },
+            "systemCanEditTag": {
+              "type": "boolean",
+              "description": "Controls edit tag permissions. Ignored if type is not system."
+            },
+            "systemCanReactToMessages": {
+              "type": "boolean",
+              "description": "Controls react to messages permissions. Ignored if type is not system."
+            },
             "nmBotAutoDeleteSystemServiceMessages": {
               "type": "boolean",
               "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -8018,6 +8114,10 @@ Generated at: 2026-05-15T10:53:21.936Z
               "type": "boolean",
               "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
             },
+            "nmBotAutoDeleteGuestBotMessages": {
+              "type": "boolean",
+              "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
+            },
             "messageIds": {
               "type": "array",
               "description": "Ids of the message templates to send scheduled. Must not be empty if using \"disabled\" as type.Currently a chat subscribed to nmBot+ can add up to 6 messages. Otherwise a chat can add up to 3 messages.",
@@ -8070,6 +8170,8 @@ Generated at: 2026-05-15T10:53:21.936Z
           "systemCanSendPolls",
           "systemCanSendOtherMessages",
           "systemCanAddWebPagePreviews",
+          "systemCanEditTag",
+          "systemCanReactToMessages",
           "nmBotAutoDeleteSystemServiceMessages",
           "nmBotAutoDeleteLongMessages",
           "nmBotAutoDeleteMessagesWithLinks",
@@ -8085,6 +8187,7 @@ Generated at: 2026-05-15T10:53:21.936Z
           "nmBotAutoDeleteStories",
           "nmBotAutoDeleteChannelMessages",
           "nmBotAutoDeleteExternalQuotes",
+          "nmBotAutoDeleteGuestBotMessages",
           "messageIds",
           "pinMessage",
           "deleteLastMessage",
@@ -8150,6 +8253,14 @@ Generated at: 2026-05-15T10:53:21.936Z
             "type": "boolean",
             "description": "Controls link preview permissions. Ignored if type is not system."
           },
+          "systemCanEditTag": {
+            "type": "boolean",
+            "description": "Controls edit tag permissions. Ignored if type is not system."
+          },
+          "systemCanReactToMessages": {
+            "type": "boolean",
+            "description": "Controls react to messages permissions. Ignored if type is not system."
+          },
           "nmBotAutoDeleteSystemServiceMessages": {
             "type": "boolean",
             "description": "Controls auto-delete of system messages. Ignored if type is not nmBot."
@@ -8209,6 +8320,10 @@ Generated at: 2026-05-15T10:53:21.936Z
           "nmBotAutoDeleteExternalQuotes": {
             "type": "boolean",
             "description": "Controls auto-delete of message quoted other chat's message. Ignored if type is not nmBot."
+          },
+          "nmBotAutoDeleteGuestBotMessages": {
+            "type": "boolean",
+            "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
           },
           "messageIds": {
             "type": "array",
@@ -8281,12 +8396,15 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanSendPolls",
             "systemCanSendOtherMessages",
             "systemCanAddWebPagePreviews",
+            "systemCanEditTag",
+            "systemCanReactToMessages",
             "nmBotAutoDeleteSystemServiceMessages",
             "nmBotAutoDeleteLongMessages",
             "nmBotAutoDeleteMessagesWithLinks",
             "nmBotAutoDeleteMessagesWithCustomEmoji",
             "nmBotAutoDeletePremiumStickers",
             "nmBotAutoDeleteExternalQuotes",
+            "nmBotAutoDeleteGuestBotMessages",
             "pinMessage",
             "deleteLastMessage",
             "unpinLastMessage"
@@ -8334,6 +8452,10 @@ Generated at: 2026-05-15T10:53:21.936Z
             "nmBotAutoDeleteGifs": {
               "type": "boolean",
               "description": "Controls auto-delete of GIFs. Ignored if type is not nmBot."
+            },
+            "nmBotAutoDeleteGuestBotMessages": {
+              "type": "boolean",
+              "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
             },
             "nmBotAutoDeleteLongMessages": {
               "type": "boolean",
@@ -8390,6 +8512,14 @@ Generated at: 2026-05-15T10:53:21.936Z
             "systemCanAddWebPagePreviews": {
               "type": "boolean",
               "description": "Controls link preview permissions. Ignored if type is not system."
+            },
+            "systemCanEditTag": {
+              "type": "boolean",
+              "description": "Controls edit tag permissions. Ignored if type is not system."
+            },
+            "systemCanReactToMessages": {
+              "type": "boolean",
+              "description": "Controls react to messages permissions. Ignored if type is not system."
             },
             "systemCanSendAudios": {
               "type": "boolean",
@@ -11221,12 +11351,15 @@ Generated at: 2026-05-15T10:53:21.936Z
               "systemCanSendPolls",
               "systemCanSendOtherMessages",
               "systemCanAddWebPagePreviews",
+              "systemCanEditTag",
+              "systemCanReactToMessages",
               "nmBotAutoDeleteSystemServiceMessages",
               "nmBotAutoDeleteLongMessages",
               "nmBotAutoDeleteMessagesWithLinks",
               "nmBotAutoDeleteMessagesWithCustomEmoji",
               "nmBotAutoDeletePremiumStickers",
               "nmBotAutoDeleteExternalQuotes",
+              "nmBotAutoDeleteGuestBotMessages",
               "pinMessage",
               "deleteLastMessage",
               "unpinLastMessage"
@@ -11274,6 +11407,10 @@ Generated at: 2026-05-15T10:53:21.936Z
               "nmBotAutoDeleteGifs": {
                 "type": "boolean",
                 "description": "Controls auto-delete of GIFs. Ignored if type is not nmBot."
+              },
+              "nmBotAutoDeleteGuestBotMessages": {
+                "type": "boolean",
+                "description": "Controls auto-delete of guest bot messages. Ignored if type is not nmBot."
               },
               "nmBotAutoDeleteLongMessages": {
                 "type": "boolean",
@@ -11330,6 +11467,14 @@ Generated at: 2026-05-15T10:53:21.936Z
               "systemCanAddWebPagePreviews": {
                 "type": "boolean",
                 "description": "Controls link preview permissions. Ignored if type is not system."
+              },
+              "systemCanEditTag": {
+                "type": "boolean",
+                "description": "Controls edit tag permissions. Ignored if type is not system."
+              },
+              "systemCanReactToMessages": {
+                "type": "boolean",
+                "description": "Controls react to messages permissions. Ignored if type is not system."
               },
               "systemCanSendAudios": {
                 "type": "boolean",
@@ -12619,6 +12764,9 @@ Generated at: 2026-05-15T10:53:21.936Z
         "autoDeleteGifs": {
           "type": "boolean"
         },
+        "autoDeleteGuestBotMessages": {
+          "type": "boolean"
+        },
         "autoDeleteLongMessages": {
           "type": "boolean"
         },
@@ -13147,6 +13295,9 @@ Generated at: 2026-05-15T10:53:21.936Z
             "autoDeleteGifs": {
               "type": "boolean"
             },
+            "autoDeleteGuestBotMessages": {
+              "type": "boolean"
+            },
             "autoDeleteLongMessages": {
               "type": "boolean"
             },
@@ -13642,6 +13793,9 @@ Generated at: 2026-05-15T10:53:21.936Z
             "type": "boolean"
           },
           "autoDeleteGifs": {
+            "type": "boolean"
+          },
+          "autoDeleteGuestBotMessages": {
             "type": "boolean"
           },
           "autoDeleteLongMessages": {
@@ -14200,6 +14354,7 @@ Generated at: 2026-05-15T10:53:21.936Z
                 "messagesSentViaBot",
                 "stories",
                 "externalQuotes",
+                "guestBotMessages",
                 "contacts"
               ],
               "properties": {
@@ -14214,6 +14369,10 @@ Generated at: 2026-05-15T10:53:21.936Z
                 "gifs": {
                   "type": "boolean",
                   "description": "groupSetConfig key: autoDeleteGifs."
+                },
+                "guestBotMessages": {
+                  "type": "boolean",
+                  "description": "groupSetConfig key: autoDeleteGuestBotMessages."
                 },
                 "longMessages": {
                   "type": "boolean",
