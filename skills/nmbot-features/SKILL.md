@@ -139,7 +139,7 @@ Groups with nmBot+ subscription can set the duration of the ban, which can be te
 
 Group administrators can choose to limit the use of certain commands to specific user roles, such as administrators only or all members. This can help prevent abuse of powerful commands and ensure that only trusted users have access to sensitive functionalities.
 
-For new groups, nmBot+ subscription is required to set command limitations. For groups that have been using nmBot before nmBot+ subscription was introduced, they can set command limitations without nmBot+ subscription, if there're enough member count. Visit type `groupConfiguration.commandLimitation` for more details.
+Group Commands Limitation used to require nmBot+ subscription or a minimum member count, but now it's available for all groups. Visit type `groupConfiguration.commandLimitation` for more details.
 
 #### Join Prevention and Control (JPAC)
 
