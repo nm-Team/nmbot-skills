@@ -727,3 +727,9 @@ Before January 2023, nmBot was in its early stages of development, so updates co
 The official documentation for nmBot is available at `https://support.nmteam.xyz/nmbot-telegram/`. The documentation provides detailed information about nmBot's features, configurations, and usage instructions. It also includes FAQs, troubleshooting guides, and other resources to help users get the most out of nmBot.
 
 However, the documentation may not cover every single detail of nmBot's features and configurations and may not be updated in real-time with the latest changes to nmBot. For the most up-to-date information and specific questions, users can also refer to the nmBot Panel, which provides access to all current features and settings of nmBot.
+
+## Update nmBot Agent Skills
+
+As nmBot continues to evolve and add new features, the nmBot Agent's skills are also updated to keep up with the latest capabilities of nmBot. This ensures that users can always get the most accurate and relevant information when they ask nmBot Agent about nmBot's features and configurations.
+
+nmBot Agent Skills are published on GitHub at `https://github.com/nm-Team/nmbot-skills`. You should check the GitHub repository regularly for updates to nmBot Agent Skills, especially after major updates to nmBot, to ensure that you have the latest information and capabilities when using nmBot Agent.
