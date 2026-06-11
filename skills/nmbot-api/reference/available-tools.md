@@ -1,6 +1,6 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-05-19T12:00:39.459Z
+Generated at: 2026-06-11T06:06:13.448Z
 
 - **Project Title:** nmBot
 - **Project Version:** 1\.0\.0
@@ -2531,7 +2531,7 @@ Generated at: 2026-05-19T12:00:39.459Z
       "type": "integer",
       "description": "User ID to ban/unban."
     },
-    "isUnabn": {
+    "isUnban": {
       "type": "boolean",
       "description": "When true, perform unban instead of ban."
     }
@@ -2580,7 +2580,7 @@ Generated at: 2026-05-19T12:00:39.459Z
           "type": "integer",
           "description": "User ID to ban/unban."
         },
-        "isUnabn": {
+        "isUnban": {
           "type": "boolean",
           "description": "When true, perform unban instead of ban."
         }
@@ -2598,7 +2598,7 @@ Generated at: 2026-05-19T12:00:39.459Z
         "type": "integer",
         "description": "User ID to ban/unban."
       },
-      "isUnabn": {
+      "isUnban": {
         "type": "boolean",
         "description": "When true, perform unban instead of ban."
       }
@@ -17144,7 +17144,8 @@ Generated at: 2026-05-19T12:00:39.459Z
       "type": "boolean",
       "description": "Optional. Whether prefer show preview above text. Accept if template type is text."
     }
-  }
+  },
+  "required": ["text"]
 }
 ```
 
@@ -17177,6 +17178,7 @@ Generated at: 2026-05-19T12:00:39.459Z
     "description": "",
     "schema": {
       "type": "object",
+      "required": ["text"],
       "properties": {
         "text": {
           "type": "string",
@@ -17242,7 +17244,8 @@ Generated at: 2026-05-19T12:00:39.459Z
         "type": "boolean",
         "description": "Optional. Whether prefer show preview above text. Accept if template type is text."
       }
-    }
+    },
+    "required": ["text"]
   }
 }
 ```
