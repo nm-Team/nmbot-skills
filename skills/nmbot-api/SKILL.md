@@ -31,7 +31,7 @@ To obtain an API token, users can generate one from the nmBot Panel via "Setting
 Once generated, store it only in the authorized client configuration that sends MCP requests.
 The transport should send the token as the `Authorization` header with the `Bearer` scheme.
 
-Free nmBot users can generate one API token, while nmBot Pro users can generate up to 5 API tokens for their accounts.
+Free nmBot users can generate one API token, while nmBot+ users can generate up to 5 API tokens for their accounts.
 
 ## Trust Boundary
 
