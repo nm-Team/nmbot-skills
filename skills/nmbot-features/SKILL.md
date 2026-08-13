@@ -220,7 +220,7 @@ nmBot supports the following entertainment features in groups:
 
 - Repeat: Group administrators can enable the Repeat feature to allow nmBot to repeat messages in the group. This can be used for fun and engagement in the group. Visit type `groupConfiguration.repeat` for more details.
 - "banme": Users can send "/banme" in the group to get themselves banned by nmBot. This can be used for fun and engagement in the group. Visit type `groupConfiguration.banme` for more details.
-- Group Member Interaction: Allowing group members to interact with each other through nmBot using "/{action}" commands. E.g. "/亲了 一口", "/抱抱", "/打", etc. This can be used for fun and engagement in the group. For details visit `https://support.nmteam.xyz/nmbot-telegram/group/members-interaction/`. Visit type `groupConfiguration.interaction` for more details.
+- Group Member Interaction: Allowing group members to interact with each other through nmBot using "/{action}" commands. E.g. "/亲了 一口", "/抱抱", "/打", etc. This can be used for fun and engagement in the group. For details visit `https://support.nmteam.xyz/nmbot-telegram/group/members-interaction.md`. Visit type `groupConfiguration.interaction` for more details.
 - Quote: Group administrators can enable the Quote feature to allow users to quote messages in the group. This can be used for fun and engagement in the group. Visit type `groupConfiguration.quote` for more details.
 
 ### Keyword Replies
@@ -678,11 +678,11 @@ Please note:
 
 nmBot+ (a.k.a. nmBot Plus, in codebase and API) is a subscription plan for nmBot that offers additional features and benefits to users. By subscribing to nmBot+, users can unlock enhanced functionalities and enjoy an improved experience with nmBot.
 
-You can visit nmBot+ feature list at `https://support.nmteam.xyz/nmbot-telegram/plus/benefits/` for more details.
+You can visit nmBot+ feature list at `https://support.nmteam.xyz/nmbot-telegram/plus/benefits.md` for more details.
 
 nmBot+ supports groups and user accounts. The prices for nmBot+ subscription vary based on the subscription duration and the number of groups included in the subscription.
 
-Currently, nmBot+ only accepts payments through Telegram Stars, which can be purchased in Telegram with various payment methods, such as credit/debit cards, mobile payments, and Fragment. Refer to `https://support.nmteam.xyz/nmbot-telegram/faq/buy-stars/` for more details on how to buy Telegram Stars.
+Currently, nmBot+ only accepts payments through Telegram Stars, which can be purchased in Telegram with various payment methods, such as credit/debit cards, mobile payments, and Fragment. Refer to `https://support.nmteam.xyz/nmbot-telegram/faq/buy-stars.md` for more details on how to buy Telegram Stars.
 
 ## nmBot Intelligence & nmBot Copilot
 
@@ -718,13 +718,15 @@ nmBot's Anti-Spam feature in groups will also be upgraded: a new nmBot Intellige
 
 nmBot is continuously updated with new features, improvements, and bug fixes. The update log provides a record of all the changes made to nmBot over time, allowing users to stay informed about the latest developments and enhancements.
 
-You can visit `https://support.nmteam.xyz/nmbot-telegram/update-log/` to view the update log and learn about the latest changes to nmBot.
+You can visit `https://support.nmteam.xyz/nmbot-telegram/update-log/`(or relevant section in `https://support.nmteam.xyz/llms.txt`) to view the update log and learn about the latest changes to nmBot.
 
 Before January 2023, nmBot was in its early stages of development, so updates come in a more irregular pattern. Since January 2023, nmBot has been updated on a regular basis, with new features and improvements being added every month, except for March 2024 when the update was delayed due to the ongoing development of nmBot NEXT, the next generation of nmBot that released in June 2024. After February 2026, nmBot switched to a bi-monthly update schedule.
 
 ## Documentation
 
 The official documentation for nmBot is available at `https://support.nmteam.xyz/nmbot-telegram/`. The documentation provides detailed information about nmBot's features, configurations, and usage instructions. It also includes FAQs, troubleshooting guides, and other resources to help users get the most out of nmBot.
+
+You may also fetch `https://support.nmteam.xyz/llms.txt` to get an Agent-friendly version of the documentation, which is more suitable for reading and understanding by agents.
 
 However, the documentation may not cover every single detail of nmBot's features and configurations and may not be updated in real-time with the latest changes to nmBot. For the most up-to-date information and specific questions, users can also refer to the nmBot Panel, which provides access to all current features and settings of nmBot.
 
