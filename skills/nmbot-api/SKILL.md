@@ -46,6 +46,8 @@ Free nmBot users can make up to 5 API requests per minute and 50 API requests pe
 
 Requests that exceed the rate limits will receive a `429 Too Many Requests` response, and the agent should wait before making further requests.
 
+The JSON-RPC error uses code `-32002` and includes `retryAfterSeconds` and `limitType` in its data. Wait for the indicated duration before retrying.
+
 ## Endpoints
 
 You can get nmBot MCP server endpoints via standard MCP discovery mechanism, after connected to the MCP server.
@@ -58,6 +60,8 @@ A Markdown list of the endpoints is also available at [available-tools.md](refer
 The MCP server provides an initialization endpoint that agents can call to retrieve basic information about the bot and the user, using the same endpoint as nmBot Panel API.
 
 Refer to `init` endpoint in the MCP for details.
+
+The optional `scope` array selects the initialization data to return. Allowed values are `core`, `capabilities`, `plus`, `subscription`, `panelExtras`, `clientConfig`, `messageTemplates`, `intelligence`, `business`, and `summary2024`. Omit `scope` for the full response; an empty array or an unknown value returns `invalid_scope`. For the managed chat IDs and command list, request `scope: ["core"]`. Include other scopes when their data is needed.
 
 ## Get Managed Channels/Groups List and Their Configurations
 

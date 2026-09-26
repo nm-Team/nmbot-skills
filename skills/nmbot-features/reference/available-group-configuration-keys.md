@@ -1,9 +1,9 @@
 # Available Group Configuration Keys
 
-- **Generated At:** 2026-05-19T12:03:03.209Z
+- **Generated At:** 2026-09-16T07:37:36.116Z
 - **Source File:** packages/bot-next/src/utils/oneClickGroupConfigurationChanger.ts
 - **Total Tags:** 10
-- **Total Keys:** 117
+- **Total Keys:** 119
 - **Function Field Output:** Function body is omitted for safety and readability.
 
 ---
@@ -59,6 +59,7 @@
 
 - **Key:** speakFrequencyLimitation
 - **Description:** Limit the number of messages sent by users in a short time.
+
 
 ---
 
@@ -482,11 +483,12 @@
 
 - **Key:** commandLimitationEnabled
 - **Name:** Command Limitation
-- **Available values:** Dynamic (validated by valueFunction)
+- **Available values:**
+  - true
+  - false
 - **Required permissions:** speakLimitations
 - **Tags:**
   - Group Management Feature (managementFeature)
-- **valueFunction:** Defined (function body omitted for safety and readability)
 
 ---
 
@@ -1576,6 +1578,48 @@
   - Group Management Feature (managementFeature)
 - **valueConverter:** Defined (function body omitted for safety and readability)
 - **importValueConverter:** Defined (function body omitted for safety and readability)
+
+---
+
+### spamDetectorAdbyeAction
+
+- **Key:** spamDetectorAdbyeAction
+- **Name:** AdBye Advertising Detection Action
+- **Available values:**
+  - false
+  - delete
+  - ban
+- **Required permissions:** speakLimitations
+- **Tags:**
+  - Spam Detector (spamDetector)
+  - Group Management Feature (managementFeature)
+- **valueFunction:** Defined (function body omitted for safety and readability)
+- **valueConverter:** Defined (function body omitted for safety and readability)
+- **importValueConverter:** Defined (function body omitted for safety and readability)
+- **Available values (English labels):**
+  - Disabled
+  - Delete
+  - Delete and ban
+
+---
+
+### spamDetectorAdbyeThreshold
+
+- **Key:** spamDetectorAdbyeThreshold
+- **Name:** AdBye Advertising Detection Sensitivity
+- **Available values:**
+  - 21
+  - 31
+  - 41
+  - 51
+  - 61
+  - 71
+  - 81
+  - 91
+- **Required permissions:** speakLimitations
+- **Tags:**
+  - Spam Detector (spamDetector)
+  - Group Management Feature (managementFeature)
 
 ---
 

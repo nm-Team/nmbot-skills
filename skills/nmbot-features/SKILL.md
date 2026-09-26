@@ -37,6 +37,8 @@ For users, nmBot Panel can be launched in the following ways:
 
 You can get all known available routers at [panel-route.md](reference/panel-route.md).
 
+Panel settings are organized into Account and Sessions, Notifications, Interface and Experience, Advanced Settings, and About, alongside nmBot Intelligence, MCP Configuration, and nmBot+. Account binding is at `/settings/account/bind-nmteam-account`; the previous `/settings/bind-nmteam-account` URL remains an alias.
+
 #### Address
 
 nmBot Panel: `https://nmbot.nmnm.fun`
@@ -174,6 +176,9 @@ Supported spam types include:
 - nmBot: The users/messages that are detected as spam by nmBot's algorithms.
 - nmBot Intelligence: The users/messages that are detected as spam by nmBot's intelligence, which is based on various signals and data sources.
 - ComBot Anti-Spam: The users/messages that are detected as spam by ComBot's anti-spam system, which is a third-party service that nmBot integrates with.
+- AdBye: A third-party service that scores message text for advertising. It is available only when enabled by the bot operator and configured on the server. Enabling it sends group message text to AdBye; review this data-sharing behavior before enabling it for a group.
+
+For AdBye, use `spamDetectorAdbyeAction` to disable detection (`false`), delete matching messages (`delete`), or delete matching messages and ban the sender (`ban`). Set `spamDetectorAdbyeThreshold` to one of `21`, `31`, `41`, `51`, `61`, `71`, `81`, or `91`; scores at or above the threshold match. Check `groupConfiguration.spamDetector.availability.adbye` before enabling it. While unavailable, `detectors.adbye` returns `false` without clearing the saved group setting.
 
 For messages detected as spam, nmBot can automatically delete the messages and ban the users, based on the group administrators' configurations.
 
@@ -509,6 +514,8 @@ You can also specify a timezone, for example {date:+8} represents the date in UT
 #### How to Add Formatting to Message Templates
 
 In message templates, you can use Markdown, HTML, and MarkdownV2 parsing modes. Each mode has its own way of applying formatting.
+
+Text templates also support `RichMarkdown` and `RichHTML` with nmBot+. These nmBot parsing modes convert rich content into Telegram messages and are not supported for media captions. Use the `parseMode` field when creating or updating a template through MCP. The `sendMessageTemplateTestMessage` tool sends a real test message to the current user and must be treated as a write action.
 
 The Markdown and MarkdownV2 formats mentioned here are defined by Telegram and differ from the commonly known Markdown format.
 

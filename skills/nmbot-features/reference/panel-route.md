@@ -1,6 +1,6 @@
 # nmBot Panel Route List
 
-Generated at: 2026-04-19T06:18:38.334Z
+Generated at: 2026-09-26T10:34:24.418Z
 
 ## /
 
@@ -27,7 +27,7 @@ Generated at: 2026-04-19T06:18:38.334Z
 - **Path:** /groups/:id/management\-function
 - **Name:** GroupManagementFunction
 - **Title:** Group Management Features
-- **Sub Pages:** 9
+- **Sub Pages:** 10
 
 ## /groups/:id/management\-function/join\-verify
 
@@ -52,7 +52,7 @@ Generated at: 2026-04-19T06:18:38.334Z
 
 - **Path:** /groups/:id/management\-function/join\-verify/custom\-rules
 - **Name:** CustomRulesJoinVerify
-- **Title:** 自定义规则
+- **Title:** Custom Rules
 
 ## /groups/:id/management\-function/new\-member\-limitation
 
@@ -78,31 +78,37 @@ Generated at: 2026-04-19T06:18:38.334Z
 - **Name:** GroupManagementAutoDeleteByType
 - **Title:** Auto\-Delete Messages
 
+## /groups/:id/management\-function/spam\-detector
+
+- **Path:** /groups/:id/management\-function/spam\-detector
+- **Name:** GroupManagementSpamDetector
+- **Title:** Spam Message Interception
+
 ## /groups/:id/management\-function/custom\-rules
 
 - **Path:** /groups/:id/management\-function/custom\-rules
 - **Name:** CustomRulesGroup
-- **Title:** 自定义规则
+- **Title:** Custom Rules
 
 ## /groups/:id/management\-function/jpac
 
 - **Path:** /groups/:id/management\-function/jpac
 - **Name:** GroupJPAC
-- **Title:** 联防联控机制
+- **Title:** Joint Prevention and Control
 - **Sub Pages:** 1
 
 ## /groups/:id/management\-function/jpac/:jpacId
 
 - **Path:** /groups/:id/management\-function/jpac/:jpacId
 - **Name:** JPACDetail
-- **Title:** 联防联控机制
+- **Title:** Joint Prevention and Control
 - **Sub Pages:** 1
 
 ## /groups/:id/management\-function/jpac/:jpacId/users
 
 - **Path:** /groups/:id/management\-function/jpac/:jpacId/users
 - **Name:** JPACUserList
-- **Title:** 联防联控机制
+- **Title:** Joint Prevention and Control
 
 ## /groups/:id/management\-function/speak\-frequency\-limit
 
@@ -138,14 +144,14 @@ Generated at: 2026-04-19T06:18:38.334Z
 
 - **Path:** /groups/:id/keyword\-replies
 - **Name:** KeywordRepliesGroup
-- **Title:** 关键词回复
+- **Title:** Keyword Replies
 - **Sub Pages:** 1
 
 ## /groups/:id/keyword\-replies/edit\-keyword\-reply\-isAdd:isAdd\-replyId=:replyId
 
 - **Path:** /groups/:id/keyword\-replies/edit\-keyword\-reply\-isAdd:isAdd\-replyId=:replyId
 - **Name:** ReplyEditorGroup
-- **Title:** 编辑关键词回复
+- **Title:** Edit Keyword Reply
 - **Min Width:** 500
 
 ## /groups/:id/lockdown\-mode
@@ -209,7 +215,7 @@ Generated at: 2026-04-19T06:18:38.334Z
 
 - **Path:** /groups/:id/message\-template
 - **Name:** TemplatePageGroup
-- **Title:** 查看消息模板
+- **Title:** View Message Templates
 - **Min Width:** 600
 
 ## /groups/:id/set\-commands
@@ -264,21 +270,21 @@ Generated at: 2026-04-19T06:18:38.334Z
 
 - **Path:** /business/keyword\-replies
 - **Name:** KeywordRepliesBusiness
-- **Title:** 关键词回复
+- **Title:** Keyword Replies
 - **Sub Pages:** 1
 
 ## /business/keyword\-replies/edit\-keyword\-reply\-isAdd:isAdd\-replyId=:replyId
 
 - **Path:** /business/keyword\-replies/edit\-keyword\-reply\-isAdd:isAdd\-replyId=:replyId
 - **Name:** ReplyEditorBusiness
-- **Title:** 编辑关键词回复
+- **Title:** Edit Keyword Reply
 - **Min Width:** 500
 
 ## /business/message\-template
 
 - **Path:** /business/message\-template
 - **Name:** TemplatePageBuniness
-- **Title:** 查看消息模板
+- **Title:** View Message Templates
 - **Min Width:** 600
 
 ## /business/business\-scheduled\-task
@@ -352,13 +358,27 @@ Generated at: 2026-04-19T06:18:38.334Z
 - **Name:** Settings
 - **Title:** Settings
 - **Accessible For Guest:** Yes
-- **Sub Pages:** 4
+- **Sub Pages:** 8
 
-## /settings/bind\-nmteam\-account
+## /settings/account
 
-- **Path:** /settings/bind\-nmteam\-account
+- **Path:** /settings/account
+- **Name:** SettingsAccount
+- **Title:** Account and Sessions
+- **Accessible For Guest:** Yes
+- **Sub Pages:** 1
+
+## /settings/account/bind\-nmteam\-account
+
+- **Path:** /settings/account/bind\-nmteam\-account
 - **Name:** BindAccount
 - **Title:** Bind Account
+
+## /settings/notifications
+
+- **Path:** /settings/notifications
+- **Name:** SettingsNotifications
+- **Title:** Notifications
 
 ## /settings/nmbot\-intelligence
 
@@ -385,13 +405,78 @@ Generated at: 2026-04-19T06:18:38.334Z
 
 - **Path:** /settings/plus/buy\-gift\-code
 - **Name:** BuyGift
-- **Title:** 购买礼品码
+- **Title:** Buy Gift Code
+
+## /settings/experience
+
+- **Path:** /settings/experience
+- **Name:** SettingsExperience
+- **Title:** Interface and Experience
+- **Accessible For Guest:** Yes
+- **Sub Pages:** 4
+
+## /settings/experience/language
+
+- **Path:** /settings/experience/language
+- **Name:** SettingsLanguage
+- **Title:** Language
+- **Accessible For Guest:** Yes
+
+## /settings/experience/appearance
+
+- **Path:** /settings/experience/appearance
+- **Name:** SettingsAppearance
+- **Title:** Appearance
+- **Accessible For Guest:** Yes
+
+## /settings/experience/interaction
+
+- **Path:** /settings/experience/interaction
+- **Name:** SettingsInteraction
+- **Title:** Interaction
+- **Accessible For Guest:** Yes
+
+## /settings/experience/mini\-app
+
+- **Path:** /settings/experience/mini\-app
+- **Name:** SettingsMiniApp
+- **Title:** Mini App Settings
+- **Accessible For Guest:** Yes
+
+## /settings/advanced
+
+- **Path:** /settings/advanced
+- **Name:** SettingsAdvanced
+- **Title:** Advanced Settings
+- **Accessible For Guest:** Yes
+- **Sub Pages:** 2
+
+## /settings/advanced/server
+
+- **Path:** /settings/advanced/server
+- **Name:** SettingsServer
+- **Title:** Server
+- **Accessible For Guest:** Yes
+
+## /settings/advanced/experimental
+
+- **Path:** /settings/advanced/experimental
+- **Name:** SettingsExperimental
+- **Title:** Experimental Settings
+- **Accessible For Guest:** Yes
+
+## /settings/about
+
+- **Path:** /settings/about
+- **Name:** SettingsAbout
+- **Title:** About
+- **Accessible For Guest:** Yes
 
 ## /admin
 
 - **Path:** /admin
 - **Name:** Administrator
-- **Sub Pages:** 6
+- **Sub Pages:** 5
 
 ## /:pathMatch\(\.\*\)\*
 

@@ -1,6 +1,6 @@
 # nmBot Available MCP Tools
 
-Generated at: 2026-06-11T06:06:13.448Z
+Generated at: 2026-09-26T10:32:19.981Z
 
 - **Project Title:** nmBot
 - **Project Version:** 1\.0\.0
@@ -15,7 +15,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** addGroupScheduledTask
 **- Tool Description:** POST /addGroupScheduledTask
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -82,7 +81,11 @@ Generated at: 2026-06-11T06:06:13.448Z
         "type": {
           "type": "string",
           "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-          "enum": ["system", "nmBot", "disabled"]
+          "enum": [
+            "system",
+            "nmBot",
+            "disabled"
+          ]
         },
         "systemCanSendMessages": {
           "type": "boolean",
@@ -218,12 +221,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["groupId", "newObject"]
+  "required": [
+    "groupId",
+    "newObject"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "addGroupScheduledTask",
@@ -232,7 +236,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /addGroupScheduledTask
 **- Method Name:** addGroupScheduledTask
@@ -242,7 +245,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /addGroupScheduledTask
 **- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -251,7 +253,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId", "newObject"],
+      "required": [
+        "groupId",
+        "newObject"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -315,7 +320,11 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": {
               "type": "string",
               "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-              "enum": ["system", "nmBot", "disabled"]
+              "enum": [
+                "system",
+                "nmBot",
+                "disabled"
+              ]
             },
             "systemCanSendMessages": {
               "type": "boolean",
@@ -518,7 +527,11 @@ Generated at: 2026-06-11T06:06:13.448Z
           "type": {
             "type": "string",
             "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-            "enum": ["system", "nmBot", "disabled"]
+            "enum": [
+              "system",
+              "nmBot",
+              "disabled"
+            ]
           },
           "systemCanSendMessages": {
             "type": "boolean",
@@ -654,13 +667,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["groupId", "newObject"]
+    "required": [
+      "groupId",
+      "newObject"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -668,11 +682,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "added"],
+      "required": [
+        "code",
+        "added"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "added": {
@@ -867,7 +886,11 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": {
               "type": "string",
               "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-              "enum": ["system", "nmBot", "disabled"]
+              "enum": [
+                "system",
+                "nmBot",
+                "disabled"
+              ]
             },
             "unpinLastMessage": {
               "type": "boolean",
@@ -884,7 +907,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -906,7 +931,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** addJpacList
 **- Tool Description:** Join an existing JPAC list via shareId\. Method: POST /addJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -920,12 +944,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Share id of the target JPAC."
     }
   },
-  "required": ["chatId", "shareId"]
+  "required": [
+    "chatId",
+    "shareId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "addJpacList",
@@ -934,7 +959,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /addJpacList
 **- Method Name:** addJpacList
@@ -944,7 +968,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Join an existing JPAC list via shareId\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -953,7 +976,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "shareId"],
+      "required": [
+        "chatId",
+        "shareId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -978,13 +1004,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Share id of the target JPAC."
       }
     },
-    "required": ["chatId", "shareId"]
+    "required": [
+      "chatId",
+      "shareId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -992,11 +1019,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -1066,7 +1097,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -1085,7 +1118,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -1107,7 +1142,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** addKeywordReply
 **- Tool Description:** POST /addKeywordReply
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -1229,12 +1263,36 @@ Generated at: 2026-06-11T06:06:13.448Z
         "autoDeleteOriginalMessageAfter": {
           "type": "integer",
           "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-          "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+          "enum": [
+            0,
+            1,
+            3,
+            5,
+            10,
+            30,
+            60,
+            120,
+            180,
+            240,
+            300
+          ]
         },
         "autoDeleteReplyMessageAfter": {
           "type": "integer",
           "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-          "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+          "enum": [
+            0,
+            1,
+            3,
+            5,
+            10,
+            30,
+            60,
+            120,
+            180,
+            240,
+            300
+          ]
         },
         "ignoreGroupAdministators": {
           "type": "boolean",
@@ -1251,7 +1309,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "cooldown": {
           "type": "integer",
           "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-          "enum": [0, 10, 30, 60, 120, 600, 1800]
+          "enum": [
+            0,
+            10,
+            30,
+            60,
+            120,
+            600,
+            1800
+          ]
         },
         "preferCrossMessageReplies": {
           "type": "boolean",
@@ -1272,7 +1338,12 @@ Generated at: 2026-06-11T06:06:13.448Z
         "warnSender": {
           "type": "integer",
           "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-          "enum": [0, 1, 2, 3]
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ]
         },
         "muteSender": {
           "type": "integer",
@@ -1293,12 +1364,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["chatId", "newObject"]
+  "required": [
+    "chatId",
+    "newObject"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "addKeywordReply",
@@ -1307,7 +1379,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /addKeywordReply
 **- Method Name:** addKeywordReply
@@ -1317,7 +1388,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /addKeywordReply
 **- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -1326,7 +1396,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "newObject"],
+      "required": [
+        "chatId",
+        "newObject"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -1445,12 +1518,36 @@ Generated at: 2026-06-11T06:06:13.448Z
             "autoDeleteOriginalMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "autoDeleteReplyMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "ignoreGroupAdministators": {
               "type": "boolean",
@@ -1467,7 +1564,15 @@ Generated at: 2026-06-11T06:06:13.448Z
             "cooldown": {
               "type": "integer",
               "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-              "enum": [0, 10, 30, 60, 120, 600, 1800]
+              "enum": [
+                0,
+                10,
+                30,
+                60,
+                120,
+                600,
+                1800
+              ]
             },
             "preferCrossMessageReplies": {
               "type": "boolean",
@@ -1488,7 +1593,12 @@ Generated at: 2026-06-11T06:06:13.448Z
             "warnSender": {
               "type": "integer",
               "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-              "enum": [0, 1, 2, 3]
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ]
             },
             "muteSender": {
               "type": "integer",
@@ -1631,12 +1741,36 @@ Generated at: 2026-06-11T06:06:13.448Z
           "autoDeleteOriginalMessageAfter": {
             "type": "integer",
             "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-            "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+            "enum": [
+              0,
+              1,
+              3,
+              5,
+              10,
+              30,
+              60,
+              120,
+              180,
+              240,
+              300
+            ]
           },
           "autoDeleteReplyMessageAfter": {
             "type": "integer",
             "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-            "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+            "enum": [
+              0,
+              1,
+              3,
+              5,
+              10,
+              30,
+              60,
+              120,
+              180,
+              240,
+              300
+            ]
           },
           "ignoreGroupAdministators": {
             "type": "boolean",
@@ -1653,7 +1787,15 @@ Generated at: 2026-06-11T06:06:13.448Z
           "cooldown": {
             "type": "integer",
             "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-            "enum": [0, 10, 30, 60, 120, 600, 1800]
+            "enum": [
+              0,
+              10,
+              30,
+              60,
+              120,
+              600,
+              1800
+            ]
           },
           "preferCrossMessageReplies": {
             "type": "boolean",
@@ -1674,7 +1816,12 @@ Generated at: 2026-06-11T06:06:13.448Z
           "warnSender": {
             "type": "integer",
             "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-            "enum": [0, 1, 2, 3]
+            "enum": [
+              0,
+              1,
+              2,
+              3
+            ]
           },
           "muteSender": {
             "type": "integer",
@@ -1695,13 +1842,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["chatId", "newObject"]
+    "required": [
+      "chatId",
+      "newObject"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -1709,11 +1857,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "added"],
+      "required": [
+        "code",
+        "added"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "added": {
@@ -1758,12 +1911,36 @@ Generated at: 2026-06-11T06:06:13.448Z
             "autoDeleteOriginalMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "autoDeleteReplyMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "businessMarkMessagesAsRead": {
               "type": "boolean",
@@ -1780,7 +1957,15 @@ Generated at: 2026-06-11T06:06:13.448Z
             "cooldown": {
               "type": "integer",
               "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-              "enum": [0, 10, 30, 60, 120, 600, 1800]
+              "enum": [
+                0,
+                10,
+                30,
+                60,
+                120,
+                600,
+                1800
+              ]
             },
             "disableNmartchat": {
               "type": "boolean",
@@ -1897,7 +2082,12 @@ Generated at: 2026-06-11T06:06:13.448Z
             "warnSender": {
               "type": "integer",
               "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-              "enum": [0, 1, 2, 3]
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ]
             }
           },
           "title": "KeywordReply"
@@ -1910,7 +2100,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -1932,7 +2124,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** addMessageTemplate
 **- Tool Description:** POST /addMessageTemplate
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -1943,7 +2134,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     },
     "data": {
       "type": "object",
-      "required": ["keyboard", "protectContent", "disableNotification"],
+      "required": [
+        "keyboard",
+        "protectContent",
+        "disableNotification"
+      ],
       "properties": {
         "title": {
           "type": "string",
@@ -1955,8 +2150,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "parseMode": {
           "type": "string",
-          "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-          "enum": ["Markdown", "MarkdownV2", "HTML"]
+          "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+          "enum": [
+            "Markdown",
+            "MarkdownV2",
+            "HTML",
+            "RichMarkdown",
+            "RichHTML"
+          ]
         },
         "caption": {
           "type": "string",
@@ -2019,7 +2220,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["url", "text"],
+              "required": [
+                "url",
+                "text"
+              ],
               "properties": {
                 "icon_custom_emoji_id": {
                   "type": "string",
@@ -2028,7 +2232,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "style": {
                   "type": "string",
                   "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                  "enum": ["danger", "success", "primary"]
+                  "enum": [
+                    "danger",
+                    "success",
+                    "primary"
+                  ]
                 },
                 "text": {
                   "type": "string",
@@ -2055,12 +2263,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["chatId", "data"]
+  "required": [
+    "chatId",
+    "data"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "addMessageTemplate",
@@ -2069,7 +2278,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /addMessageTemplate
 **- Method Name:** addMessageTemplate
@@ -2079,7 +2287,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /addMessageTemplate
 **- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -2088,7 +2295,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "data"],
+      "required": [
+        "chatId",
+        "data"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -2096,7 +2306,11 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "data": {
           "type": "object",
-          "required": ["keyboard", "protectContent", "disableNotification"],
+          "required": [
+            "keyboard",
+            "protectContent",
+            "disableNotification"
+          ],
           "properties": {
             "title": {
               "type": "string",
@@ -2108,8 +2322,14 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "parseMode": {
               "type": "string",
-              "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-              "enum": ["Markdown", "MarkdownV2", "HTML"]
+              "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+              "enum": [
+                "Markdown",
+                "MarkdownV2",
+                "HTML",
+                "RichMarkdown",
+                "RichHTML"
+              ]
             },
             "caption": {
               "type": "string",
@@ -2172,7 +2392,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["url", "text"],
+                  "required": [
+                    "url",
+                    "text"
+                  ],
                   "properties": {
                     "icon_custom_emoji_id": {
                       "type": "string",
@@ -2181,7 +2404,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "style": {
                       "type": "string",
                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                      "enum": ["danger", "success", "primary"]
+                      "enum": [
+                        "danger",
+                        "success",
+                        "primary"
+                      ]
                     },
                     "text": {
                       "type": "string",
@@ -2219,7 +2446,11 @@ Generated at: 2026-06-11T06:06:13.448Z
       },
       "data": {
         "type": "object",
-        "required": ["keyboard", "protectContent", "disableNotification"],
+        "required": [
+          "keyboard",
+          "protectContent",
+          "disableNotification"
+        ],
         "properties": {
           "title": {
             "type": "string",
@@ -2231,8 +2462,14 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "parseMode": {
             "type": "string",
-            "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-            "enum": ["Markdown", "MarkdownV2", "HTML"]
+            "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+            "enum": [
+              "Markdown",
+              "MarkdownV2",
+              "HTML",
+              "RichMarkdown",
+              "RichHTML"
+            ]
           },
           "caption": {
             "type": "string",
@@ -2295,7 +2532,10 @@ Generated at: 2026-06-11T06:06:13.448Z
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["url", "text"],
+                "required": [
+                  "url",
+                  "text"
+                ],
                 "properties": {
                   "icon_custom_emoji_id": {
                     "type": "string",
@@ -2304,7 +2544,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "style": {
                     "type": "string",
                     "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                    "enum": ["danger", "success", "primary"]
+                    "enum": [
+                      "danger",
+                      "success",
+                      "primary"
+                    ]
                   },
                   "text": {
                     "type": "string",
@@ -2331,13 +2575,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["chatId", "data"]
+    "required": [
+      "chatId",
+      "data"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -2345,11 +2590,17 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "messageTemplates", "insertId"],
+      "required": [
+        "code",
+        "messageTemplates",
+        "insertId"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "insertId": {
@@ -2391,7 +2642,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -2400,7 +2654,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -2461,8 +2719,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "parseMode": {
                 "type": "string",
-                "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                "enum": ["Markdown", "MarkdownV2", "HTML"]
+                "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                "enum": [
+                  "Markdown",
+                  "MarkdownV2",
+                  "HTML",
+                  "RichMarkdown",
+                  "RichHTML"
+                ]
               },
               "protectContent": {
                 "type": "boolean",
@@ -2496,7 +2760,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -2518,7 +2784,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** banGroupJoinVerificationUser
 **- Tool Description:** Ban or unban user from join\-verification history\. Method: POST /banGroupJoinVerificationUser\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -2536,12 +2801,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "When true, perform unban instead of ban."
     }
   },
-  "required": ["groupId", "banUserId"]
+  "required": [
+    "groupId",
+    "banUserId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "banGroupJoinVerificationUser",
@@ -2550,7 +2816,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /banGroupJoinVerificationUser
 **- Method Name:** banGroupJoinVerificationUser
@@ -2560,7 +2825,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Ban or unban user from join\-verification history\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -2570,7 +2834,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId", "banUserId"],
+      "required": [
+        "groupId",
+        "banUserId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -2603,13 +2870,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "When true, perform unban instead of ban."
       }
     },
-    "required": ["groupId", "banUserId"]
+    "required": [
+      "groupId",
+      "banUserId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -2617,7 +2885,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -2636,7 +2906,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -2658,7 +2930,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** channelSetConfig
 **- Tool Description:** Update channel\-level configuration keys\. Method: POST /channelSetConfig\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -2681,7 +2952,10 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "postButton": {
           "type": "object",
-          "required": ["buttons", "addCommentLink"],
+          "required": [
+            "buttons",
+            "addCommentLink"
+          ],
           "properties": {
             "addCommentLink": {
               "type": "boolean",
@@ -2693,7 +2967,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["url", "text"],
+                  "required": [
+                    "url",
+                    "text"
+                  ],
                   "properties": {
                     "icon_custom_emoji_id": {
                       "type": "string",
@@ -2702,7 +2979,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "style": {
                       "type": "string",
                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                      "enum": ["danger", "success", "primary"]
+                      "enum": [
+                        "danger",
+                        "success",
+                        "primary"
+                      ]
                     },
                     "text": {
                       "type": "string",
@@ -2723,7 +3004,9 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "postEditor": {
           "type": "object",
-          "required": ["buttons"],
+          "required": [
+            "buttons"
+          ],
           "properties": {
             "buttons": {
               "type": "array",
@@ -2731,7 +3014,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["url", "text"],
+                  "required": [
+                    "url",
+                    "text"
+                  ],
                   "properties": {
                     "icon_custom_emoji_id": {
                       "type": "string",
@@ -2740,7 +3026,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "style": {
                       "type": "string",
                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                      "enum": ["danger", "success", "primary"]
+                      "enum": [
+                        "danger",
+                        "success",
+                        "primary"
+                      ]
                     },
                     "text": {
                       "type": "string",
@@ -2768,12 +3058,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Required when editing post markup related settings."
     }
   },
-  "required": ["channelId", "config"]
+  "required": [
+    "channelId",
+    "config"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "channelSetConfig",
@@ -2782,7 +3073,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /channelSetConfig
 **- Method Name:** channelSetConfig
@@ -2792,7 +3082,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Update channel\-level configuration keys\.
 **- Tags:** Allow Tools Calling, Group
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -2802,7 +3091,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["channelId", "config"],
+      "required": [
+        "channelId",
+        "config"
+      ],
       "properties": {
         "channelId": {
           "type": "integer",
@@ -2822,7 +3114,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "postButton": {
               "type": "object",
-              "required": ["buttons", "addCommentLink"],
+              "required": [
+                "buttons",
+                "addCommentLink"
+              ],
               "properties": {
                 "addCommentLink": {
                   "type": "boolean",
@@ -2834,7 +3129,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "type": "array",
                     "items": {
                       "type": "object",
-                      "required": ["url", "text"],
+                      "required": [
+                        "url",
+                        "text"
+                      ],
                       "properties": {
                         "icon_custom_emoji_id": {
                           "type": "string",
@@ -2843,7 +3141,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                         "style": {
                           "type": "string",
                           "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                          "enum": ["danger", "success", "primary"]
+                          "enum": [
+                            "danger",
+                            "success",
+                            "primary"
+                          ]
                         },
                         "text": {
                           "type": "string",
@@ -2864,7 +3166,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "postEditor": {
               "type": "object",
-              "required": ["buttons"],
+              "required": [
+                "buttons"
+              ],
               "properties": {
                 "buttons": {
                   "type": "array",
@@ -2872,7 +3176,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "type": "array",
                     "items": {
                       "type": "object",
-                      "required": ["url", "text"],
+                      "required": [
+                        "url",
+                        "text"
+                      ],
                       "properties": {
                         "icon_custom_emoji_id": {
                           "type": "string",
@@ -2881,7 +3188,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                         "style": {
                           "type": "string",
                           "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                          "enum": ["danger", "success", "primary"]
+                          "enum": [
+                            "danger",
+                            "success",
+                            "primary"
+                          ]
                         },
                         "text": {
                           "type": "string",
@@ -2932,7 +3243,10 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "postButton": {
             "type": "object",
-            "required": ["buttons", "addCommentLink"],
+            "required": [
+              "buttons",
+              "addCommentLink"
+            ],
             "properties": {
               "addCommentLink": {
                 "type": "boolean",
@@ -2944,7 +3258,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -2953,7 +3270,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -2974,7 +3295,9 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "postEditor": {
             "type": "object",
-            "required": ["buttons"],
+            "required": [
+              "buttons"
+            ],
             "properties": {
               "buttons": {
                 "type": "array",
@@ -2982,7 +3305,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -2991,7 +3317,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -3019,13 +3349,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Required when editing post markup related settings."
       }
     },
-    "required": ["channelId", "config"]
+    "required": [
+      "channelId",
+      "config"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -3033,7 +3364,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -3053,7 +3386,10 @@ Generated at: 2026-06-11T06:06:13.448Z
           "properties": {
             "autoFormatCJK": {
               "type": "object",
-              "required": ["enabled", "ignoreCustomEmoji"],
+              "required": [
+                "enabled",
+                "ignoreCustomEmoji"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -3080,7 +3416,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "postButton": {
               "type": "object",
-              "required": ["buttons", "addCommentLink"],
+              "required": [
+                "buttons",
+                "addCommentLink"
+              ],
               "properties": {
                 "addCommentLink": {
                   "type": "boolean",
@@ -3092,7 +3431,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "type": "array",
                     "items": {
                       "type": "object",
-                      "required": ["url", "text"],
+                      "required": [
+                        "url",
+                        "text"
+                      ],
                       "properties": {
                         "icon_custom_emoji_id": {
                           "type": "string",
@@ -3101,7 +3443,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                         "style": {
                           "type": "string",
                           "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                          "enum": ["danger", "success", "primary"]
+                          "enum": [
+                            "danger",
+                            "success",
+                            "primary"
+                          ]
                         },
                         "text": {
                           "type": "string",
@@ -3141,7 +3487,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -3163,7 +3511,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** checkGroup
 **- Tool Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\. Method: POST /checkGroup\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -3190,9 +3537,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "checkGroup",
@@ -3201,7 +3546,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /checkGroup
 **- Method Name:** checkGroup
@@ -3211,7 +3555,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Validate and fetch detailed management context for one or multiple chats \(groups or channels\)\.
 **- Tags:** Allow Tools Calling, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -3270,9 +3613,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -3280,7 +3621,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "groups"],
+      "required": [
+        "code",
+        "groups"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -3293,7 +3637,9 @@ Generated at: 2026-06-11T06:06:13.448Z
           "description": "Per-chat check result array. Each item contains code/message and optional group payload.",
           "items": {
             "type": "object",
-            "required": ["code"],
+            "required": [
+              "code"
+            ],
             "properties": {
               "code": {
                 "type": "integer"
@@ -3326,7 +3672,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       },
                       "chatType": {
                         "type": "string",
-                        "enum": ["group", "supergroup", "channel"]
+                        "enum": [
+                          "group",
+                          "supergroup",
+                          "channel"
+                        ]
                       },
                       "configuration": {
                         "oneOf": [
@@ -3376,7 +3726,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             "properties": {
                               "actionLog": {
                                 "type": "object",
-                                "required": ["enabled", "channel"],
+                                "required": [
+                                  "enabled",
+                                  "channel"
+                                ],
                                 "properties": {
                                   "channel": {
                                     "type": "integer",
@@ -3491,7 +3844,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "autoDeleteReplyToOperation": {
                                 "type": "object",
-                                "required": ["enabled", "timeout"],
+                                "required": [
+                                  "enabled",
+                                  "timeout"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -3506,7 +3862,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "autoWarnAfterAutoDelete": {
                                 "type": "object",
-                                "required": ["enabled", "count"],
+                                "required": [
+                                  "enabled",
+                                  "count"
+                                ],
                                 "properties": {
                                   "count": {
                                     "type": "integer",
@@ -3572,14 +3931,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                                     "description": "Updated via groupSetConfig key: commandLimitationData.",
                                     "items": {
                                       "type": "object",
-                                      "required": ["command", "setting"],
+                                      "required": [
+                                        "command",
+                                        "setting"
+                                      ],
                                       "properties": {
                                         "command": {
                                           "type": "string"
                                         },
                                         "setting": {
                                           "type": "string",
-                                          "enum": ["disabled", "admin_only"]
+                                          "enum": [
+                                            "disabled",
+                                            "admin_only"
+                                          ]
                                         }
                                       }
                                     }
@@ -3597,7 +3962,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "creditAPI": {
                                 "type": "object",
-                                "required": ["enabled"],
+                                "required": [
+                                  "enabled"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -3612,7 +3979,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "emergencyMode": {
                                 "type": "object",
-                                "required": ["silentMode", "offlineMode"],
+                                "required": [
+                                  "silentMode",
+                                  "offlineMode"
+                                ],
                                 "properties": {
                                   "offlineMode": {
                                     "type": "object",
@@ -3673,7 +4043,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "joinRequestNotification": {
                                 "type": "object",
-                                "required": ["enabled", "messageIds"],
+                                "required": [
+                                  "enabled",
+                                  "messageIds"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -3744,7 +4117,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   "chat": {
                                     "type": "string",
                                     "description": "Updated via groupSetConfig key: joinVerificationChat.",
-                                    "enum": ["group", "private"]
+                                    "enum": [
+                                      "group",
+                                      "private"
+                                    ]
                                   },
                                   "customText": {
                                     "type": "string",
@@ -3780,7 +4156,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "maxAttempts": {
                                     "type": "object",
-                                    "required": ["enabled", "count"],
+                                    "required": [
+                                      "enabled",
+                                      "count"
+                                    ],
                                     "properties": {
                                       "count": {
                                         "type": "integer",
@@ -3816,7 +4195,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "jpac": {
                                 "type": "object",
-                                "required": ["sendMessage"],
+                                "required": [
+                                  "sendMessage"
+                                ],
                                 "properties": {
                                   "autoSyncNewBannedUsers": {
                                     "type": "boolean",
@@ -3835,7 +4216,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "leaveMessage": {
                                 "type": "object",
-                                "required": ["autoDeleteAfter"],
+                                "required": [
+                                  "autoDeleteAfter"
+                                ],
                                 "properties": {
                                   "autoDeleteAfter": {
                                     "type": "integer",
@@ -3951,7 +4334,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "nmartChatV2": {
                                 "type": "object",
-                                "required": ["enabled", "plusEnabled"],
+                                "required": [
+                                  "enabled",
+                                  "plusEnabled"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -4053,7 +4439,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "quote": {
                                 "type": "object",
-                                "required": ["enabled"],
+                                "required": [
+                                  "enabled"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -4068,7 +4456,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "replyChannelPosts": {
                                 "type": "object",
-                                "required": ["enabled", "messageIds"],
+                                "required": [
+                                  "enabled",
+                                  "messageIds"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -4087,6 +4478,7 @@ Generated at: 2026-06-11T06:06:13.448Z
                               "spamDetector": {
                                 "type": "object",
                                 "required": [
+                                  "availability",
                                   "detectors",
                                   "hasDetectorEnabled",
                                   "hasBanEnabled",
@@ -4094,6 +4486,7 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   "sendMessage",
                                   "onlyBanUsersSendMultipleMessageTextsMatched",
                                   "allowSupportToUnbanUsers",
+                                  "adbyeThreshold",
                                   "nmBotIntelligenceThreshold",
                                   "nmBotIntelligenceSmartAction",
                                   "detectBotMessages"
@@ -4103,9 +4496,37 @@ Generated at: 2026-06-11T06:06:13.448Z
                                     "type": "integer",
                                     "description": "Deprecated numeric action alias."
                                   },
+                                  "adbyeThreshold": {
+                                    "type": "integer",
+                                    "description": "Updated via groupSetConfig key: spamDetectorAdbyeThreshold. Scores at or above this threshold are treated as advertising.",
+                                    "enum": [
+                                      21,
+                                      31,
+                                      41,
+                                      51,
+                                      61,
+                                      71,
+                                      81,
+                                      91
+                                    ]
+                                  },
                                   "allowSupportToUnbanUsers": {
                                     "type": "boolean",
                                     "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                                  },
+                                  "availability": {
+                                    "type": "object",
+                                    "description": "Server-computed availability for dynamically gated spam detectors.",
+                                    "required": [
+                                      "adbye"
+                                    ],
+                                    "properties": {
+                                      "adbye": {
+                                        "type": "boolean",
+                                        "description": "True only when spamDetector.adbye.enabled is enabled in the variable manager and ADBYE_API_KEY is configured."
+                                      }
+                                    },
+                                    "title": "GroupConfigurationSpamDetectorAvailability"
                                   },
                                   "detectBotMessages": {
                                     "type": "string",
@@ -4116,19 +4537,43 @@ Generated at: 2026-06-11T06:06:13.448Z
                                     "required": [
                                       "nmBot",
                                       "cas",
+                                      "adbye",
                                       "nmBotIntelligence"
                                     ],
                                     "properties": {
+                                      "adbye": {
+                                        "description": "Mapped from groupSetConfig key: spamDetectorAdbyeAction. Returns false while AdBye is unavailable without clearing the stored setting.",
+                                        "oneOf": [
+                                          {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false
+                                            ]
+                                          },
+                                          {
+                                            "type": "string",
+                                            "enum": [
+                                              "delete",
+                                              "ban"
+                                            ]
+                                          }
+                                        ]
+                                      },
                                       "cas": {
                                         "description": "Mapped from groupSetConfig key: spamDetectorCASAction.",
                                         "oneOf": [
                                           {
                                             "type": "boolean",
-                                            "enum": [false]
+                                            "enum": [
+                                              false
+                                            ]
                                           },
                                           {
                                             "type": "string",
-                                            "enum": ["delete", "ban"]
+                                            "enum": [
+                                              "delete",
+                                              "ban"
+                                            ]
                                           }
                                         ]
                                       },
@@ -4137,11 +4582,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                                         "oneOf": [
                                           {
                                             "type": "boolean",
-                                            "enum": [false]
+                                            "enum": [
+                                              false
+                                            ]
                                           },
                                           {
                                             "type": "string",
-                                            "enum": ["delete", "ban"]
+                                            "enum": [
+                                              "delete",
+                                              "ban"
+                                            ]
                                           }
                                         ]
                                       },
@@ -4150,11 +4600,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                                         "oneOf": [
                                           {
                                             "type": "boolean",
-                                            "enum": [false]
+                                            "enum": [
+                                              false
+                                            ]
                                           },
                                           {
                                             "type": "string",
-                                            "enum": ["delete", "ban"]
+                                            "enum": [
+                                              "delete",
+                                              "ban"
+                                            ]
                                           }
                                         ]
                                       }
@@ -4302,7 +4757,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                 "properties": {
                                   "actionLog": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4340,7 +4798,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "adminFunctions": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4378,7 +4839,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "games": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4416,7 +4880,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "importOrExportConfiguration": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4454,7 +4921,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "joinVerification": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4492,7 +4962,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "keywordReply": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4530,7 +5003,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "otherAdminFunctions": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4568,7 +5044,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "smartChat": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4606,7 +5085,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "speakLimitations": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4644,7 +5126,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   },
                                   "welcomeMessage": {
                                     "type": "object",
-                                    "required": ["setting", "exceptions"],
+                                    "required": [
+                                      "setting",
+                                      "exceptions"
+                                    ],
                                     "properties": {
                                       "exceptions": {
                                         "type": "array",
@@ -4689,7 +5174,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "welcomeMessage": {
                                 "type": "object",
-                                "required": ["autoDeleteAfter"],
+                                "required": [
+                                  "autoDeleteAfter"
+                                ],
                                 "properties": {
                                   "autoDeleteAfter": {
                                     "type": "integer",
@@ -4717,7 +5204,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             "properties": {
                               "autoFormatCJK": {
                                 "type": "object",
-                                "required": ["enabled", "ignoreCustomEmoji"],
+                                "required": [
+                                  "enabled",
+                                  "ignoreCustomEmoji"
+                                ],
                                 "properties": {
                                   "enabled": {
                                     "type": "boolean",
@@ -4744,7 +5234,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                               },
                               "postButton": {
                                 "type": "object",
-                                "required": ["buttons", "addCommentLink"],
+                                "required": [
+                                  "buttons",
+                                  "addCommentLink"
+                                ],
                                 "properties": {
                                   "addCommentLink": {
                                     "type": "boolean",
@@ -4756,7 +5249,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                       "type": "array",
                                       "items": {
                                         "type": "object",
-                                        "required": ["url", "text"],
+                                        "required": [
+                                          "url",
+                                          "text"
+                                        ],
                                         "properties": {
                                           "icon_custom_emoji_id": {
                                             "type": "string",
@@ -4849,7 +5345,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                 "type": "array",
                                 "items": {
                                   "type": "object",
-                                  "required": ["url", "text"],
+                                  "required": [
+                                    "url",
+                                    "text"
+                                  ],
                                   "properties": {
                                     "icon_custom_emoji_id": {
                                       "type": "string",
@@ -4858,7 +5357,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                                     "style": {
                                       "type": "string",
                                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                                      "enum": ["danger", "success", "primary"]
+                                      "enum": [
+                                        "danger",
+                                        "success",
+                                        "primary"
+                                      ]
                                     },
                                     "text": {
                                       "type": "string",
@@ -4919,8 +5422,14 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "parseMode": {
                               "type": "string",
-                              "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                              "enum": ["Markdown", "MarkdownV2", "HTML"]
+                              "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                              "enum": [
+                                "Markdown",
+                                "MarkdownV2",
+                                "HTML",
+                                "RichMarkdown",
+                                "RichHTML"
+                              ]
                             },
                             "protectContent": {
                               "type": "boolean",
@@ -5020,7 +5529,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "chatType": {
                   "type": "string",
-                  "enum": ["group", "supergroup", "channel"]
+                  "enum": [
+                    "group",
+                    "supergroup",
+                    "channel"
+                  ]
                 },
                 "configuration": {
                   "oneOf": [
@@ -5070,7 +5583,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "properties": {
                         "actionLog": {
                           "type": "object",
-                          "required": ["enabled", "channel"],
+                          "required": [
+                            "enabled",
+                            "channel"
+                          ],
                           "properties": {
                             "channel": {
                               "type": "integer",
@@ -5185,7 +5701,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "autoDeleteReplyToOperation": {
                           "type": "object",
-                          "required": ["enabled", "timeout"],
+                          "required": [
+                            "enabled",
+                            "timeout"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5200,7 +5719,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "autoWarnAfterAutoDelete": {
                           "type": "object",
-                          "required": ["enabled", "count"],
+                          "required": [
+                            "enabled",
+                            "count"
+                          ],
                           "properties": {
                             "count": {
                               "type": "integer",
@@ -5266,14 +5788,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                               "description": "Updated via groupSetConfig key: commandLimitationData.",
                               "items": {
                                 "type": "object",
-                                "required": ["command", "setting"],
+                                "required": [
+                                  "command",
+                                  "setting"
+                                ],
                                 "properties": {
                                   "command": {
                                     "type": "string"
                                   },
                                   "setting": {
                                     "type": "string",
-                                    "enum": ["disabled", "admin_only"]
+                                    "enum": [
+                                      "disabled",
+                                      "admin_only"
+                                    ]
                                   }
                                 }
                               }
@@ -5291,7 +5819,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "creditAPI": {
                           "type": "object",
-                          "required": ["enabled"],
+                          "required": [
+                            "enabled"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5306,11 +5836,18 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "emergencyMode": {
                           "type": "object",
-                          "required": ["silentMode", "offlineMode"],
+                          "required": [
+                            "silentMode",
+                            "offlineMode"
+                          ],
                           "properties": {
                             "offlineMode": {
                               "type": "object",
-                              "required": ["active", "duration", "activeUntil"],
+                              "required": [
+                                "active",
+                                "duration",
+                                "activeUntil"
+                              ],
                               "properties": {
                                 "active": {
                                   "type": "boolean",
@@ -5329,7 +5866,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "silentMode": {
                               "type": "object",
-                              "required": ["active", "duration", "activeUntil"],
+                              "required": [
+                                "active",
+                                "duration",
+                                "activeUntil"
+                              ],
                               "properties": {
                                 "active": {
                                   "type": "boolean",
@@ -5359,7 +5900,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "joinRequestNotification": {
                           "type": "object",
-                          "required": ["enabled", "messageIds"],
+                          "required": [
+                            "enabled",
+                            "messageIds"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5430,7 +5974,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             "chat": {
                               "type": "string",
                               "description": "Updated via groupSetConfig key: joinVerificationChat.",
-                              "enum": ["group", "private"]
+                              "enum": [
+                                "group",
+                                "private"
+                              ]
                             },
                             "customText": {
                               "type": "string",
@@ -5466,7 +6013,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "maxAttempts": {
                               "type": "object",
-                              "required": ["enabled", "count"],
+                              "required": [
+                                "enabled",
+                                "count"
+                              ],
                               "properties": {
                                 "count": {
                                   "type": "integer",
@@ -5502,7 +6052,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "jpac": {
                           "type": "object",
-                          "required": ["sendMessage"],
+                          "required": [
+                            "sendMessage"
+                          ],
                           "properties": {
                             "autoSyncNewBannedUsers": {
                               "type": "boolean",
@@ -5521,7 +6073,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "leaveMessage": {
                           "type": "object",
-                          "required": ["autoDeleteAfter"],
+                          "required": [
+                            "autoDeleteAfter"
+                          ],
                           "properties": {
                             "autoDeleteAfter": {
                               "type": "integer",
@@ -5637,7 +6191,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "nmartChatV2": {
                           "type": "object",
-                          "required": ["enabled", "plusEnabled"],
+                          "required": [
+                            "enabled",
+                            "plusEnabled"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5739,7 +6296,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "quote": {
                           "type": "object",
-                          "required": ["enabled"],
+                          "required": [
+                            "enabled"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5754,7 +6313,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "replyChannelPosts": {
                           "type": "object",
-                          "required": ["enabled", "messageIds"],
+                          "required": [
+                            "enabled",
+                            "messageIds"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -5773,6 +6335,7 @@ Generated at: 2026-06-11T06:06:13.448Z
                         "spamDetector": {
                           "type": "object",
                           "required": [
+                            "availability",
                             "detectors",
                             "hasDetectorEnabled",
                             "hasBanEnabled",
@@ -5780,6 +6343,7 @@ Generated at: 2026-06-11T06:06:13.448Z
                             "sendMessage",
                             "onlyBanUsersSendMultipleMessageTextsMatched",
                             "allowSupportToUnbanUsers",
+                            "adbyeThreshold",
                             "nmBotIntelligenceThreshold",
                             "nmBotIntelligenceSmartAction",
                             "detectBotMessages"
@@ -5789,9 +6353,37 @@ Generated at: 2026-06-11T06:06:13.448Z
                               "type": "integer",
                               "description": "Deprecated numeric action alias."
                             },
+                            "adbyeThreshold": {
+                              "type": "integer",
+                              "description": "Updated via groupSetConfig key: spamDetectorAdbyeThreshold. Scores at or above this threshold are treated as advertising.",
+                              "enum": [
+                                21,
+                                31,
+                                41,
+                                51,
+                                61,
+                                71,
+                                81,
+                                91
+                              ]
+                            },
                             "allowSupportToUnbanUsers": {
                               "type": "boolean",
                               "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                            },
+                            "availability": {
+                              "type": "object",
+                              "description": "Server-computed availability for dynamically gated spam detectors.",
+                              "required": [
+                                "adbye"
+                              ],
+                              "properties": {
+                                "adbye": {
+                                  "type": "boolean",
+                                  "description": "True only when spamDetector.adbye.enabled is enabled in the variable manager and ADBYE_API_KEY is configured."
+                                }
+                              },
+                              "title": "GroupConfigurationSpamDetectorAvailability"
                             },
                             "detectBotMessages": {
                               "type": "string",
@@ -5799,18 +6391,46 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "detectors": {
                               "type": "object",
-                              "required": ["nmBot", "cas", "nmBotIntelligence"],
+                              "required": [
+                                "nmBot",
+                                "cas",
+                                "adbye",
+                                "nmBotIntelligence"
+                              ],
                               "properties": {
+                                "adbye": {
+                                  "description": "Mapped from groupSetConfig key: spamDetectorAdbyeAction. Returns false while AdBye is unavailable without clearing the stored setting.",
+                                  "oneOf": [
+                                    {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false
+                                      ]
+                                    },
+                                    {
+                                      "type": "string",
+                                      "enum": [
+                                        "delete",
+                                        "ban"
+                                      ]
+                                    }
+                                  ]
+                                },
                                 "cas": {
                                   "description": "Mapped from groupSetConfig key: spamDetectorCASAction.",
                                   "oneOf": [
                                     {
                                       "type": "boolean",
-                                      "enum": [false]
+                                      "enum": [
+                                        false
+                                      ]
                                     },
                                     {
                                       "type": "string",
-                                      "enum": ["delete", "ban"]
+                                      "enum": [
+                                        "delete",
+                                        "ban"
+                                      ]
                                     }
                                   ]
                                 },
@@ -5819,11 +6439,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   "oneOf": [
                                     {
                                       "type": "boolean",
-                                      "enum": [false]
+                                      "enum": [
+                                        false
+                                      ]
                                     },
                                     {
                                       "type": "string",
-                                      "enum": ["delete", "ban"]
+                                      "enum": [
+                                        "delete",
+                                        "ban"
+                                      ]
                                     }
                                   ]
                                 },
@@ -5832,11 +6457,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                                   "oneOf": [
                                     {
                                       "type": "boolean",
-                                      "enum": [false]
+                                      "enum": [
+                                        false
+                                      ]
                                     },
                                     {
                                       "type": "string",
-                                      "enum": ["delete", "ban"]
+                                      "enum": [
+                                        "delete",
+                                        "ban"
+                                      ]
                                     }
                                   ]
                                 }
@@ -5984,7 +6614,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                           "properties": {
                             "actionLog": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6022,7 +6655,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "adminFunctions": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6060,7 +6696,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "games": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6098,7 +6737,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "importOrExportConfiguration": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6136,7 +6778,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "joinVerification": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6174,7 +6819,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "keywordReply": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6212,7 +6860,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "otherAdminFunctions": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6250,7 +6901,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "smartChat": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6288,7 +6942,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "speakLimitations": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6326,7 +6983,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                             },
                             "welcomeMessage": {
                               "type": "object",
-                              "required": ["setting", "exceptions"],
+                              "required": [
+                                "setting",
+                                "exceptions"
+                              ],
                               "properties": {
                                 "exceptions": {
                                   "type": "array",
@@ -6371,7 +7031,9 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "welcomeMessage": {
                           "type": "object",
-                          "required": ["autoDeleteAfter"],
+                          "required": [
+                            "autoDeleteAfter"
+                          ],
                           "properties": {
                             "autoDeleteAfter": {
                               "type": "integer",
@@ -6399,7 +7061,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "properties": {
                         "autoFormatCJK": {
                           "type": "object",
-                          "required": ["enabled", "ignoreCustomEmoji"],
+                          "required": [
+                            "enabled",
+                            "ignoreCustomEmoji"
+                          ],
                           "properties": {
                             "enabled": {
                               "type": "boolean",
@@ -6426,7 +7091,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                         },
                         "postButton": {
                           "type": "object",
-                          "required": ["buttons", "addCommentLink"],
+                          "required": [
+                            "buttons",
+                            "addCommentLink"
+                          ],
                           "properties": {
                             "addCommentLink": {
                               "type": "boolean",
@@ -6438,7 +7106,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                                 "type": "array",
                                 "items": {
                                   "type": "object",
-                                  "required": ["url", "text"],
+                                  "required": [
+                                    "url",
+                                    "text"
+                                  ],
                                   "properties": {
                                     "icon_custom_emoji_id": {
                                       "type": "string",
@@ -6447,7 +7118,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                                     "style": {
                                       "type": "string",
                                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                                      "enum": ["danger", "success", "primary"]
+                                      "enum": [
+                                        "danger",
+                                        "success",
+                                        "primary"
+                                      ]
                                     },
                                     "text": {
                                       "type": "string",
@@ -6527,7 +7202,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                           "type": "array",
                           "items": {
                             "type": "object",
-                            "required": ["url", "text"],
+                            "required": [
+                              "url",
+                              "text"
+                            ],
                             "properties": {
                               "icon_custom_emoji_id": {
                                 "type": "string",
@@ -6536,7 +7214,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                               "style": {
                                 "type": "string",
                                 "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                                "enum": ["danger", "success", "primary"]
+                                "enum": [
+                                  "danger",
+                                  "success",
+                                  "primary"
+                                ]
                               },
                               "text": {
                                 "type": "string",
@@ -6597,8 +7279,14 @@ Generated at: 2026-06-11T06:06:13.448Z
                       },
                       "parseMode": {
                         "type": "string",
-                        "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                        "enum": ["Markdown", "MarkdownV2", "HTML"]
+                        "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                        "enum": [
+                          "Markdown",
+                          "MarkdownV2",
+                          "HTML",
+                          "RichMarkdown",
+                          "RichHTML"
+                        ]
                       },
                       "protectContent": {
                         "type": "boolean",
@@ -6667,7 +7355,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -6689,7 +7379,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** createJpacList
 **- Tool Description:** Create a JPAC list for the chat \(one per chat\)\. Method: POST /createJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -6704,12 +7393,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "maxLength": 99
     }
   },
-  "required": ["chatId", "title"]
+  "required": [
+    "chatId",
+    "title"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "createJpacList",
@@ -6718,7 +7408,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /createJpacList
 **- Method Name:** createJpacList
@@ -6728,7 +7417,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Create a JPAC list for the chat \(one per chat\)\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -6737,7 +7425,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "title"],
+      "required": [
+        "chatId",
+        "title"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -6764,13 +7455,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "maxLength": 99
       }
     },
-    "required": ["chatId", "title"]
+    "required": [
+      "chatId",
+      "title"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -6778,11 +7470,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -6852,7 +7548,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -6871,7 +7569,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -6893,7 +7593,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** deleteGroupScheduledTask
 **- Tool Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\. Method: POST /deleteGroupScheduledTask\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -6907,12 +7606,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The task id to delete."
     }
   },
-  "required": ["groupId", "id"]
+  "required": [
+    "groupId",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "deleteGroupScheduledTask",
@@ -6921,7 +7621,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /deleteGroupScheduledTask
 **- Method Name:** deleteGroupScheduledTask
@@ -6931,7 +7630,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Delete a Scheduled Task \(original Lockdown Mode\) for a group\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -6940,7 +7638,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId", "id"],
+      "required": [
+        "groupId",
+        "id"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -6965,13 +7666,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The task id to delete."
       }
     },
-    "required": ["groupId", "id"]
+    "required": [
+      "groupId",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -6979,11 +7681,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "deleted"],
+      "required": [
+        "code",
+        "deleted"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "deleted": {
@@ -6998,7 +7705,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7018,9 +7727,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## deleteKeywordReplies
 
 **- Tool Name:** deleteKeywordReplies
-**- Tool Description:** Delete Keyword Replies for a group or user\. Method: POST /deleteKeywordReplies\. Includes documented 200 response schema\.
+**- Tool Description:** Delete Keyword Replies for a group or user\.  Method: POST /deleteKeywordReplies\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -7037,12 +7745,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["chatId", "ids"]
+  "required": [
+    "chatId",
+    "ids"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "deleteKeywordReplies",
@@ -7051,7 +7760,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /deleteKeywordReplies
 **- Method Name:** deleteKeywordReplies
@@ -7061,7 +7769,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Delete Keyword Replies for a group or user\.
 **- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -7070,7 +7777,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "ids"],
+      "required": [
+        "chatId",
+        "ids"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -7101,13 +7811,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["chatId", "ids"]
+    "required": [
+      "chatId",
+      "ids"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -7115,11 +7826,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "deleted"],
+      "required": [
+        "code",
+        "deleted"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "deleted": {
@@ -7137,7 +7853,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7157,9 +7875,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## deleteKeywordReply
 
 **- Tool Name:** deleteKeywordReply
-**- Tool Description:** Delete a Keyword Reply for a group or user\. Method: POST /deleteKeywordReply\. Includes documented 200 response schema\.
+**- Tool Description:** Delete a Keyword Reply for a group or user\.  Method: POST /deleteKeywordReply\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -7173,12 +7890,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The keyword reply id to delete."
     }
   },
-  "required": ["chatId", "id"]
+  "required": [
+    "chatId",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "deleteKeywordReply",
@@ -7187,7 +7905,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /deleteKeywordReply
 **- Method Name:** deleteKeywordReply
@@ -7197,7 +7914,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Delete a Keyword Reply for a group or user\.
 **- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -7206,7 +7922,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "id"],
+      "required": [
+        "chatId",
+        "id"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -7231,13 +7950,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The keyword reply id to delete."
       }
     },
-    "required": ["chatId", "id"]
+    "required": [
+      "chatId",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -7245,11 +7965,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "deleted"],
+      "required": [
+        "code",
+        "deleted"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "deleted": {
@@ -7264,7 +7989,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7284,9 +8011,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## deleteMessageTemplate
 
 **- Tool Name:** deleteMessageTemplate
-**- Tool Description:** Delete a Message Template from a chat\. Method: POST /deleteMessageTemplate\. Includes documented 200 response schema\.
+**- Tool Description:** Delete a Message Template from a chat\.  Method: POST /deleteMessageTemplate\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -7300,12 +8026,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The id of the message template to edit."
     }
   },
-  "required": ["chatId", "templateId"]
+  "required": [
+    "chatId",
+    "templateId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "deleteMessageTemplate",
@@ -7314,7 +8041,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /deleteMessageTemplate
 **- Method Name:** deleteMessageTemplate
@@ -7324,7 +8050,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Delete a Message Template from a chat\.
 **- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -7333,7 +8058,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "templateId"],
+      "required": [
+        "chatId",
+        "templateId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -7358,13 +8086,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The id of the message template to edit."
       }
     },
-    "required": ["chatId", "templateId"]
+    "required": [
+      "chatId",
+      "templateId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -7372,11 +8101,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "messageTemplates"],
+      "required": [
+        "code",
+        "messageTemplates"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "messageTemplates": {
@@ -7414,7 +8148,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -7423,7 +8160,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -7484,8 +8225,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "parseMode": {
                 "type": "string",
-                "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                "enum": ["Markdown", "MarkdownV2", "HTML"]
+                "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                "enum": [
+                  "Markdown",
+                  "MarkdownV2",
+                  "HTML",
+                  "RichMarkdown",
+                  "RichHTML"
+                ]
               },
               "protectContent": {
                 "type": "boolean",
@@ -7519,7 +8266,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7541,7 +8290,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** disableJpacList
 **- Tool Description:** Disable \(delete\) a JPAC list created by the chat\. Method: POST /disableJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -7555,12 +8303,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "JPAC solution id."
     }
   },
-  "required": ["chatId", "id"]
+  "required": [
+    "chatId",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "disableJpacList",
@@ -7569,7 +8318,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /disableJpacList
 **- Method Name:** disableJpacList
@@ -7579,7 +8327,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Disable \(delete\) a JPAC list created by the chat\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -7588,7 +8335,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "id"],
+      "required": [
+        "chatId",
+        "id"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -7613,13 +8363,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "JPAC solution id."
       }
     },
-    "required": ["chatId", "id"]
+    "required": [
+      "chatId",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -7627,11 +8378,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -7655,7 +8410,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7674,7 +8431,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -7696,7 +8455,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** editGroupScheduledTask
 **- Tool Description:** POST /editGroupScheduledTask
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -7767,7 +8525,11 @@ Generated at: 2026-06-11T06:06:13.448Z
         "type": {
           "type": "string",
           "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-          "enum": ["system", "nmBot", "disabled"]
+          "enum": [
+            "system",
+            "nmBot",
+            "disabled"
+          ]
         },
         "systemCanSendMessages": {
           "type": "boolean",
@@ -7903,12 +8665,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["groupId", "newObject", "id"]
+  "required": [
+    "groupId",
+    "newObject",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "editGroupScheduledTask",
@@ -7917,7 +8681,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /editGroupScheduledTask
 **- Method Name:** editGroupScheduledTask
@@ -7927,7 +8690,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /editGroupScheduledTask
 **- Tags:** Allow Tools Calling, nmBot Intelligence, Scheduled Task, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -7936,7 +8698,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId", "newObject", "id"],
+      "required": [
+        "groupId",
+        "newObject",
+        "id"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -8004,7 +8770,11 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": {
               "type": "string",
               "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-              "enum": ["system", "nmBot", "disabled"]
+              "enum": [
+                "system",
+                "nmBot",
+                "disabled"
+              ]
             },
             "systemCanSendMessages": {
               "type": "boolean",
@@ -8211,7 +8981,11 @@ Generated at: 2026-06-11T06:06:13.448Z
           "type": {
             "type": "string",
             "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-            "enum": ["system", "nmBot", "disabled"]
+            "enum": [
+              "system",
+              "nmBot",
+              "disabled"
+            ]
           },
           "systemCanSendMessages": {
             "type": "boolean",
@@ -8347,13 +9121,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["groupId", "newObject", "id"]
+    "required": [
+      "groupId",
+      "newObject",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -8361,11 +9137,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "updated"],
+      "required": [
+        "code",
+        "updated"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "updated": {
@@ -8560,7 +9341,11 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": {
               "type": "string",
               "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-              "enum": ["system", "nmBot", "disabled"]
+              "enum": [
+                "system",
+                "nmBot",
+                "disabled"
+              ]
             },
             "unpinLastMessage": {
               "type": "boolean",
@@ -8577,7 +9362,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -8599,7 +9386,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** editKeywordReply
 **- Tool Description:** POST /editKeywordReply
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -8725,12 +9511,36 @@ Generated at: 2026-06-11T06:06:13.448Z
         "autoDeleteOriginalMessageAfter": {
           "type": "integer",
           "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-          "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+          "enum": [
+            0,
+            1,
+            3,
+            5,
+            10,
+            30,
+            60,
+            120,
+            180,
+            240,
+            300
+          ]
         },
         "autoDeleteReplyMessageAfter": {
           "type": "integer",
           "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-          "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+          "enum": [
+            0,
+            1,
+            3,
+            5,
+            10,
+            30,
+            60,
+            120,
+            180,
+            240,
+            300
+          ]
         },
         "ignoreGroupAdministators": {
           "type": "boolean",
@@ -8747,7 +9557,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "cooldown": {
           "type": "integer",
           "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-          "enum": [0, 10, 30, 60, 120, 600, 1800]
+          "enum": [
+            0,
+            10,
+            30,
+            60,
+            120,
+            600,
+            1800
+          ]
         },
         "preferCrossMessageReplies": {
           "type": "boolean",
@@ -8768,7 +9586,12 @@ Generated at: 2026-06-11T06:06:13.448Z
         "warnSender": {
           "type": "integer",
           "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-          "enum": [0, 1, 2, 3]
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ]
         },
         "muteSender": {
           "type": "integer",
@@ -8789,12 +9612,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["chatId", "newObject", "id"]
+  "required": [
+    "chatId",
+    "newObject",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "editKeywordReply",
@@ -8803,7 +9628,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /editKeywordReply
 **- Method Name:** editKeywordReply
@@ -8813,7 +9637,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /editKeywordReply
 **- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -8822,7 +9645,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "newObject", "id"],
+      "required": [
+        "chatId",
+        "newObject",
+        "id"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -8945,12 +9772,36 @@ Generated at: 2026-06-11T06:06:13.448Z
             "autoDeleteOriginalMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "autoDeleteReplyMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "ignoreGroupAdministators": {
               "type": "boolean",
@@ -8967,7 +9818,15 @@ Generated at: 2026-06-11T06:06:13.448Z
             "cooldown": {
               "type": "integer",
               "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-              "enum": [0, 10, 30, 60, 120, 600, 1800]
+              "enum": [
+                0,
+                10,
+                30,
+                60,
+                120,
+                600,
+                1800
+              ]
             },
             "preferCrossMessageReplies": {
               "type": "boolean",
@@ -8988,7 +9847,12 @@ Generated at: 2026-06-11T06:06:13.448Z
             "warnSender": {
               "type": "integer",
               "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-              "enum": [0, 1, 2, 3]
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ]
             },
             "muteSender": {
               "type": "integer",
@@ -9135,12 +9999,36 @@ Generated at: 2026-06-11T06:06:13.448Z
           "autoDeleteOriginalMessageAfter": {
             "type": "integer",
             "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-            "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+            "enum": [
+              0,
+              1,
+              3,
+              5,
+              10,
+              30,
+              60,
+              120,
+              180,
+              240,
+              300
+            ]
           },
           "autoDeleteReplyMessageAfter": {
             "type": "integer",
             "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-            "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+            "enum": [
+              0,
+              1,
+              3,
+              5,
+              10,
+              30,
+              60,
+              120,
+              180,
+              240,
+              300
+            ]
           },
           "ignoreGroupAdministators": {
             "type": "boolean",
@@ -9157,7 +10045,15 @@ Generated at: 2026-06-11T06:06:13.448Z
           "cooldown": {
             "type": "integer",
             "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-            "enum": [0, 10, 30, 60, 120, 600, 1800]
+            "enum": [
+              0,
+              10,
+              30,
+              60,
+              120,
+              600,
+              1800
+            ]
           },
           "preferCrossMessageReplies": {
             "type": "boolean",
@@ -9178,7 +10074,12 @@ Generated at: 2026-06-11T06:06:13.448Z
           "warnSender": {
             "type": "integer",
             "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-            "enum": [0, 1, 2, 3]
+            "enum": [
+              0,
+              1,
+              2,
+              3
+            ]
           },
           "muteSender": {
             "type": "integer",
@@ -9199,13 +10100,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["chatId", "newObject", "id"]
+    "required": [
+      "chatId",
+      "newObject",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -9213,11 +10116,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "updated"],
+      "required": [
+        "code",
+        "updated"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "updated": {
@@ -9262,12 +10170,36 @@ Generated at: 2026-06-11T06:06:13.448Z
             "autoDeleteOriginalMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "autoDeleteReplyMessageAfter": {
               "type": "integer",
               "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-              "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+              "enum": [
+                0,
+                1,
+                3,
+                5,
+                10,
+                30,
+                60,
+                120,
+                180,
+                240,
+                300
+              ]
             },
             "businessMarkMessagesAsRead": {
               "type": "boolean",
@@ -9284,7 +10216,15 @@ Generated at: 2026-06-11T06:06:13.448Z
             "cooldown": {
               "type": "integer",
               "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-              "enum": [0, 10, 30, 60, 120, 600, 1800]
+              "enum": [
+                0,
+                10,
+                30,
+                60,
+                120,
+                600,
+                1800
+              ]
             },
             "disableNmartchat": {
               "type": "boolean",
@@ -9401,7 +10341,12 @@ Generated at: 2026-06-11T06:06:13.448Z
             "warnSender": {
               "type": "integer",
               "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-              "enum": [0, 1, 2, 3]
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ]
             }
           },
           "title": "KeywordReply"
@@ -9414,7 +10359,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -9434,9 +10381,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## editMessageTemplate
 
 **- Tool Name:** editMessageTemplate
-**- Tool Description:** Edit a Message Template from a chat\. Method: POST /editMessageTemplate\. Includes documented 200 response schema\.
+**- Tool Description:** Edit a Message Template from a chat\.  Method: POST /editMessageTemplate\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -9451,7 +10397,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     },
     "data": {
       "type": "object",
-      "required": ["keyboard", "protectContent", "disableNotification"],
+      "required": [
+        "keyboard",
+        "protectContent",
+        "disableNotification"
+      ],
       "properties": {
         "title": {
           "type": "string",
@@ -9463,8 +10413,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "parseMode": {
           "type": "string",
-          "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-          "enum": ["Markdown", "MarkdownV2", "HTML"]
+          "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+          "enum": [
+            "Markdown",
+            "MarkdownV2",
+            "HTML",
+            "RichMarkdown",
+            "RichHTML"
+          ]
         },
         "caption": {
           "type": "string",
@@ -9527,7 +10483,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["url", "text"],
+              "required": [
+                "url",
+                "text"
+              ],
               "properties": {
                 "icon_custom_emoji_id": {
                   "type": "string",
@@ -9536,7 +10495,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "style": {
                   "type": "string",
                   "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                  "enum": ["danger", "success", "primary"]
+                  "enum": [
+                    "danger",
+                    "success",
+                    "primary"
+                  ]
                 },
                 "text": {
                   "type": "string",
@@ -9563,12 +10526,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["chatId", "data", "templateId"]
+  "required": [
+    "chatId",
+    "data",
+    "templateId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "editMessageTemplate",
@@ -9577,7 +10542,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /editMessageTemplate
 **- Method Name:** editMessageTemplate
@@ -9587,7 +10551,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Edit a Message Template from a chat\.
 **- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -9596,7 +10559,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "data", "templateId"],
+      "required": [
+        "chatId",
+        "data",
+        "templateId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -9608,7 +10575,11 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "data": {
           "type": "object",
-          "required": ["keyboard", "protectContent", "disableNotification"],
+          "required": [
+            "keyboard",
+            "protectContent",
+            "disableNotification"
+          ],
           "properties": {
             "title": {
               "type": "string",
@@ -9620,8 +10591,14 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "parseMode": {
               "type": "string",
-              "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-              "enum": ["Markdown", "MarkdownV2", "HTML"]
+              "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+              "enum": [
+                "Markdown",
+                "MarkdownV2",
+                "HTML",
+                "RichMarkdown",
+                "RichHTML"
+              ]
             },
             "caption": {
               "type": "string",
@@ -9684,7 +10661,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["url", "text"],
+                  "required": [
+                    "url",
+                    "text"
+                  ],
                   "properties": {
                     "icon_custom_emoji_id": {
                       "type": "string",
@@ -9693,7 +10673,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                     "style": {
                       "type": "string",
                       "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                      "enum": ["danger", "success", "primary"]
+                      "enum": [
+                        "danger",
+                        "success",
+                        "primary"
+                      ]
                     },
                     "text": {
                       "type": "string",
@@ -9735,7 +10719,11 @@ Generated at: 2026-06-11T06:06:13.448Z
       },
       "data": {
         "type": "object",
-        "required": ["keyboard", "protectContent", "disableNotification"],
+        "required": [
+          "keyboard",
+          "protectContent",
+          "disableNotification"
+        ],
         "properties": {
           "title": {
             "type": "string",
@@ -9747,8 +10735,14 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "parseMode": {
             "type": "string",
-            "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-            "enum": ["Markdown", "MarkdownV2", "HTML"]
+            "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+            "enum": [
+              "Markdown",
+              "MarkdownV2",
+              "HTML",
+              "RichMarkdown",
+              "RichHTML"
+            ]
           },
           "caption": {
             "type": "string",
@@ -9811,7 +10805,10 @@ Generated at: 2026-06-11T06:06:13.448Z
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["url", "text"],
+                "required": [
+                  "url",
+                  "text"
+                ],
                 "properties": {
                   "icon_custom_emoji_id": {
                     "type": "string",
@@ -9820,7 +10817,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "style": {
                     "type": "string",
                     "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                    "enum": ["danger", "success", "primary"]
+                    "enum": [
+                      "danger",
+                      "success",
+                      "primary"
+                    ]
                   },
                   "text": {
                     "type": "string",
@@ -9847,13 +10848,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["chatId", "data", "templateId"]
+    "required": [
+      "chatId",
+      "data",
+      "templateId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -9861,11 +10864,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "messageTemplates"],
+      "required": [
+        "code",
+        "messageTemplates"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "messageTemplates": {
@@ -9903,7 +10911,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -9912,7 +10923,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -9973,8 +10988,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "parseMode": {
                 "type": "string",
-                "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                "enum": ["Markdown", "MarkdownV2", "HTML"]
+                "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                "enum": [
+                  "Markdown",
+                  "MarkdownV2",
+                  "HTML",
+                  "RichMarkdown",
+                  "RichHTML"
+                ]
               },
               "protectContent": {
                 "type": "boolean",
@@ -10008,7 +11029,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10030,16 +11053,13 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getBusinessScheduledTasks
 **- Tool Description:** Get the Business Scheduled Tasks for the user\. Method: POST /getBusinessScheduledTasks\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getBusinessScheduledTasks",
@@ -10048,7 +11068,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getBusinessScheduledTasks
 **- Method Name:** getBusinessScheduledTasks
@@ -10058,7 +11077,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get the Business Scheduled Tasks for the user\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence, User, User Only, Readonly, Business Scheduled Task
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10068,9 +11086,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10078,11 +11094,17 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "businessScheduledTasks", "maxCount"],
+      "required": [
+        "code",
+        "businessScheduledTasks",
+        "maxCount"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "businessScheduledTasks": {
@@ -10156,7 +11178,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10178,7 +11202,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getChatJpacList
 **- Tool Description:** Get JPAC lists created by the chat and lists the chat has joined\. Method: POST /getChatJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -10188,12 +11211,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Target group chat id."
     }
   },
-  "required": ["chatId"]
+  "required": [
+    "chatId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getChatJpacList",
@@ -10202,7 +11225,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getChatJpacList
 **- Method Name:** getChatJpacList
@@ -10212,7 +11234,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get JPAC lists created by the chat and lists the chat has joined\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10221,7 +11242,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId"],
+      "required": [
+        "chatId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -10238,13 +11261,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Target group chat id."
       }
     },
-    "required": ["chatId"]
+    "required": [
+      "chatId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10252,15 +11275,23 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "data"],
+      "required": [
+        "code",
+        "data"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "data": {
           "type": "object",
-          "required": ["chatJPAC", "joinedJPAC"],
+          "required": [
+            "chatJPAC",
+            "joinedJPAC"
+          ],
           "properties": {
             "chatJPAC": {
               "type": "array",
@@ -10370,7 +11401,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10389,7 +11422,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10411,16 +11446,13 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getCredit
 **- Tool Description:** Get credit balance and daily sign status for current user\. Method: POST /getCredit\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getCredit",
@@ -10429,7 +11461,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getCredit
 **- Method Name:** getCredit
@@ -10439,7 +11470,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get credit balance and daily sign status for current user\.
 **- Tags:** Allow Tools Calling, User, User Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10459,9 +11489,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10469,7 +11497,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10480,7 +11510,10 @@ Generated at: 2026-06-11T06:06:13.448Z
         "data": {
           "type": "object",
           "description": "Current credit status payload.",
-          "required": ["credit", "signed"],
+          "required": [
+            "credit",
+            "signed"
+          ],
           "properties": {
             "credit": {
               "type": "number"
@@ -10507,7 +11540,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10529,16 +11564,13 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getCreditHistory
 **- Tool Description:** Get recent credit change records from credit service\. Method: POST /getCreditHistory\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getCreditHistory",
@@ -10547,7 +11579,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getCreditHistory
 **- Method Name:** getCreditHistory
@@ -10557,7 +11588,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get recent credit change records from credit service\.
 **- Tags:** Allow Tools Calling, User, User Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10577,9 +11607,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10587,7 +11615,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10612,7 +11642,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10634,7 +11666,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getGroupActionLog
 **- Tool Description:** Search moderation/action logs in a managed group\. Method: POST /getGroupActionLog\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -10671,12 +11702,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Filter by actor user ID."
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupActionLog",
@@ -10685,7 +11716,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupActionLog
 **- Method Name:** getGroupActionLog
@@ -10695,7 +11725,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Search moderation/action logs in a managed group\.
 **- Tags:** Allow Tools Calling, Group, Group Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10705,7 +11734,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -10776,13 +11807,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Filter by actor user ID."
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10790,7 +11821,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10811,7 +11844,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10833,7 +11868,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getGroupCommands
 **- Tool Description:** Get custom command visibility config for a managed group\. Method: POST /getGroupCommands\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -10843,12 +11877,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Target group ID."
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupCommands",
@@ -10857,7 +11891,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupCommands
 **- Method Name:** getGroupCommands
@@ -10867,7 +11900,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get custom command visibility config for a managed group\.
 **- Tags:** Allow Tools Calling, Group, Group Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -10877,7 +11909,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -10894,13 +11928,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Target group ID."
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -10908,7 +11942,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10917,7 +11953,11 @@ Generated at: 2026-06-11T06:06:13.448Z
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["command", "isAdminOnly", "enabled"],
+            "required": [
+              "command",
+              "isAdminOnly",
+              "enabled"
+            ],
             "properties": {
               "command": {
                 "type": "string"
@@ -10945,7 +11985,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -10967,7 +12009,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getGroupCustomRules
 **- Tool Description:** POST /getGroupCustomRules
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -10976,12 +12017,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "type": "integer"
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupCustomRules",
@@ -10990,7 +12031,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupCustomRules
 **- Method Name:** getGroupCustomRules
@@ -11000,7 +12040,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /getGroupCustomRules
 **- Tags:** Allow Tools Calling, Group Custom Rules, nmBot Intelligence, Readonly, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11009,7 +12048,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer"
@@ -11024,13 +12065,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "type": "integer"
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11038,11 +12079,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "customRules"],
+      "required": [
+        "code",
+        "customRules"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "customRules": {
@@ -11080,8 +12126,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "type": {
                 "type": "string",
-                "description": "The match type of the rule. Accepts the following value:- userId: match id of the Telegram user.- userName: match the user's name.- userBio: match the bio of the user.- emojiStatusStickerSetName: user emoji status pack.- stickerSetName: The sticker name(id) the user sent.",
-                "enum": ["userId", "userName", "userBio"]
+                "description": "The match type of the rule. Accepts the following value:- text: match the message text.- userTitle: match the title of the user.- userBio: match the bio of the user. Only checked with join verification.- emojiStatusStickerSetName: user emoji status pack. Only checked with join verification.- stickerSetName: The sticker name(id) the user sent.",
+                "enum": [
+                  "text",
+                  "userTitle",
+                  "userBio",
+                  "emojiStatusStickerSetName",
+                  "stickerSetName"
+                ]
               }
             },
             "title": "CustomSpamRule"
@@ -11095,7 +12147,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11117,7 +12171,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getGroupJoinVerificationHistory
 **- Tool Description:** Get recent join\-verification records for a managed group\. Method: POST /getGroupJoinVerificationHistory\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -11127,12 +12180,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Target group ID."
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupJoinVerificationHistory",
@@ -11141,7 +12194,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupJoinVerificationHistory
 **- Method Name:** getGroupJoinVerificationHistory
@@ -11151,7 +12203,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get recent join\-verification records for a managed group\.
 **- Tags:** Allow Tools Calling, Group, Group Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11161,7 +12212,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -11178,13 +12231,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Target group ID."
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11192,7 +12245,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11213,7 +12268,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11233,9 +12290,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## getGroupScheduledTasks
 
 **- Tool Name:** getGroupScheduledTasks
-**- Tool Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\. Method: POST /getGroupScheduledTasks\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\.  Method: POST /getGroupScheduledTasks\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -11245,12 +12301,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The id of the group."
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupScheduledTasks",
@@ -11259,7 +12315,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupScheduledTasks
 **- Method Name:** getGroupScheduledTasks
@@ -11269,7 +12324,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get all Scheduled Tasks \(original Lockdown Mode\) for a group\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence, Readonly, Scheduled Task, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11278,7 +12332,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -11295,13 +12351,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The id of the group."
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11309,11 +12365,17 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "maxCount", "lockdowns"],
+      "required": [
+        "code",
+        "maxCount",
+        "lockdowns"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "maxCount": {
@@ -11515,7 +12577,11 @@ Generated at: 2026-06-11T06:06:13.448Z
               "type": {
                 "type": "string",
                 "description": "The type of permission modify. Acceptable values:- system. Modify group members' permission with Telegram's built in system.- nmBot. Modify nmBot's \"autoDeleteMessage(ByType)\" configurations.- disabled. Don't modify any permission configuration. Only available for nmBot+ chats.",
-                "enum": ["system", "nmBot", "disabled"]
+                "enum": [
+                  "system",
+                  "nmBot",
+                  "disabled"
+                ]
               },
               "unpinLastMessage": {
                 "type": "boolean",
@@ -11533,7 +12599,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11555,7 +12623,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getGroupWhitelist
 **- Tool Description:** POST /getGroupWhitelist
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -11564,12 +12631,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "type": "integer"
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getGroupWhitelist",
@@ -11578,7 +12645,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getGroupWhitelist
 **- Method Name:** getGroupWhitelist
@@ -11588,7 +12654,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /getGroupWhitelist
 **- Tags:** Allow Tools Calling, Group White List, Readonly, nmBot Intelligence, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11597,7 +12662,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer"
@@ -11612,13 +12679,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "type": "integer"
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11626,11 +12693,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "whitelist"],
+      "required": [
+        "code",
+        "whitelist"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "whitelist": {
@@ -11638,7 +12710,13 @@ Generated at: 2026-06-11T06:06:13.448Z
           "description": "The whitelist of the group.",
           "items": {
             "type": "object",
-            "required": ["id", "groupId", "chatId", "addByUserId", "date"],
+            "required": [
+              "id",
+              "groupId",
+              "chatId",
+              "addByUserId",
+              "date"
+            ],
             "properties": {
               "addByUserId": {
                 "type": "integer",
@@ -11671,7 +12749,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11693,16 +12773,13 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getIntelligenceChatSettings
 **- Tool Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /getIntelligenceChatSettings\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getIntelligenceChatSettings",
@@ -11711,7 +12788,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getIntelligenceChatSettings
 **- Method Name:** getIntelligenceChatSettings
@@ -11721,7 +12797,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11739,9 +12814,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11751,7 +12824,9 @@ Generated at: 2026-06-11T06:06:13.448Z
       "allOf": [
         {
           "type": "object",
-          "required": ["code"],
+          "required": [
+            "code"
+          ],
           "properties": {
             "code": {
               "type": "integer"
@@ -11760,11 +12835,16 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         {
           "type": "object",
-          "required": ["intelligenceSettings"],
+          "required": [
+            "intelligenceSettings"
+          ],
           "properties": {
             "intelligenceSettings": {
               "type": "object",
-              "required": ["model", "autoConfirmReadonlyApiRequest"],
+              "required": [
+                "model",
+                "autoConfirmReadonlyApiRequest"
+              ],
               "properties": {
                 "autoConfirmReadonlyApiRequest": {
                   "type": "boolean",
@@ -11773,7 +12853,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "model": {
                   "type": "string",
                   "description": "The model type to use. \"default\" or \"advanced\". Advanced is plus-user-only.",
-                  "enum": ["default", "anvanced"]
+                  "enum": [
+                    "default",
+                    "advanced"
+                  ]
                 }
               },
               "title": "IntelligenceSettings"
@@ -11791,7 +12874,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** getJpacUserList
 **- Tool Description:** Get JPAC user list for a specific JPAC list ID\. Method: POST /getJpacUserList\. Permission scope: Group Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -11805,12 +12887,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "JPAC list ID."
     }
   },
-  "required": ["chatId", "id"]
+  "required": [
+    "chatId",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getJpacUserList",
@@ -11819,7 +12902,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getJpacUserList
 **- Method Name:** getJpacUserList
@@ -11829,7 +12911,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get JPAC user list for a specific JPAC list ID\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11839,7 +12920,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["chatId", "id"],
+      "required": [
+        "chatId",
+        "id"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -11864,13 +12948,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "JPAC list ID."
       }
     },
-    "required": ["chatId", "id"]
+    "required": [
+      "chatId",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -11878,7 +12963,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11907,7 +12994,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -11927,9 +13016,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## getKeywordReplies
 
 **- Tool Name:** getKeywordReplies
-**- Tool Description:** Get all Keyword Replies for a group or user\. Method: POST /getKeywordReplies\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Description:** Get all Keyword Replies for a group or user\.  Method: POST /getKeywordReplies\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -11939,12 +13027,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The id of the group/user to get keyword replies for."
     }
   },
-  "required": ["chatId"]
+  "required": [
+    "chatId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getKeywordReplies",
@@ -11953,7 +13041,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getKeywordReplies
 **- Method Name:** getKeywordReplies
@@ -11963,7 +13050,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get all Keyword Replies for a group or user\.
 **- Tags:** Allow Tools Calling, Keyword Reply, nmBot Intelligence, Readonly, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -11972,7 +13058,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId"],
+      "required": [
+        "chatId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -11989,13 +13077,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The id of the group/user to get keyword replies for."
       }
     },
-    "required": ["chatId"]
+    "required": [
+      "chatId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -12003,11 +13091,17 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "maxCount", "keywordReplies"],
+      "required": [
+        "code",
+        "maxCount",
+        "keywordReplies"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "maxCount": {
@@ -12059,12 +13153,36 @@ Generated at: 2026-06-11T06:06:13.448Z
               "autoDeleteOriginalMessageAfter": {
                 "type": "integer",
                 "description": "Time in seconds to auto delete the message that triggered the keyword reply. Set to 0 to disable. Plus-only if is a business keyword reply.",
-                "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+                "enum": [
+                  0,
+                  1,
+                  3,
+                  5,
+                  10,
+                  30,
+                  60,
+                  120,
+                  180,
+                  240,
+                  300
+                ]
               },
               "autoDeleteReplyMessageAfter": {
                 "type": "integer",
                 "description": "Time in seconds to auto delete the message that replied to triggered message. Set to 0 to disable. Plus-only if is a business keyword reply.",
-                "enum": [0, 1, 3, 5, 10, 30, 60, 120, 180, 240, 300]
+                "enum": [
+                  0,
+                  1,
+                  3,
+                  5,
+                  10,
+                  30,
+                  60,
+                  120,
+                  180,
+                  240,
+                  300
+                ]
               },
               "businessMarkMessagesAsRead": {
                 "type": "boolean",
@@ -12081,7 +13199,15 @@ Generated at: 2026-06-11T06:06:13.448Z
               "cooldown": {
                 "type": "integer",
                 "description": "Time in seconds to wait before the next trigger of the keyword reply. Set to 0 to disable.",
-                "enum": [0, 10, 30, 60, 120, 600, 1800]
+                "enum": [
+                  0,
+                  10,
+                  30,
+                  60,
+                  120,
+                  600,
+                  1800
+                ]
               },
               "disableNmartchat": {
                 "type": "boolean",
@@ -12198,7 +13324,12 @@ Generated at: 2026-06-11T06:06:13.448Z
               "warnSender": {
                 "type": "integer",
                 "description": "The time to let nmBot warn the sender. Set to 0 to disable. For group keyword reply only. For nmBot+ chats only.",
-                "enum": [0, 1, 2, 3]
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
               }
             },
             "title": "KeywordReply"
@@ -12212,7 +13343,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -12232,9 +13365,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## getMessageTemplates
 
 **- Tool Name:** getMessageTemplates
-**- Tool Description:** Get a chat's Message Templates\. Method: POST /getMessageTemplates\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Description:** Get a chat's Message Templates\.  Method: POST /getMessageTemplates\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -12244,12 +13376,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "The chat id to get message templates."
     }
   },
-  "required": ["chatId"]
+  "required": [
+    "chatId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getMessageTemplates",
@@ -12258,7 +13390,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getMessageTemplates
 **- Method Name:** getMessageTemplates
@@ -12268,7 +13399,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get a chat's Message Templates\.
 **- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -12277,7 +13407,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId"],
+      "required": [
+        "chatId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -12294,13 +13426,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "The chat id to get message templates."
       }
     },
-    "required": ["chatId"]
+    "required": [
+      "chatId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -12308,11 +13440,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "messageTemplates"],
+      "required": [
+        "code",
+        "messageTemplates"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "messageTemplates": {
@@ -12350,7 +13487,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "text"],
+                    "required": [
+                      "url",
+                      "text"
+                    ],
                     "properties": {
                       "icon_custom_emoji_id": {
                         "type": "string",
@@ -12359,7 +13499,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "style": {
                         "type": "string",
                         "description": "Style of the button. Must be one of danger (red), success (green) or primary (blue). If omitted, then an app-specific style is used.",
-                        "enum": ["danger", "success", "primary"]
+                        "enum": [
+                          "danger",
+                          "success",
+                          "primary"
+                        ]
                       },
                       "text": {
                         "type": "string",
@@ -12420,8 +13564,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "parseMode": {
                 "type": "string",
-                "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-                "enum": ["Markdown", "MarkdownV2", "HTML"]
+                "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+                "enum": [
+                  "Markdown",
+                  "MarkdownV2",
+                  "HTML",
+                  "RichMarkdown",
+                  "RichHTML"
+                ]
               },
               "protectContent": {
                 "type": "boolean",
@@ -12455,7 +13605,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -12475,18 +13627,15 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## getUserConfiguration
 
 **- Tool Name:** getUserConfiguration
-**- Tool Description:** Get the current user's configuration of nmBot\. Method: POST /getUserConfiguration\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Description:** Get the current user's configuration of nmBot\.  Method: POST /getUserConfiguration\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "getUserConfiguration",
@@ -12495,7 +13644,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /getUserConfiguration
 **- Method Name:** getUserConfiguration
@@ -12505,7 +13653,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Get the current user's configuration of nmBot\.
 **- Tags:** Allow Tools Calling, User, User Only, Readonly, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -12515,9 +13662,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -12525,16 +13670,23 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "userConfiguration"],
+      "required": [
+        "code",
+        "userConfiguration"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "userConfiguration": {
           "type": "object",
-          "required": ["receiveGroupMentionAdministratorNotifications"],
+          "required": [
+            "receiveGroupMentionAdministratorNotifications"
+          ],
           "properties": {
             "receiveGroupMentionAdministratorNotifications": {
               "type": "boolean",
@@ -12554,7 +13706,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** grantJpacAccessToChat
 **- Tool Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\. Method: POST /grantJpacAccessToChat\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -12572,12 +13723,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Chat id to grant management access."
     }
   },
-  "required": ["chatId", "id", "targetChatId"]
+  "required": [
+    "chatId",
+    "id",
+    "targetChatId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "grantJpacAccessToChat",
@@ -12586,7 +13739,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /grantJpacAccessToChat
 **- Method Name:** grantJpacAccessToChat
@@ -12596,7 +13748,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Grant another chat permission to manage this JPAC \(up to 3 management chats\)\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -12605,7 +13756,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "id", "targetChatId"],
+      "required": [
+        "chatId",
+        "id",
+        "targetChatId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -12638,13 +13793,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Chat id to grant management access."
       }
     },
-    "required": ["chatId", "id", "targetChatId"]
+    "required": [
+      "chatId",
+      "id",
+      "targetChatId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -12652,11 +13809,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -12680,7 +13841,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -12699,7 +13862,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -12721,7 +13886,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** groupSetConfig
 **- Tool Description:** Apply one\-click group configuration changes\. Method: POST /groupSetConfig\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -12822,14 +13986,20 @@ Generated at: 2026-06-11T06:06:13.448Z
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["command", "setting"],
+            "required": [
+              "command",
+              "setting"
+            ],
             "properties": {
               "command": {
                 "type": "string"
               },
               "setting": {
                 "type": "string",
-                "enum": ["disabled", "admin_only"]
+                "enum": [
+                  "disabled",
+                  "admin_only"
+                ]
               }
             },
             "additionalProperties": false
@@ -12886,7 +14056,10 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "joinVerificationChat": {
           "type": "string",
-          "enum": ["group", "private"]
+          "enum": [
+            "group",
+            "private"
+          ]
         },
         "joinVerificationCustomText": {
           "type": "string"
@@ -13130,12 +14303,49 @@ Generated at: 2026-06-11T06:06:13.448Z
           "oneOf": [
             {
               "type": "boolean",
-              "enum": [false]
+              "enum": [
+                false
+              ]
             },
             {
               "type": "string",
-              "enum": ["delete", "ban"]
+              "enum": [
+                "delete",
+                "ban"
+              ]
             }
+          ]
+        },
+        "spamDetectorAdbyeAction": {
+          "description": "AdBye action. Enabling delete or ban requires spamDetector.adbye.enabled in the variable manager and a configured ADBYE_API_KEY; false remains accepted while unavailable.",
+          "oneOf": [
+            {
+              "type": "boolean",
+              "enum": [
+                false
+              ]
+            },
+            {
+              "type": "string",
+              "enum": [
+                "delete",
+                "ban"
+              ]
+            }
+          ]
+        },
+        "spamDetectorAdbyeThreshold": {
+          "type": "integer",
+          "description": "AdBye score threshold. The default is 81, the start of the advertising score band.",
+          "enum": [
+            21,
+            31,
+            41,
+            51,
+            61,
+            71,
+            81,
+            91
           ]
         },
         "spamDetectorAllowSupportToUnbanUsers": {
@@ -13145,11 +14355,16 @@ Generated at: 2026-06-11T06:06:13.448Z
           "oneOf": [
             {
               "type": "boolean",
-              "enum": [false]
+              "enum": [
+                false
+              ]
             },
             {
               "type": "string",
-              "enum": ["delete", "ban"]
+              "enum": [
+                "delete",
+                "ban"
+              ]
             }
           ]
         },
@@ -13160,11 +14375,16 @@ Generated at: 2026-06-11T06:06:13.448Z
           "oneOf": [
             {
               "type": "boolean",
-              "enum": [false]
+              "enum": [
+                false
+              ]
             },
             {
               "type": "string",
-              "enum": ["delete", "ban"]
+              "enum": [
+                "delete",
+                "ban"
+              ]
             }
           ]
         },
@@ -13221,12 +14441,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "title": "GroupSetConfigPatch"
     }
   },
-  "required": ["groupId", "config"]
+  "required": [
+    "groupId",
+    "config"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "groupSetConfig",
@@ -13235,7 +14456,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /groupSetConfig
 **- Method Name:** groupSetConfig
@@ -13245,7 +14465,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Apply one\-click group configuration changes\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -13255,7 +14474,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId", "config"],
+      "required": [
+        "groupId",
+        "config"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -13353,14 +14575,20 @@ Generated at: 2026-06-11T06:06:13.448Z
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["command", "setting"],
+                "required": [
+                  "command",
+                  "setting"
+                ],
                 "properties": {
                   "command": {
                     "type": "string"
                   },
                   "setting": {
                     "type": "string",
-                    "enum": ["disabled", "admin_only"]
+                    "enum": [
+                      "disabled",
+                      "admin_only"
+                    ]
                   }
                 },
                 "additionalProperties": false
@@ -13417,7 +14645,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "joinVerificationChat": {
               "type": "string",
-              "enum": ["group", "private"]
+              "enum": [
+                "group",
+                "private"
+              ]
             },
             "joinVerificationCustomText": {
               "type": "string"
@@ -13661,12 +14892,49 @@ Generated at: 2026-06-11T06:06:13.448Z
               "oneOf": [
                 {
                   "type": "boolean",
-                  "enum": [false]
+                  "enum": [
+                    false
+                  ]
                 },
                 {
                   "type": "string",
-                  "enum": ["delete", "ban"]
+                  "enum": [
+                    "delete",
+                    "ban"
+                  ]
                 }
+              ]
+            },
+            "spamDetectorAdbyeAction": {
+              "description": "AdBye action. Enabling delete or ban requires spamDetector.adbye.enabled in the variable manager and a configured ADBYE_API_KEY; false remains accepted while unavailable.",
+              "oneOf": [
+                {
+                  "type": "boolean",
+                  "enum": [
+                    false
+                  ]
+                },
+                {
+                  "type": "string",
+                  "enum": [
+                    "delete",
+                    "ban"
+                  ]
+                }
+              ]
+            },
+            "spamDetectorAdbyeThreshold": {
+              "type": "integer",
+              "description": "AdBye score threshold. The default is 81, the start of the advertising score band.",
+              "enum": [
+                21,
+                31,
+                41,
+                51,
+                61,
+                71,
+                81,
+                91
               ]
             },
             "spamDetectorAllowSupportToUnbanUsers": {
@@ -13676,11 +14944,16 @@ Generated at: 2026-06-11T06:06:13.448Z
               "oneOf": [
                 {
                   "type": "boolean",
-                  "enum": [false]
+                  "enum": [
+                    false
+                  ]
                 },
                 {
                   "type": "string",
-                  "enum": ["delete", "ban"]
+                  "enum": [
+                    "delete",
+                    "ban"
+                  ]
                 }
               ]
             },
@@ -13691,11 +14964,16 @@ Generated at: 2026-06-11T06:06:13.448Z
               "oneOf": [
                 {
                   "type": "boolean",
-                  "enum": [false]
+                  "enum": [
+                    false
+                  ]
                 },
                 {
                   "type": "string",
-                  "enum": ["delete", "ban"]
+                  "enum": [
+                    "delete",
+                    "ban"
+                  ]
                 }
               ]
             },
@@ -13853,14 +15131,20 @@ Generated at: 2026-06-11T06:06:13.448Z
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["command", "setting"],
+              "required": [
+                "command",
+                "setting"
+              ],
               "properties": {
                 "command": {
                   "type": "string"
                 },
                 "setting": {
                   "type": "string",
-                  "enum": ["disabled", "admin_only"]
+                  "enum": [
+                    "disabled",
+                    "admin_only"
+                  ]
                 }
               },
               "additionalProperties": false
@@ -13917,7 +15201,10 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "joinVerificationChat": {
             "type": "string",
-            "enum": ["group", "private"]
+            "enum": [
+              "group",
+              "private"
+            ]
           },
           "joinVerificationCustomText": {
             "type": "string"
@@ -14161,12 +15448,49 @@ Generated at: 2026-06-11T06:06:13.448Z
             "oneOf": [
               {
                 "type": "boolean",
-                "enum": [false]
+                "enum": [
+                  false
+                ]
               },
               {
                 "type": "string",
-                "enum": ["delete", "ban"]
+                "enum": [
+                  "delete",
+                  "ban"
+                ]
               }
+            ]
+          },
+          "spamDetectorAdbyeAction": {
+            "description": "AdBye action. Enabling delete or ban requires spamDetector.adbye.enabled in the variable manager and a configured ADBYE_API_KEY; false remains accepted while unavailable.",
+            "oneOf": [
+              {
+                "type": "boolean",
+                "enum": [
+                  false
+                ]
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "delete",
+                  "ban"
+                ]
+              }
+            ]
+          },
+          "spamDetectorAdbyeThreshold": {
+            "type": "integer",
+            "description": "AdBye score threshold. The default is 81, the start of the advertising score band.",
+            "enum": [
+              21,
+              31,
+              41,
+              51,
+              61,
+              71,
+              81,
+              91
             ]
           },
           "spamDetectorAllowSupportToUnbanUsers": {
@@ -14176,11 +15500,16 @@ Generated at: 2026-06-11T06:06:13.448Z
             "oneOf": [
               {
                 "type": "boolean",
-                "enum": [false]
+                "enum": [
+                  false
+                ]
               },
               {
                 "type": "string",
-                "enum": ["delete", "ban"]
+                "enum": [
+                  "delete",
+                  "ban"
+                ]
               }
             ]
           },
@@ -14191,11 +15520,16 @@ Generated at: 2026-06-11T06:06:13.448Z
             "oneOf": [
               {
                 "type": "boolean",
-                "enum": [false]
+                "enum": [
+                  false
+                ]
               },
               {
                 "type": "string",
-                "enum": ["delete", "ban"]
+                "enum": [
+                  "delete",
+                  "ban"
+                ]
               }
             ]
           },
@@ -14252,13 +15586,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "title": "GroupSetConfigPatch"
       }
     },
-    "required": ["groupId", "config"]
+    "required": [
+      "groupId",
+      "config"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -14266,7 +15601,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -14320,7 +15657,10 @@ Generated at: 2026-06-11T06:06:13.448Z
           "properties": {
             "actionLog": {
               "type": "object",
-              "required": ["enabled", "channel"],
+              "required": [
+                "enabled",
+                "channel"
+              ],
               "properties": {
                 "channel": {
                   "type": "integer",
@@ -14435,7 +15775,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "autoDeleteReplyToOperation": {
               "type": "object",
-              "required": ["enabled", "timeout"],
+              "required": [
+                "enabled",
+                "timeout"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -14450,7 +15793,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "autoWarnAfterAutoDelete": {
               "type": "object",
-              "required": ["enabled", "count"],
+              "required": [
+                "enabled",
+                "count"
+              ],
               "properties": {
                 "count": {
                   "type": "integer",
@@ -14477,7 +15823,11 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "channelMessages": {
               "type": "object",
-              "required": ["autoDelete", "autoBan", "aggressiveMode"],
+              "required": [
+                "autoDelete",
+                "autoBan",
+                "aggressiveMode"
+              ],
               "properties": {
                 "aggressiveMode": {
                   "type": "boolean",
@@ -14496,7 +15846,12 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "commandLimitation": {
               "type": "object",
-              "required": ["enabled", "canAccess", "requirePlus", "data"],
+              "required": [
+                "enabled",
+                "canAccess",
+                "requirePlus",
+                "data"
+              ],
               "properties": {
                 "canAccess": {
                   "type": "boolean",
@@ -14507,14 +15862,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "description": "Updated via groupSetConfig key: commandLimitationData.",
                   "items": {
                     "type": "object",
-                    "required": ["command", "setting"],
+                    "required": [
+                      "command",
+                      "setting"
+                    ],
                     "properties": {
                       "command": {
                         "type": "string"
                       },
                       "setting": {
                         "type": "string",
-                        "enum": ["disabled", "admin_only"]
+                        "enum": [
+                          "disabled",
+                          "admin_only"
+                        ]
                       }
                     }
                   }
@@ -14532,7 +15893,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "creditAPI": {
               "type": "object",
-              "required": ["enabled"],
+              "required": [
+                "enabled"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -14547,11 +15910,18 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "emergencyMode": {
               "type": "object",
-              "required": ["silentMode", "offlineMode"],
+              "required": [
+                "silentMode",
+                "offlineMode"
+              ],
               "properties": {
                 "offlineMode": {
                   "type": "object",
-                  "required": ["active", "duration", "activeUntil"],
+                  "required": [
+                    "active",
+                    "duration",
+                    "activeUntil"
+                  ],
                   "properties": {
                     "active": {
                       "type": "boolean",
@@ -14570,7 +15940,11 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "silentMode": {
                   "type": "object",
-                  "required": ["active", "duration", "activeUntil"],
+                  "required": [
+                    "active",
+                    "duration",
+                    "activeUntil"
+                  ],
                   "properties": {
                     "active": {
                       "type": "boolean",
@@ -14600,7 +15974,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "joinRequestNotification": {
               "type": "object",
-              "required": ["enabled", "messageIds"],
+              "required": [
+                "enabled",
+                "messageIds"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -14671,7 +16048,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "chat": {
                   "type": "string",
                   "description": "Updated via groupSetConfig key: joinVerificationChat.",
-                  "enum": ["group", "private"]
+                  "enum": [
+                    "group",
+                    "private"
+                  ]
                 },
                 "customText": {
                   "type": "string",
@@ -14707,7 +16087,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "maxAttempts": {
                   "type": "object",
-                  "required": ["enabled", "count"],
+                  "required": [
+                    "enabled",
+                    "count"
+                  ],
                   "properties": {
                     "count": {
                       "type": "integer",
@@ -14743,7 +16126,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "jpac": {
               "type": "object",
-              "required": ["sendMessage"],
+              "required": [
+                "sendMessage"
+              ],
               "properties": {
                 "autoSyncNewBannedUsers": {
                   "type": "boolean",
@@ -14762,7 +16147,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "leaveMessage": {
               "type": "object",
-              "required": ["autoDeleteAfter"],
+              "required": [
+                "autoDeleteAfter"
+              ],
               "properties": {
                 "autoDeleteAfter": {
                   "type": "integer",
@@ -14878,7 +16265,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "nmartChatV2": {
               "type": "object",
-              "required": ["enabled", "plusEnabled"],
+              "required": [
+                "enabled",
+                "plusEnabled"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -14980,7 +16370,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "quote": {
               "type": "object",
-              "required": ["enabled"],
+              "required": [
+                "enabled"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -14995,7 +16387,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "replyChannelPosts": {
               "type": "object",
-              "required": ["enabled", "messageIds"],
+              "required": [
+                "enabled",
+                "messageIds"
+              ],
               "properties": {
                 "enabled": {
                   "type": "boolean",
@@ -15014,6 +16409,7 @@ Generated at: 2026-06-11T06:06:13.448Z
             "spamDetector": {
               "type": "object",
               "required": [
+                "availability",
                 "detectors",
                 "hasDetectorEnabled",
                 "hasBanEnabled",
@@ -15021,6 +16417,7 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "sendMessage",
                 "onlyBanUsersSendMultipleMessageTextsMatched",
                 "allowSupportToUnbanUsers",
+                "adbyeThreshold",
                 "nmBotIntelligenceThreshold",
                 "nmBotIntelligenceSmartAction",
                 "detectBotMessages"
@@ -15030,9 +16427,37 @@ Generated at: 2026-06-11T06:06:13.448Z
                   "type": "integer",
                   "description": "Deprecated numeric action alias."
                 },
+                "adbyeThreshold": {
+                  "type": "integer",
+                  "description": "Updated via groupSetConfig key: spamDetectorAdbyeThreshold. Scores at or above this threshold are treated as advertising.",
+                  "enum": [
+                    21,
+                    31,
+                    41,
+                    51,
+                    61,
+                    71,
+                    81,
+                    91
+                  ]
+                },
                 "allowSupportToUnbanUsers": {
                   "type": "boolean",
                   "description": "Updated via groupSetConfig key: spamDetectorAllowSupportToUnbanUsers."
+                },
+                "availability": {
+                  "type": "object",
+                  "description": "Server-computed availability for dynamically gated spam detectors.",
+                  "required": [
+                    "adbye"
+                  ],
+                  "properties": {
+                    "adbye": {
+                      "type": "boolean",
+                      "description": "True only when spamDetector.adbye.enabled is enabled in the variable manager and ADBYE_API_KEY is configured."
+                    }
+                  },
+                  "title": "GroupConfigurationSpamDetectorAvailability"
                 },
                 "detectBotMessages": {
                   "type": "string",
@@ -15040,18 +16465,46 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "detectors": {
                   "type": "object",
-                  "required": ["nmBot", "cas", "nmBotIntelligence"],
+                  "required": [
+                    "nmBot",
+                    "cas",
+                    "adbye",
+                    "nmBotIntelligence"
+                  ],
                   "properties": {
+                    "adbye": {
+                      "description": "Mapped from groupSetConfig key: spamDetectorAdbyeAction. Returns false while AdBye is unavailable without clearing the stored setting.",
+                      "oneOf": [
+                        {
+                          "type": "boolean",
+                          "enum": [
+                            false
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "delete",
+                            "ban"
+                          ]
+                        }
+                      ]
+                    },
                     "cas": {
                       "description": "Mapped from groupSetConfig key: spamDetectorCASAction.",
                       "oneOf": [
                         {
                           "type": "boolean",
-                          "enum": [false]
+                          "enum": [
+                            false
+                          ]
                         },
                         {
                           "type": "string",
-                          "enum": ["delete", "ban"]
+                          "enum": [
+                            "delete",
+                            "ban"
+                          ]
                         }
                       ]
                     },
@@ -15060,11 +16513,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "oneOf": [
                         {
                           "type": "boolean",
-                          "enum": [false]
+                          "enum": [
+                            false
+                          ]
                         },
                         {
                           "type": "string",
-                          "enum": ["delete", "ban"]
+                          "enum": [
+                            "delete",
+                            "ban"
+                          ]
                         }
                       ]
                     },
@@ -15073,11 +16531,16 @@ Generated at: 2026-06-11T06:06:13.448Z
                       "oneOf": [
                         {
                           "type": "boolean",
-                          "enum": [false]
+                          "enum": [
+                            false
+                          ]
                         },
                         {
                           "type": "string",
-                          "enum": ["delete", "ban"]
+                          "enum": [
+                            "delete",
+                            "ban"
+                          ]
                         }
                       ]
                     }
@@ -15144,7 +16607,13 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "weightedIndex": {
                   "type": "object",
                   "description": "Readonly computed weights from weightedIndexGear.",
-                  "required": ["text", "sticker", "media", "file", "voice"],
+                  "required": [
+                    "text",
+                    "sticker",
+                    "media",
+                    "file",
+                    "voice"
+                  ],
                   "properties": {
                     "file": {
                       "type": "number"
@@ -15165,7 +16634,13 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "weightedIndexGear": {
                   "type": "object",
-                  "required": ["text", "sticker", "media", "file", "voice"],
+                  "required": [
+                    "text",
+                    "sticker",
+                    "media",
+                    "file",
+                    "voice"
+                  ],
                   "properties": {
                     "file": {
                       "type": "integer",
@@ -15213,13 +16688,20 @@ Generated at: 2026-06-11T06:06:13.448Z
               "properties": {
                 "actionLog": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15247,13 +16729,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "adminFunctions": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15281,13 +16770,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "games": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15315,13 +16811,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "importOrExportConfiguration": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15349,13 +16852,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "joinVerification": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15383,13 +16893,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "keywordReply": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15417,13 +16934,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "otherAdminFunctions": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15451,13 +16975,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "smartChat": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15485,13 +17016,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "speakLimitations": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15519,13 +17057,20 @@ Generated at: 2026-06-11T06:06:13.448Z
                 },
                 "welcomeMessage": {
                   "type": "object",
-                  "required": ["setting", "exceptions"],
+                  "required": [
+                    "setting",
+                    "exceptions"
+                  ],
                   "properties": {
                     "exceptions": {
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "required": ["userId", "canChange", "addDate"],
+                        "required": [
+                          "userId",
+                          "canChange",
+                          "addDate"
+                        ],
                         "properties": {
                           "addDate": {
                             "type": "integer"
@@ -15560,7 +17105,9 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "welcomeMessage": {
               "type": "object",
-              "required": ["autoDeleteAfter"],
+              "required": [
+                "autoDeleteAfter"
+              ],
               "properties": {
                 "autoDeleteAfter": {
                   "type": "integer",
@@ -15594,7 +17141,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -15616,7 +17165,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** groupSetJoinVerifyChannel
 **- Tool Description:** Set the Join Verification Channel of a group\. Method: POST /groupSetJoinVerifyChannel\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -15639,12 +17187,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       ]
     }
   },
-  "required": ["groupId", "channelId"]
+  "required": [
+    "groupId",
+    "channelId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "groupSetJoinVerifyChannel (nmBot Intelligence)",
@@ -15653,7 +17202,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /groupSetJoinVerifyChannel
 **- Method Name:** groupSetJoinVerifyChannel
@@ -15663,7 +17211,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Set the Join Verification Channel of a group\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -15672,7 +17219,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId", "channelId"],
+      "required": [
+        "groupId",
+        "channelId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -15715,13 +17265,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         ]
       }
     },
-    "required": ["groupId", "channelId"]
+    "required": [
+      "groupId",
+      "channelId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -15729,15 +17280,35 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "msg"],
+      "required": [
+        "code",
+        "msg",
+        "newGroupConfiguration"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "msg": {
-          "type": "string"
+          "description": "true when the verification channel was set, otherwise the reason the update failed.",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "newGroupConfiguration": {
+          "type": "object",
+          "description": "The group configuration after the verification channel was set.",
+          "properties": {},
+          "additionalProperties": true
         }
       }
     }
@@ -15747,7 +17318,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -15769,7 +17342,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** importConfigurationFromNmBot
 **- Tool Description:** Parse encrypted nmBot exported configuration and validate importable items\. Method: POST /importConfigurationFromNmBot\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -15786,12 +17358,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Encrypted payload object from nmBot export."
     }
   },
-  "required": ["groupId", "language", "nmBotConfiguration"]
+  "required": [
+    "groupId",
+    "language",
+    "nmBotConfiguration"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "importConfigurationFromNmBot",
@@ -15800,7 +17374,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /importConfigurationFromNmBot
 **- Method Name:** importConfigurationFromNmBot
@@ -15810,7 +17383,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Parse encrypted nmBot exported configuration and validate importable items\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -15820,7 +17392,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId", "language", "nmBotConfiguration"],
+      "required": [
+        "groupId",
+        "language",
+        "nmBotConfiguration"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -15851,13 +17427,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Encrypted payload object from nmBot export."
       }
     },
-    "required": ["groupId", "language", "nmBotConfiguration"]
+    "required": [
+      "groupId",
+      "language",
+      "nmBotConfiguration"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -15865,7 +17443,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -15888,7 +17468,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -15910,7 +17492,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** importJpacFromCSV
 **- Tool Description:** Import JPAC users from CSV content\. Method: POST /importJpacFromCSV\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -15928,12 +17509,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "CSV text containing user identifiers to import."
     }
   },
-  "required": ["chatId", "id", "csv"]
+  "required": [
+    "chatId",
+    "id",
+    "csv"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "importJpacFromCSV",
@@ -15942,7 +17525,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /importJpacFromCSV
 **- Method Name:** importJpacFromCSV
@@ -15952,7 +17534,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Import JPAC users from CSV content\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -15962,7 +17543,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["chatId", "id", "csv"],
+      "required": [
+        "chatId",
+        "id",
+        "csv"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -15995,13 +17580,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "CSV text containing user identifiers to import."
       }
     },
-    "required": ["chatId", "id", "csv"]
+    "required": [
+      "chatId",
+      "id",
+      "csv"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -16009,7 +17596,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16030,7 +17619,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16052,7 +17643,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** init
 **- Tool Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\. Method: POST /init\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -16064,13 +17654,32 @@ Generated at: 2026-06-11T06:06:13.448Z
     "ignoreSubscribeStatus": {
       "type": "boolean",
       "description": "Skip checking channel subscription status when true."
+    },
+    "scope": {
+      "type": "array",
+      "description": "Optional response scope filter. When omitted, all legacy initialization data is returned.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "core",
+          "capabilities",
+          "plus",
+          "subscription",
+          "panelExtras",
+          "clientConfig",
+          "messageTemplates",
+          "intelligence",
+          "business",
+          "summary2024"
+        ]
+      }
     }
   }
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "init",
@@ -16079,7 +17688,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /init
 **- Method Name:** init
@@ -16089,7 +17697,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Initialize panel runtime context for the current user, including permissions, plans, feature availability, and cached resources\.
 **- Tags:** User, User Only, Readonly, Allow Tools Calling
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -16107,6 +17714,27 @@ Generated at: 2026-06-11T06:06:13.448Z
         "ignoreSubscribeStatus": {
           "type": "boolean",
           "description": "Skip checking channel subscription status when true."
+        },
+        "scope": {
+          "type": "array",
+          "description": "Optional response scope filter. When omitted, all legacy initialization data is returned.",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "core",
+              "capabilities",
+              "plus",
+              "subscription",
+              "panelExtras",
+              "clientConfig",
+              "messageTemplates",
+              "intelligence",
+              "business",
+              "summary2024"
+            ]
+          }
         }
       }
     }
@@ -16121,14 +17749,33 @@ Generated at: 2026-06-11T06:06:13.448Z
       "ignoreSubscribeStatus": {
         "type": "boolean",
         "description": "Skip checking channel subscription status when true."
+      },
+      "scope": {
+        "type": "array",
+        "description": "Optional response scope filter. When omitted, all legacy initialization data is returned.",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "core",
+            "capabilities",
+            "plus",
+            "subscription",
+            "panelExtras",
+            "clientConfig",
+            "messageTemplates",
+            "intelligence",
+            "business",
+            "summary2024"
+          ]
+        }
       }
     }
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -16136,7 +17783,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16274,7 +17923,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16296,7 +17947,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** leaveJpacList
 **- Tool Description:** Leave a JPAC list that the chat has joined\. Method: POST /leaveJpacList\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -16310,12 +17960,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "JPAC solution id to leave."
     }
   },
-  "required": ["chatId", "id"]
+  "required": [
+    "chatId",
+    "id"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "leaveJpacList",
@@ -16324,7 +17975,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /leaveJpacList
 **- Method Name:** leaveJpacList
@@ -16334,7 +17984,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Leave a JPAC list that the chat has joined\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -16343,7 +17992,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "id"],
+      "required": [
+        "chatId",
+        "id"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -16368,13 +18020,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "JPAC solution id to leave."
       }
     },
-    "required": ["chatId", "id"]
+    "required": [
+      "chatId",
+      "id"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -16382,11 +18035,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -16410,7 +18067,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16429,7 +18088,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16451,7 +18112,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** mergeBusinessScheduledTasks
 **- Tool Description:** Save the new Business Scheduled Tasks for the user\. Method: POST /mergeBusinessScheduledTasks\. Permission scope: User Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -16517,12 +18177,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["businessScheduledTasks"]
+  "required": [
+    "businessScheduledTasks"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "mergeBusinessScheduledTasks",
@@ -16531,7 +18191,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /mergeBusinessScheduledTasks
 **- Method Name:** mergeBusinessScheduledTasks
@@ -16541,7 +18200,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Save the new Business Scheduled Tasks for the user\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence, User Only, User, Business Scheduled Task
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -16550,7 +18208,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["businessScheduledTasks"],
+      "required": [
+        "businessScheduledTasks"
+      ],
       "properties": {
         "businessScheduledTasks": {
           "type": "array",
@@ -16679,13 +18339,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["businessScheduledTasks"]
+    "required": [
+      "businessScheduledTasks"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -16693,7 +18353,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["message", "code", "businessScheduledTasks"],
+      "required": [
+        "message",
+        "code",
+        "businessScheduledTasks"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16771,7 +18435,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** mergeGroupCustomRules
 **- Tool Description:** POST /mergeGroupCustomRules
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -16784,7 +18447,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "All new custom spam rules to update. Items not in the list will be removed.",
       "items": {
         "type": "object",
-        "required": ["id", "chatId", "type", "content", "isEnabled", "date"],
+        "required": [
+          "id",
+          "chatId",
+          "type",
+          "content",
+          "isEnabled",
+          "date"
+        ],
         "properties": {
           "chatId": {
             "type": "integer",
@@ -16808,20 +18478,27 @@ Generated at: 2026-06-11T06:06:13.448Z
           },
           "type": {
             "type": "string",
-            "description": "The match type of the rule. Accepts the following value:- userId: match id of the Telegram user.- userName: match the user's name.- userBio: match the bio of the user.- emojiStatusStickerSetName: user emoji status pack.- stickerSetName: The sticker name(id) the user sent.",
-            "enum": ["userId", "userName", "userBio"]
+            "description": "The match type of the rule. Accepts the following value:- text: match the message text.- userTitle: match the title of the user.- userBio: match the bio of the user. Only checked with join verification.- emojiStatusStickerSetName: user emoji status pack. Only checked with join verification.- stickerSetName: The sticker name(id) the user sent.",
+            "enum": [
+              "text",
+              "userTitle",
+              "userBio",
+              "emojiStatusStickerSetName",
+              "stickerSetName"
+            ]
           }
         },
         "title": "CustomSpamRule"
       }
     }
   },
-  "required": ["groupId", "customRules"]
+  "required": [
+    "groupId",
+    "customRules"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "mergeGroupCustomRules",
@@ -16830,7 +18507,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /mergeGroupCustomRules
 **- Method Name:** mergeGroupCustomRules
@@ -16840,7 +18516,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** POST /mergeGroupCustomRules
 **- Tags:** Allow Tools Calling, Group Custom Rules, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -16849,7 +18524,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["groupId", "customRules"],
+      "required": [
+        "groupId",
+        "customRules"
+      ],
       "properties": {
         "groupId": {
           "type": "integer"
@@ -16890,8 +18568,14 @@ Generated at: 2026-06-11T06:06:13.448Z
               },
               "type": {
                 "type": "string",
-                "description": "The match type of the rule. Accepts the following value:- userId: match id of the Telegram user.- userName: match the user's name.- userBio: match the bio of the user.- emojiStatusStickerSetName: user emoji status pack.- stickerSetName: The sticker name(id) the user sent.",
-                "enum": ["userId", "userName", "userBio"]
+                "description": "The match type of the rule. Accepts the following value:- text: match the message text.- userTitle: match the title of the user.- userBio: match the bio of the user. Only checked with join verification.- emojiStatusStickerSetName: user emoji status pack. Only checked with join verification.- stickerSetName: The sticker name(id) the user sent.",
+                "enum": [
+                  "text",
+                  "userTitle",
+                  "userBio",
+                  "emojiStatusStickerSetName",
+                  "stickerSetName"
+                ]
               }
             },
             "title": "CustomSpamRule"
@@ -16911,7 +18595,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "All new custom spam rules to update. Items not in the list will be removed.",
         "items": {
           "type": "object",
-          "required": ["id", "chatId", "type", "content", "isEnabled", "date"],
+          "required": [
+            "id",
+            "chatId",
+            "type",
+            "content",
+            "isEnabled",
+            "date"
+          ],
           "properties": {
             "chatId": {
               "type": "integer",
@@ -16935,21 +18626,28 @@ Generated at: 2026-06-11T06:06:13.448Z
             },
             "type": {
               "type": "string",
-              "description": "The match type of the rule. Accepts the following value:- userId: match id of the Telegram user.- userName: match the user's name.- userBio: match the bio of the user.- emojiStatusStickerSetName: user emoji status pack.- stickerSetName: The sticker name(id) the user sent.",
-              "enum": ["userId", "userName", "userBio"]
+              "description": "The match type of the rule. Accepts the following value:- text: match the message text.- userTitle: match the title of the user.- userBio: match the bio of the user. Only checked with join verification.- emojiStatusStickerSetName: user emoji status pack. Only checked with join verification.- stickerSetName: The sticker name(id) the user sent.",
+              "enum": [
+                "text",
+                "userTitle",
+                "userBio",
+                "emojiStatusStickerSetName",
+                "stickerSetName"
+              ]
             }
           },
           "title": "CustomSpamRule"
         }
       }
     },
-    "required": ["groupId", "customRules"]
+    "required": [
+      "groupId",
+      "customRules"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -16957,11 +18655,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         }
       }
@@ -16972,7 +18674,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -16994,7 +18698,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** resetGroupCommands
 **- Tool Description:** Reset group custom command config back to defaults\. Method: POST /resetGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17004,12 +18707,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Target group ID."
     }
   },
-  "required": ["groupId"]
+  "required": [
+    "groupId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "resetGroupCommands",
@@ -17018,7 +18721,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /resetGroupCommands
 **- Method Name:** resetGroupCommands
@@ -17028,7 +18730,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Reset group custom command config back to defaults\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17038,7 +18739,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId"],
+      "required": [
+        "groupId"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -17055,13 +18758,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Target group ID."
       }
     },
-    "required": ["groupId"]
+    "required": [
+      "groupId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17069,7 +18772,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17088,7 +18793,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17108,9 +18815,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## sendMessageTemplateTestMessage
 
 **- Tool Name:** sendMessageTemplateTestMessage
-**- Tool Description:** Send a test message to the user to confirm Message Template settings\. Method: POST /sendMessageTemplateTestMessage\. Readonly endpoint\. Includes documented 200 response schema\.
+**- Tool Description:** Send a test message to the user to confirm Message Template settings\.  Method: POST /sendMessageTemplateTestMessage\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17121,8 +18827,14 @@ Generated at: 2026-06-11T06:06:13.448Z
     },
     "parseMode": {
       "type": "string",
-      "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-      "enum": ["Markdown", "MarkdownV2", "HTML"]
+      "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+      "enum": [
+        "Markdown",
+        "MarkdownV2",
+        "HTML",
+        "RichMarkdown",
+        "RichHTML"
+      ]
     },
     "linkPreview": {
       "type": "boolean",
@@ -17145,31 +18857,29 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Optional. Whether prefer show preview above text. Accept if template type is text."
     }
   },
-  "required": ["text"]
+  "required": [
+    "text"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "sendMessageTemplateTestMessage",
-  "readOnlyHint": true,
+  "readOnlyHint": false,
   "idempotentHint": false,
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /sendMessageTemplateTestMessage
 **- Method Name:** sendMessageTemplateTestMessage
-**- Readonly:** Yes
+**- Readonly:** No
 **- Deprecated:** No
 **- Summary:** sendMessageTemplateTestMessage
 **- Description:** Send a test message to the user to confirm Message Template settings\.
-**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Readonly, Group, User
+**- Tags:** Allow Tools Calling, Message Template, nmBot Intelligence, Group, User
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17178,7 +18888,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["text"],
+      "required": [
+        "text"
+      ],
       "properties": {
         "text": {
           "type": "string",
@@ -17186,8 +18898,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         "parseMode": {
           "type": "string",
-          "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-          "enum": ["Markdown", "MarkdownV2", "HTML"]
+          "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+          "enum": [
+            "Markdown",
+            "MarkdownV2",
+            "HTML",
+            "RichMarkdown",
+            "RichHTML"
+          ]
         },
         "linkPreview": {
           "type": "boolean",
@@ -17221,8 +18939,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       },
       "parseMode": {
         "type": "string",
-        "description": "Optional. Message/caption parse mode. Accept if template has text/caption.",
-        "enum": ["Markdown", "MarkdownV2", "HTML"]
+        "description": "Optional. Message/caption parse mode. Accept if template has text/caption. RichMarkdown and RichHTML require nmBot+ and are only supported for text templates.",
+        "enum": [
+          "Markdown",
+          "MarkdownV2",
+          "HTML",
+          "RichMarkdown",
+          "RichHTML"
+        ]
       },
       "linkPreview": {
         "type": "boolean",
@@ -17245,13 +18969,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Optional. Whether prefer show preview above text. Accept if template type is text."
       }
     },
-    "required": ["text"]
+    "required": [
+      "text"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17259,11 +18983,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         }
       }
@@ -17274,7 +19002,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17296,7 +19026,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** setGroupCommands
 **- Tool Description:** Persist enabled command list for group admins and members\. Method: POST /setGroupCommands\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17313,12 +19042,13 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["groupId", "commands"]
+  "required": [
+    "groupId",
+    "commands"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "setGroupCommands",
@@ -17327,7 +19057,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /setGroupCommands
 **- Method Name:** setGroupCommands
@@ -17337,7 +19066,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Persist enabled command list for group admins and members\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17347,7 +19075,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId", "commands"],
+      "required": [
+        "groupId",
+        "commands"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -17378,13 +19109,14 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["groupId", "commands"]
+    "required": [
+      "groupId",
+      "commands"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17392,7 +19124,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17411,7 +19145,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17433,7 +19169,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** setGroupPermissionException
 **- Tool Description:** Set or clear per\-admin permission exception for a group\. Method: POST /setGroupPermissionException\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17455,12 +19190,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Set true/false to override, omit to remove exception."
     }
   },
-  "required": ["groupId", "userId", "permission"]
+  "required": [
+    "groupId",
+    "userId",
+    "permission"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "setGroupPermissionException",
@@ -17469,7 +19206,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /setGroupPermissionException
 **- Method Name:** setGroupPermissionException
@@ -17479,7 +19215,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Set or clear per\-admin permission exception for a group\.
 **- Tags:** Allow Tools Calling, Group, Group Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17489,7 +19224,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["groupId", "userId", "permission"],
+      "required": [
+        "groupId",
+        "userId",
+        "permission"
+      ],
       "properties": {
         "groupId": {
           "type": "integer",
@@ -17530,13 +19269,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Set true/false to override, omit to remove exception."
       }
     },
-    "required": ["groupId", "userId", "permission"]
+    "required": [
+      "groupId",
+      "userId",
+      "permission"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17544,7 +19285,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "newGroupConfiguration"],
+      "required": [
+        "code",
+        "newGroupConfiguration"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17562,7 +19306,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17584,7 +19330,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** setJpacAutoAddNewBannedUsers
 **- Tool Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\. Method: POST /setJpacAutoAddNewBannedUsers\. Permission scope: Group Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17602,12 +19347,14 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Whether to auto-add new banned users."
     }
   },
-  "required": ["chatId", "id", "value"]
+  "required": [
+    "chatId",
+    "id",
+    "value"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "setJpacAutoAddNewBannedUsers",
@@ -17616,7 +19363,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /setJpacAutoAddNewBannedUsers
 **- Method Name:** setJpacAutoAddNewBannedUsers
@@ -17626,7 +19372,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Toggle auto\-add newly banned users into the JPAC list \(nmBot\+ required\)\.
 **- Tags:** Allow Tools Calling, JPAC, Group, Group Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17635,7 +19380,11 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["chatId", "id", "value"],
+      "required": [
+        "chatId",
+        "id",
+        "value"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -17668,13 +19417,15 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Whether to auto-add new banned users."
       }
     },
-    "required": ["chatId", "id", "value"]
+    "required": [
+      "chatId",
+      "id",
+      "value"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17682,11 +19433,15 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200]
+          "enum": [
+            200
+          ]
         },
         "msg": {
           "type": "string"
@@ -17710,7 +19465,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17729,7 +19486,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17751,7 +19510,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** setPinnedChats
 **- Tool Description:** Pin or unpin a chat in current user panel\. Method: POST /setPinnedChats\. Permission scope: User Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17765,12 +19523,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       "description": "Set true to unpin, false/omit to pin."
     }
   },
-  "required": ["chatId"]
+  "required": [
+    "chatId"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "setPinnedChats",
@@ -17779,7 +19537,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /setPinnedChats
 **- Method Name:** setPinnedChats
@@ -17789,7 +19546,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Pin or unpin a chat in current user panel\.
 **- Tags:** Allow Tools Calling, User, User Only
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17799,7 +19555,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "schema": {
       "type": "object",
       "description": "Request body",
-      "required": ["chatId"],
+      "required": [
+        "chatId"
+      ],
       "properties": {
         "chatId": {
           "type": "integer",
@@ -17824,13 +19582,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         "description": "Set true to unpin, false/omit to pin."
       }
     },
-    "required": ["chatId"]
+    "required": [
+      "chatId"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17838,7 +19596,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17857,7 +19617,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -17877,9 +19639,8 @@ Generated at: 2026-06-11T06:06:13.448Z
 ## setUserConfiguration
 
 **- Tool Name:** setUserConfiguration
-**- Tool Description:** Set the current user's configuration of nmBot\. Method: POST /setUserConfiguration\. Permission scope: User Only\. Includes documented 200 response schema\.
+**- Tool Description:** Set the current user's configuration of nmBot\.  Method: POST /setUserConfiguration\. Permission scope: User Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
@@ -17895,12 +19656,12 @@ Generated at: 2026-06-11T06:06:13.448Z
       }
     }
   },
-  "required": ["configuration"]
+  "required": [
+    "configuration"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "setUserConfiguration",
@@ -17909,7 +19670,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /setUserConfiguration
 **- Method Name:** setUserConfiguration
@@ -17919,7 +19679,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Set the current user's configuration of nmBot\.
 **- Tags:** Allow Tools Calling, User, User Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -17928,7 +19687,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["configuration"],
+      "required": [
+        "configuration"
+      ],
       "properties": {
         "configuration": {
           "type": "object",
@@ -17957,13 +19718,13 @@ Generated at: 2026-06-11T06:06:13.448Z
         }
       }
     },
-    "required": ["configuration"]
+    "required": [
+      "configuration"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -17971,16 +19732,23 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "userConfiguration"],
+      "required": [
+        "code",
+        "userConfiguration"
+      ],
       "properties": {
         "code": {
           "type": "integer",
-          "enum": [200],
+          "enum": [
+            200
+          ],
           "title": "ResponseCodeSuccess"
         },
         "userConfiguration": {
           "type": "object",
-          "required": ["receiveGroupMentionAdministratorNotifications"],
+          "required": [
+            "receiveGroupMentionAdministratorNotifications"
+          ],
           "properties": {
             "receiveGroupMentionAdministratorNotifications": {
               "type": "boolean",
@@ -18000,16 +19768,13 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** spamLogQuery
 **- Tool Description:** List recent spam moderation actions related to current user\. Method: POST /spamLogQuery\. Permission scope: User Only\. Readonly endpoint\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {}
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "spamLogQuery",
@@ -18018,7 +19783,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /spamLogQuery
 **- Method Name:** spamLogQuery
@@ -18028,7 +19792,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** List recent spam moderation actions related to current user\.
 **- Tags:** Allow Tools Calling, User, User Only, Readonly
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -18048,9 +19811,7 @@ Generated at: 2026-06-11T06:06:13.448Z
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -18058,7 +19819,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code", "log"],
+      "required": [
+        "code",
+        "log"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -18075,7 +19839,9 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["code"],
+      "required": [
+        "code"
+      ],
       "properties": {
         "code": {
           "type": "integer"
@@ -18097,14 +19863,16 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Tool Name:** updateIntelligenceChatSettings
 **- Tool Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\. Method: POST /updateIntelligenceChatSettings\. Permission scope: User Only\. Includes documented 200 response schema\.
 **- Tool Input Schema:**
-
 ```json
 {
   "type": "object",
   "properties": {
     "settings": {
       "type": "object",
-      "required": ["model", "autoConfirmReadonlyApiRequest"],
+      "required": [
+        "model",
+        "autoConfirmReadonlyApiRequest"
+      ],
       "properties": {
         "autoConfirmReadonlyApiRequest": {
           "type": "boolean",
@@ -18113,18 +19881,21 @@ Generated at: 2026-06-11T06:06:13.448Z
         "model": {
           "type": "string",
           "description": "The model type to use. \"default\" or \"advanced\". Advanced is plus-user-only.",
-          "enum": ["default", "anvanced"]
+          "enum": [
+            "default",
+            "advanced"
+          ]
         }
       },
       "title": "IntelligenceSettings"
     }
   },
-  "required": ["settings"]
+  "required": [
+    "settings"
+  ]
 }
 ```
-
 **- Tool Annotations:**
-
 ```json
 {
   "title": "updateIntelligenceChatSettings",
@@ -18133,7 +19904,6 @@ Generated at: 2026-06-11T06:06:13.448Z
   "openWorldHint": true
 }
 ```
-
 **- HTTP Method:** POST
 **- Path:** /updateIntelligenceChatSettings
 **- Method Name:** updateIntelligenceChatSettings
@@ -18143,7 +19913,6 @@ Generated at: 2026-06-11T06:06:13.448Z
 **- Description:** Update the user's nmBot Copilot \(originally nmBot Intelligence Chat\) settings\.
 **- Tags:** Allow Tools Calling, nmBot Intelligence API, User, User Only, nmBot Intelligence
 **- Request:**
-
 ```json
 {
   "parameters": [],
@@ -18152,11 +19921,16 @@ Generated at: 2026-06-11T06:06:13.448Z
     "description": "",
     "schema": {
       "type": "object",
-      "required": ["settings"],
+      "required": [
+        "settings"
+      ],
       "properties": {
         "settings": {
           "type": "object",
-          "required": ["model", "autoConfirmReadonlyApiRequest"],
+          "required": [
+            "model",
+            "autoConfirmReadonlyApiRequest"
+          ],
           "properties": {
             "autoConfirmReadonlyApiRequest": {
               "type": "boolean",
@@ -18165,7 +19939,10 @@ Generated at: 2026-06-11T06:06:13.448Z
             "model": {
               "type": "string",
               "description": "The model type to use. \"default\" or \"advanced\". Advanced is plus-user-only.",
-              "enum": ["default", "anvanced"]
+              "enum": [
+                "default",
+                "advanced"
+              ]
             }
           },
           "title": "IntelligenceSettings"
@@ -18178,7 +19955,10 @@ Generated at: 2026-06-11T06:06:13.448Z
     "properties": {
       "settings": {
         "type": "object",
-        "required": ["model", "autoConfirmReadonlyApiRequest"],
+        "required": [
+          "model",
+          "autoConfirmReadonlyApiRequest"
+        ],
         "properties": {
           "autoConfirmReadonlyApiRequest": {
             "type": "boolean",
@@ -18187,19 +19967,22 @@ Generated at: 2026-06-11T06:06:13.448Z
           "model": {
             "type": "string",
             "description": "The model type to use. \"default\" or \"advanced\". Advanced is plus-user-only.",
-            "enum": ["default", "anvanced"]
+            "enum": [
+              "default",
+              "advanced"
+            ]
           }
         },
         "title": "IntelligenceSettings"
       }
     },
-    "required": ["settings"]
+    "required": [
+      "settings"
+    ]
   }
 }
 ```
-
 **- Responses:**
-
 ```json
 [
   {
@@ -18209,7 +19992,9 @@ Generated at: 2026-06-11T06:06:13.448Z
       "allOf": [
         {
           "type": "object",
-          "required": ["code"],
+          "required": [
+            "code"
+          ],
           "properties": {
             "code": {
               "type": "integer"
@@ -18218,11 +20003,16 @@ Generated at: 2026-06-11T06:06:13.448Z
         },
         {
           "type": "object",
-          "required": ["intelligenceSettings"],
+          "required": [
+            "intelligenceSettings"
+          ],
           "properties": {
             "intelligenceSettings": {
               "type": "object",
-              "required": ["model", "autoConfirmReadonlyApiRequest"],
+              "required": [
+                "model",
+                "autoConfirmReadonlyApiRequest"
+              ],
               "properties": {
                 "autoConfirmReadonlyApiRequest": {
                   "type": "boolean",
@@ -18231,7 +20021,10 @@ Generated at: 2026-06-11T06:06:13.448Z
                 "model": {
                   "type": "string",
                   "description": "The model type to use. \"default\" or \"advanced\". Advanced is plus-user-only.",
-                  "enum": ["default", "anvanced"]
+                  "enum": [
+                    "default",
+                    "advanced"
+                  ]
                 }
               },
               "title": "IntelligenceSettings"
